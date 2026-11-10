@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:6d96f0d3d98fcc69eba36c95b588654358239ad3042c929807e6becac08b5852",
+  "claims": [
+    {
+      "id": "claim_78926772c10447f8bc9a77c946813e96",
+      "statement": "ml4t-models owns finance-specific model estimation, finance-native batch/result contracts, checkpoint handling, and results-frame emission, while feature engineering belongs to ml4t-engineer, execution and order simulation to ml4t-backtest, and validation and diagnostics to ml4t-diagnostic.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L1-L32",
+          "version": "repo-lines-v1:sha256:65189f11e2a87c3550f4108f279a0c12d43985d607a99659b5ccd80b128d2d6e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljMDkxZmZkOWI4YTA3YTM5MjdiOWU5MzI4ZjA1ZWE1OGMxNjUyMGZlYTEyYTc0NzU2ZGViY2M3YWFiYmFjNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2OGE3NjNlNDhiZDRhN2RjZDVhMDFjZGM0OGJiNTgyZmQ1MTMyMGVmOWNjOThlZmM4NTdmOTFjZTdmZjIzMzQifQ"
+        },
+        {
+          "resource": "repo://docs/reference/architecture.md#L93-L114",
+          "version": "repo-lines-v1:sha256:66e18402cb61e4d7622921f195d34c34807010a036c8cf41781e3c1b6e06819c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxZTBmNzM4NTA2NWU5Y2I3MmM2OGFkMzZkOWJiYjQ0NmNjZTQ1YjZlOWE2OWQ0MmFiZTAzMWY2YzA4N2RiYTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5YTkyNzI0NjMzOWU3OTM0OGE4ZjhjNWQzNGYxNTEyN2VlMTg3NjMwNTZlZTNlNDhhNWE3NjA1OTY0MGY5MGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiMjE0NzhiZDlhZjk4MjhlNTY0NTRiNzIzY2U1MWU1MTc3ODg3MmZjMmMyYzZlOWEwZjgxNjFlNjUyNDY5N2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_28fb7e96d5504967b9189190f28f0d7b",
+      "statement": "The public architecture separates five modeling responsibilities: structural latent-factor estimation, factor-premium forecasting, mapping factor outputs to asset forecasts, direct asset prediction, and direct portfolio allocation; stochastic discount factor estimation is a separate weight-native structural domain.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L111-L143",
+          "version": "repo-lines-v1:sha256:d7697c577d90d1a831fdde9f2425e919444c38e01db6fc92478040badbe38c74:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2MGE2NjQwMTM1N2YwNDNlOGYzZDUwZDc5OTNkYTJmM2UzOTk1NmM2OThkMjk0MzRlZTUwZDExNDMwZTcxN2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRlNDQ1YmFkZDdlNTI5ZjRlMGIwZjIxMjkzNmY2MDUzOTg0NmQ5YTRlNDc0YzVhYmQ4MWJjYmYyZGZhNzBjMTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBhNDNjMzg5MjU4YzE5MDEzMjI0MzUzODU4MjJiNDJkZjQ5OGI5ODNkMGE2YmY5ZjBlYzJkNTc0YzQ4YmMzMGIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/api.py#L31-L140",
+          "version": "repo-lines-v1:sha256:1f1fe87d19de43eec2bb4b01c5e9ec66b67975c61be93d5be963ed5f5bda2a56:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmOTQxNmUwOWY3OGJhMzE2YzAzMjU2ODIxM2I4NTVlZTc1NmU0MTU2NWQ5MThmMDk1MTljODFmZDYyMGY0MDYwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiYmQxNWQ4NDM5ZTg5OGMwMzBiYmRjNGI0M2ZjMmNkZWQzMWM2OTdlOGUwMmZiMWM1MGVjZTUwZmU2NmJlMmU3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2Mjg2NmI4MzY1Yjc4NDhiMDdiMzk3MjNlZTQ2ODFlNTA5MTEyMzA0Yjc4NWNmZjUxMWRhNGIzM2JiYzg3MDEyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d18516da97414cbcadf54473da463c92",
+      "statement": "Finance-native input and result dataclasses validate axis compatibility and financial identity, including timestamp lengths, unique non-empty asset identifiers, masks, and model-specific dimensions, and reject malformed inputs during construction.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L195-L275",
+          "version": "repo-lines-v1:sha256:6425cab52c1fa7ffabb40a4a023d2751bf188fdabfeba2281e48b6df443e4efd:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3Y2I2YWM3MDI2MmVlYmFmMDY0MTZlZDA1YTM0NmFkN2E2NTY1NmJmOWYwMWY5NDQ4MGU3OWE5OTI3NTI0NzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1NjJmMjNkOTViZjZmN2MxZmMyMjg2ZTgyODRiYjc5MmRkNzEzMDg4MmI3MmI5MTdmMzFmNGZhYjRmOGFmN2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0ZjI3NDIyNTAxY2M3NmU1NGEzN2Q4ZDBlNTViOGIwZGI2MjY4NTY3ZWVjNmY5M2UwZmJiMDNlZDdiNjk5ODUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L27-L193",
+          "version": "repo-lines-v1:sha256:7df35f8f29cd6a1f98cc642682ef7f663fd840ea557a97bea8698e7b129efb8a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhMTdiNGI4ZmE0YzA5OGIzODA3M2ViYzZiY2Y5M2JmYjhlZDVmMDZkZmU2N2Y2YzM2NjY4YzRmZjAyMjUyMmUzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjYWEzMzkxZjVmODdjOTUwMTkwZDIzOGE1Mzk4ZjAyMmI2ODNiZjkwNzJlZjdlNjQ2YWQwZjk4Yzc2NTQzNThlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2YWViNWViZDg1YjhhMDNiMzY5NzUxZGE2NDUzY2M4ZjVkMDcxZGFlZWJiYjk5ODJhY2JiMTg4MDVlYjM4MWUwIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L306-L543",
+          "version": "repo-lines-v1:sha256:9e77e324d2aaf3b9bd8fdeff233dc45544e3f310a45ecca01dfe295af64a3a27:eyJzZWxlY3RlZExpbmVDb3VudCI6MjM4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlMzI2MDlkNjEzOTk2ZWJlNDQ5OGEzN2I1Y2IzZDAyYmNjNTc3ZDMwMjM0MDQ5ZDQ0YWY1MmUzMDE2YzMwZThjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzMGM2MDFmOGEwZTdiNzU1YTA0YmI5N2Y1N2M2MmJjMDQwMzkxYzQ1MTNiZDNmNTIxMzg0Mzk2YzljOWNhNmQ0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d0060a7f506942bc85d6486308a3c69a",
+      "statement": "Long-frame ingress adapters resolve timestamp/entity schema, sort records, reject duplicate timestamp-entity observations, and construct either stable panels or masked cross-sectional batches from already prepared data columns.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L148-L242",
+          "version": "repo-lines-v1:sha256:eabe8bac7699dcd98a5ac5af2298a76d39210069579a6deed531c4d401e9070e:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlMzAyMzhiMDM2MDgwOGYyYmM2NmU5M2JmNzBmZDQxYTQ2MWIzNjgwOGNkM2EzMzg4N2QxMjVjZjkzNWU4NzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5ZjNkNDkyNjJmZjdmNjMwZmUxMGQ1NTZhNzAyYzY5M2JiNTUxOGExZGU5MDQwZDg4YjJjZjczNjAxNTZiYmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE4NmI0MjdiMTNiNzBhNzkzZmUyNzE3N2RhYTc3YzU3YmIxY2U3MjUwMTcxZmI4NWU5NDQ3M2QyMTA5YTNhYjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNhMjA3NTMzYjQyNWFiMDBjNTA0MGU1YzE0OWQwMDNkZjVhNjRiZGU4MjE3ZTQ1MGUzZmYzYTQ4NzU2MGRhZTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L28-L72",
+          "version": "repo-lines-v1:sha256:481d5208cc49c1998323a75ac08309e3b48140fd9b973b326bcf3ab6a0c9a32a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlMzAyMzhiMDM2MDgwOGYyYmM2NmU5M2JmNzBmZDQxYTQ2MWIzNjgwOGNkM2EzMzg4N2QxMjVjZjkzNWU4NzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxNjQ0ZGUyNjA5YWNlMTI1NzAxOTc0MDE2ZjlmOTQ2YmFhZTVjYjdmNmE3OGY0ZWZhYzM1NWI0ZTZmMmVlZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMwYTRhMmQ1NGE1YmI1ZTYyNmVhMGQ2MmNiZjBiOWI5OTI1OTc4ZTdhNjFiYmE0ZTZlNmUxZDNkZDQ1NTc4ZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjczNDA2YWE4MzIzZDI2YzhlYjExZDk1OTcwMGM4N2RmOWJmZDdmZmExMjVjMWYxZmQwMDU4Nzg1YTcxZDNlMjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L75-L145",
+          "version": "repo-lines-v1:sha256:9eb429bafd780188047c80a1e7fc906c062ead3e5005e3379decddbbb05c5ffa:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyNTZmOWUxYzk0MzNmMGYxMWQ5MjE4ZTM0OWNjOGZhNDJlNjRhNDI5YzE1OTA0YmM3NjhiZWJkMDFiYTlhOWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1NmJhMTA1ZTZmMmZjMDdjYzI4Y2JkM2MwZGMxYzdiOWVhMzAxNGMxMzFmYWM2NGM1ZjhjMjYxZmIzZDYyMGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d109895de8514966b5326cce567f835f",
+      "statement": "LatentFactorForecastPipeline fits the structural estimator before extracting training state and fitting the forecaster; prediction then extracts checkpointed state, forecasts factor premia, maps state and premia to asset forecasts, and returns all three products.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L29-L77",
+          "version": "repo-lines-v1:sha256:b62edd04be5bdfe8145cc31bfc2e7792cc35d0bbb070e5da04619f26b3eb3f5b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjMTEzNzBkYjgyNTBiOTVkNWRjNmRiN2E1YTU3MWQ4YjI4NTRiNGFhMTJjZTBlOGViYzc5MDljZmZmODQ1ZTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiNzEwMDkzZDEwNjUxZDI4MWZjOThmODNhZGI2MDAyZjY4OGYwYjNmMGY2Yzc5YmY5YmQ3MTM4MjcxY2E3YTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzMzEwOTVkNWZkOTQ5N2Y0M2RkNjkwMWE5M2Y3NDNiYjY1NTUwNmEwNTBlMTVjMjgxNWJmMWM5ZDRmMTMyOTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6d34de5a0266493a868109549dd35596",
+      "statement": "PortfolioAllocationPipeline returns both raw model weights and weights transformed sequentially by configured postprocessors, keeping allocation constraints visible and separate from execution.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L80-L110",
+          "version": "repo-lines-v1:sha256:ee6e8d86da49739c51938dbf2d9faee1924f980026abfdfd055dc18758bda101:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmNjI4ZGJlMTk5NGNmMzE0OGIwYTUzMDhlODY3MTY3NDI1Nzg4OTY5OTRlNTE4NzJjZjNjOWExNzQ0NzZhNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L536-L543",
+          "version": "repo-lines-v1:sha256:a0a33d097c079c98ad72c0766bc39f0f4251bd0e17e12abe9f52d090605709a3:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTMyNjA5ZDYxMzk5NmViZTQ0OThhMzdiNWNiM2QwMmJjYzU3N2QzMDIzNDA0OWQ0NGFmNTJlMzAxNmMzMGU4YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzNjOWExM2VkNDE3MTAzOTAwMmFhOWY5ZDYyMTg0MjVkZWY5MDQxN2FlZDRjMzlkYjMwMWUzZjQxZjgyZjlmMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_98267eaa237846dfb149313df36d5184",
+      "statement": "Model protocols make fitted status, last fit records, and applicable checkpoints observable, while FitRunRecord captures versioned execution context including configuration, seed, resolved runtime, input hash, stopping outcome, skipped updates, elapsed time, and error type.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/api.py#L31-L140",
+          "version": "repo-lines-v1:sha256:1f1fe87d19de43eec2bb4b01c5e9ec66b67975c61be93d5be963ed5f5bda2a56:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmOTQxNmUwOWY3OGJhMzE2YzAzMjU2ODIxM2I4NTVlZTc1NmU0MTU2NWQ5MThmMDk1MTljODFmZDYyMGY0MDYwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiYmQxNWQ4NDM5ZTg5OGMwMzBiYmRjNGI0M2ZjMmNkZWQzMWM2OTdlOGUwMmZiMWM1MGVjZTUwZmU2NmJlMmU3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2Mjg2NmI4MzY1Yjc4NDhiMDdiMzk3MjNlZTQ2ODFlNTA5MTEyMzA0Yjc4NWNmZjUxMWRhNGIzM2JiYzg3MDEyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L277-L331",
+          "version": "repo-lines-v1:sha256:33fe8f61685d0f133107cd8869d9f2d5b136116ae5e377c52260aaf4888f34fb:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyMzEzZDc0ZjJkOWViMjhjNjg0ZjgzYmIwZmIwMTIzMjJhYTg0N2FlODNjMzhlN2U0N2ViNjljYTZlN2UwY2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2YjJiMzc5NGFiYjE0OTY1YzM0MzJmMDgzMTRkOWU0MzRlYTllN2RjZjJkNDVlYmIzNGY0NjljZTIzZjIwZTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiYmRkMjVmM2M0MWYyZWZjODM2ZmYzZTM1ZjQzYTdhZDIxMjc0MTZhMmQwNWRjN2VmMThiYTg5NzMxMjk1ZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhOTQ0ZTkyZDBmNjcxNWY5OGFjMWVkMGQxZDFkOGJkNGJlMzdjNjRmODY4ODRmYzVlMWZiODU0NzI0MjU3MzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6d23f7df470941b5b656bf13eb5b38d3",
+      "statement": "Model fit operations can use atomic_fit to restore designated pre-fit attributes on any raised exception; neural runtime helpers validate device and precision requests and configure deterministic accelerator seeding where supported.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/lifecycle.py#L1-L26",
+          "version": "repo-lines-v1:sha256:ffe6ef4af2b3a0e984deade716910ab5dd9544d66b9304e1b1f7f0ed68abadc2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlMmY3NjRiM2E1ZGI3NmM0MTFlYzM5MzNjMmMyNWE5OGIzODg1OTg4OGY4NzQ2YmY4NjAzOWU2NWQwNzYyNWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzYzI0ZTFkMGM0YzU0MjUwN2UzODUxZmU4MjVhOTNiYzUyODliYWFhYjczM2ExMTZlMzczZGI3OTExZmMwOTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/torch_runtime.py#L1-L72",
+          "version": "repo-lines-v1:sha256:19e0e8fe5dac00d01fc1cdb40e4bacf569762587ac54f80aacef6b23514f4433:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmNWU0YWI4NzMxODIwNWJmNjMxNWFlZDE2NjM5MGJhZmFlMTMzNWE3OTExOTQxYmMxNzZlNTQxYjMxZTVkZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMWM4YWNhMmI3NjE5ZTBhMWZlNTQ3M2IxOGM0YmE2YjJiY2U0OGM0MzIxNjBmYjkyOThhYzI2MTJmMzVhNDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a9480d5005a54d07bc21ae0b0022dc73",
+      "statement": "Model artifacts are atomically saved as a versioned ZIP containing a JSON manifest and non-pickle NumPy arrays, and loading validates archive inventory, schema and model type, checksum, array inventory/metadata, and configuration/state types.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L1-L130",
+          "version": "repo-lines-v1:sha256:fac4227a30e395d432592fa49412a8b2c21160c4006050cd38b154b4e9a38fcd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiNGVhMDdkYWY1ZWZjNzRlOTk2MDU2NzAzYmQ5MjQ2NmYxYzUzYjEwY2ViZTUxNTM0NDNiNzJkMjk5MTkzNmM5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmODhiYmJlODg2Y2UyY2JkMjU2MGYwOGQ0NGNiYWRlYmFjNmY2ZDY0Yzg1YjZlNTQzZDg3ZDQ3M2Y0ODBjZTEwIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L232-L259",
+          "version": "repo-lines-v1:sha256:356ccf7f266b0e8e2193ca40411328f9dcc169d4b1826327af9ec1cd0675e3ad:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1YmM1MDNkZDBiNzQwNDkzYzM3NGYwN2YxODhkMTM1MTY4OTY4MDA2ZTcwOWM3MDMwZDNkMmFlMzA2MGUwZDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyMjU5YTZhYWU2NjliYjllNzMwMjYzNWI4M2Y5MWY1ZjY5NmY3YjBjZTIwZGRjYzc4ZDQ1MmVhMTY3ZDgyMzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5NTllN2M3ZDc3ZmQ3YTNmMGRiZDIyYmRkODI5ZGQ2ZTgzYTJiMjgwNGUzMmRmODVkNDcyOTRhOWIwY2Y0NzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZmMDFmNjNkZjdmZmJhZjk1ZjY1MDhkNDE3ZTY0M2M2MmQ0Yjc0NjExYTdmNDQyZTI5ZjdiNDMwNzFkNWQ1MDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_18f5741409884e86871177d893d45767",
+      "statement": "Integration surfaces convert model-native forecasts, signals, and weights into standardized prediction, signal, weight, and context frames; long result frames skip non-finite cells and weight surfaces can mark selected assets by a configurable threshold.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L25-L204",
+          "version": "repo-lines-v1:sha256:16d13e95b2f509a1183b3e221e8fbc2deea5f334469d3e2feff2418bc545e143:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzMDk5NmZjNTY3NmVlOTFhZjllNzczMzFiNzY2MTU4NWE1NTk4MTkyOGU5MzhhMTI3NDAxNmE1MjExYTE5Y2ZhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5YThiOWNjMGZiZmRlNmNmZTBkYjYxZTEwYzhhZmE5Mzc4ODQ5MWU2OWVlYmRkYTIyZDVmYzllMzg5MTgzZTM2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlODE1YmJhOWEwMDA0YjA0MmRiNGE0YTViOGFlZTYzOGJkYTJmNDdmM2RlZGNjNzEwZGYyYzg5OGIwODNhZmIxIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L328-L360",
+          "version": "repo-lines-v1:sha256:18992067fb3e58c53c8080c4c18a66451855203800cc1276318426e960f74f7e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiZTdmODUxZmM5NGYwNTk0MmExNjkzZTIwNGE5MTIzNDkxYzUyZTgzMThlMzViMDA0Y2YyM2EzN2ZlZTNkOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNhN2IzZTRhZTU3OTU2YWQwMTEyN2YxZmMzYTk0NmRhNDQ2MjFlNGY3YzJhOTI3YTY5Mjc5OTU0OGJhMzlmMDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxN2I3NzEzNTBjOWZlOTk3N2VkZTQwOGNkNWNjMTM5YmJjZTk2MmU3NTdmYjdjZTYzYmNmMTE2ZmVlYzk3ZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzYTY5ODFiMzI3MzFjNGI1ZjY2MzBmMmVmOTljYmQwM2Y0NzcxZGExNTMyY2ZhMGQzMWU2ZGMwYjE3ZTUwNTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_48f280d7c213443a9bb7ed296a3dcd80",
+      "statement": "BacktestDataFeedInputs requires exactly one of an in-memory price frame or price path and converts standardized signal/context surfaces into ml4t.backtest.DataFeed keyword arguments while preserving a resolved feed specification.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L168-L241",
+          "version": "repo-lines-v1:sha256:89502671c2c295f34330b8cf1436e33c7a0d1c37fc5d3a71eb53c1df85508092:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzNTI1YzcxY2ViYTU4OGYwZmI3ZWU3Njg5YWE1MmRmZjU1ZTNhZDMwOTc2NmJlODQ0NDkyZjcxMmU0MmI2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0ZmRlNGY1YmE3OTUwYjcwY2E2ZTc0OGQxNjM0MGExYTI5ZjYwY2JlYmEwYTAzMjRjMWM2YzkyMjU2NTAxYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczMjhlODk5MTc4N2ZmMjg0ZDBhY2RlZjM5ODlmZjMxN2NiZjk4NjA4YTIxMTY2OTJmM2ExMjQwZmIzMTUwZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzNTBlYTQ3YjRiODQzNDVjZTBmOTFmYmE1NDMxYWY1ODE4M2EzYTUzZWNlNGMwMDBjMzllZjNmYTRmMTczOGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L32-L62",
+          "version": "repo-lines-v1:sha256:dc464ad7346a124fd78643dbec760b34873aeb9203650d5d733fe2cb45addae9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiZmQ1YWU0ZDEyOWZlNGMzYzgyZjM0MTk5Yjg4MGI5MGY0OTMxMmNiNTYzZDUzYTM5ZGFmY2M4YzJiNGQzZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlMGMzNDA4NTVjZWFjNDRiZjE2MWFiZWI5MzUwMzA3ZDc0ZGEwNDVlZGFjM2RjYWE4YmFhOWIzZDQ4YWQ2MDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM2MDdjNTVlZTkwNjBmZTMwYzkzM2EwNDA2ZTgwNTFhM2FmZWE1Y2RhMzhhMjhiOWMwMWNhZDY3NDIzMDkzZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAyMzc1MjVkMDY1OTk4OWU5ZTBjYmUwMjYzYTJlOTRlODg0ZGRmZDliZmRiNGQxMDEyYWFhOTYwZGEzODg5NzIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L65-L165",
+          "version": "repo-lines-v1:sha256:fb99c8bd2be5709d60a925d25f62d2cf6dccc011a0babcb93f8d76463ae75fff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkYWI0MGRkMGVkNTM0ZTc4Y2YzMTliMjU4ZjA2ZDBmZGQwMjJmM2UwNTBiZTViMTk4MDMxZjM1NWU1NDJlODIyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3NWZjOWQxMWUwOGFjODNmNGFiMjAwYjhiNjliNjA2ODgyMDRiZTU4Y2QxYjhlZWYzODA0MjI3NTNjN2M0MGUyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1OTVkZjA5MzRkMmJlMmFlYWI5N2Q5ODNjNmE0M2Q2NzMxZWRiZTRmNzZiZmE3YTNhYmI0NWI0YjY5YWFhODdkIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a625a6ea56349568ea9d8678b03b427",
+      "statement": "write_backtest_frames publishes predictions and weights as one staged generation with a manifest, atomically replaces the destination directory, cleans failed staging output, and restores the prior generation if publication fails.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L228-L304",
+          "version": "repo-lines-v1:sha256:fde822fcfd28aabf965e0b8b8d5a6aa4c94c28a34271ee3aab7a56ef00f67930:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmMzdhMjNmY2MzYWNiOWE4MzI5NDc5NjA5NGU2NDZhNWI0NzFmNDg4Zjg5MTBlYTVmMTFiOTdkMjc5NjQ2NDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3MzM5Y2Y0OWQzMWY2MGIyMDc0MTY1ODQzMTdkODMxZGUzMzkzODQ3NTE2MTBhZjAyY2M1YzhlNzUzZGUwNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI2ZjY3MmM1Njg1NGQxZGViYWU0Y2E4ZDBlM2JmYjFlODE4ZjVjZDhlNjU0YWRjZDY3NmMyMDFiNjFmMTY3NGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0MmIwMDc2OTIzYmUzNjRkNWQ4Y2Y1MWQ4MDE0OTUzN2YxZmU3YjllN2ZhMzUzM2I4Mzk0ZDQ0OWEzYjk2ZDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a3a4e445c0e94909a98a37694989b600",
+      "statement": "The package public surface lazily imports portfolio implementations and turns a missing PyTorch dependency into an actionable ml4t-models[deep] installation error, keeping optional heavy dependencies out of ordinary core use.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L8-L13",
+          "version": "repo-lines-v1:sha256:f468bf8a26b35343b33b91890d9ea596fe2a898bbc553ca6d0bb99d7726a1856:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjY3YjBkM2YzZWUyZmU4Y2VjNTI1NjRhZjBkN2E5MjMzNGI5ZGY2MjJhZjVjMmU0Yjk3MGIzYzI5N2M4MjE4YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDdjMDZjNTYxZDVjMzI3MzQzNjg1MjY4YTQ2YjMzOTFmMzk5OGVlZTg5MGQyYmU1MWYwZDIxY2M0YTUzYWU2ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2E1ZjQwYmJhYmM2OTdlNTgzNTYyMjk5ODE4YmRlYTM2OTFhZTk5MzVmNTA4ZTlkMGI1OGQyNTIyOGU1NWM1YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzFmZjI1Mjk4YTIwNDdkNjk1MzM3OGI0YzdhOGFiNmQxODFlOTE2YTUxYWNjMTY2ODEwYWRmZDY4ZmY4OWUyYyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/__init__.py#L152-L197",
+          "version": "repo-lines-v1:sha256:0b033f3c8f08559532ff995f9a5dcff201fe1e6ac2be61807a8d5d21268ddc47:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmYjkzMWU3N2UyZWUzMjcyNTVkNzhkMmQyOTkxY2MzMTZlMGEzZTBkOWM1ZmNlMzQzNGI5N2NiODQwZDc5NjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5M2ExMzA2MmYxMGVlNGYxMjE4ZDkzZTM3YTZmODFkMzQ2ZmYxMWVjN2U1NWRkNTQyZTJkMmQyZWYwNzExZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwNDNmNTAzNjRlOTZmMmQ5NjFlYzUyYWM4ZWQyMjRmODFhZWViMGU3ZTZhNWJjMjFlY2MyZmVkOGUyMzZjZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:bdcc5498c7eeb833fba581486b448419b5ac45e2816854a3dbea557169b7f8d5",
+  "claims": [
+    {
+      "id": "claim_176a49ef3e044692be7f898ad2ab740d",
+      "statement": "PortfolioAllocationPipeline delegates fitting to its model and, during prediction, preserves the model result as raw_weights while applying configured postprocessors in order to produce processed_weights.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L70-L110",
+          "version": "repo-lines-v1:sha256:3b83c32e4b5a924feb55c85bf0461a9340b1205fe886a8356af604d1009591d2:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0OGRiZTNkNzdmZmVkNTg3YzYwZDdiNjRmZTc1YTRkNTllYmU4YmIyNDcyNjUzYjBiZTE2NDMxNTQyY2NlNGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmZmZhZDVjMGZlMjIzOTAwZTQyNjgxNmQyOTE5MmYzMTY2MGE5MzZlNWFiZGI0MWJhYjJkY2VkYjFhNjExYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L535-L543",
+          "version": "repo-lines-v1:sha256:65ea6fb9eb78c7d1d0880337f8c628cdf6eb5e2576bf82519ea56ab97f0bc03a:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDYyNDczMjM0YTk1OTE5MzljNzU3ZDUyOTk1MTI4NjEwYWZlYzdlMzVlNTY0Yzg4NjQyOGEyNDYzY2Y0NjM1MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTMyNjA5ZDYxMzk5NmViZTQ0OThhMzdiNWNiM2QwMmJjYzU3N2QzMDIzNDA0OWQ0NGFmNTJlMzAxNmMzMGU4YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzQwYjI2YWFlMTMyYjc4NmRhYzQ5NjI0Mzk2MDg1YjY3YmU4M2U5NjBiNzU3MjgzY2I1NGM1MzVmYTg2MGZiZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_29b857ecbd84400c93ac618f10b672c6",
+      "statement": "PortfolioSequenceBatch defines features on (B, T, N, F), aligns returns, volatility scales, and masks on (B, T, N), initial weights on (B, N), group IDs on N, costs on (N, 1), and adjacency on (N, N), with validation of those dimensions and identifier axes.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L196-L294",
+          "version": "repo-lines-v1:sha256:990c43bb1cff9c174faef3dfe16083e3c468f85893be54412e8beeb288432092:eyJzZWxlY3RlZExpbmVDb3VudCI6OTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyYWRhZjI4MmU0YjRkODA0YTYwOWIwNzQ5YjRmYjY4OTZmZWY5YmY3OGU1YzEwNzhmYjIzODhiZGM4ZWY3YmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0NmYyNGEwNjRlNmM2MTQ2NzZlZjZhMDg3ZjQ5MjYzYmVjYTc3OWYwNTU4MjBhOGY1YmQxMWY2ZDg1NzgxMTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExMzZiNzBkZmQxMjJmOTU2MzQ2YTcwYzhjMTU2ZWYzY2Y2OTI3Zjg2MWY5ZWY0NzA3MWJlOWFkYmVmM2ZiZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFlOGUzYjAyZjg1ZDAwMDA3ZDE1ODdjZDYxMjk4Y2JhODA0YzE1NzE2YTE0NGE1OGFmNjRiZWIwODgzYjE0N2UifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_88105c78a2f14afe8c901bef4b734ab2",
+      "statement": "Neural portfolio fitting requires forward returns and configured group/cost context, defaults validation to the training batch, and requires train and validation to share asset and feature dimensions and exact asset identity/order; the deep model additionally requires the same adjacency topology.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/portfolio_validation.py#L9-L42",
+          "version": "repo-lines-v1:sha256:4273e796ff866a23c358bba2d36f3aee8d386ae922574f98c648c077adf458cf:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMDVhN2YxMDZhNGZlNTNjMDk4ODMxYTMzZTFmY2FkNThjNTQ3M2RiMmM1ZWRhZmExMDFlMDI2ODQxODg0Y2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1MTc3ODM4MTNkZTBhOWI0MDA4MWNjNTYyMGQ2MTViYWU0MTczOTc0MjhmMzUyMmI1ZDMzMTAxNWM3ZjYxZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRmOThjYzg5Njk0YjJkZmNhNDhhYmZiMGNjNTUzNTJkMWY1NzllNjljYmM0NDc4NjI0NDhmYWY1N2ExZjg3YzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/deep_portfolio.py#L198-L230",
+          "version": "repo-lines-v1:sha256:6b783d4f10cf5e1aedd04f3370cc235482a8ebafe98ba8f217dca36251249e39:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlMmYxNGRjOWViYTY3MjY1N2Y1YzExYWYyOWIzZWI0MTczNTBjZTkzZWU3YjUxMTAwNzFlNTFhNDY4ZDA2NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MDMyZTk2NGQwOTMyMzUxZTVkMTg1MjY5MjgxYjE3MWEzYTA5YjA4YjI4NmU2NjFlYTQ3MDMyM2M4MmViNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkMmFhNWQxNTZkOTVjMjcxMTYxMzc5YzQ1ODcxM2Y5NmQ2OWRmZDFhZDA4MWQwMTZmNjVhNDBkYzk1ZWJmODQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjNWFkZDlkNThmOWE2MjQ5ZTcwZTUwZjQ1OTFmZjEwNTQ1Zjc0NTZhMWYyNzg2NWM1ZjJiNzYzZTFlYjU0NmIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/lstm.py#L146-L172",
+          "version": "repo-lines-v1:sha256:68c2e07d4baa5f3fafe6e3008bfdffb9d893362aa100c0a7a1d191336414f36a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmODI2YzllN2U3YzUyMmEzMGM3MTY3YmY1YmYzOThmMDU4MWVlYjEzNTE5ZWNhYWI2Mzk0ZjM1MTU0MzJlMDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFmZTQ4NTYwYWQxMzA1YTgzZjE5OTBhNzMwYjFkMjBiNjIxNWQ5MTYxYmUxYThkMjMxNjFjNWI3NDNmNzUyMTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3MjE0OTM2NmM3MDA3ZGE5NGRkNmE2YWRhOWI5YWIwZjlmMjhhNjU5NGJhMzRlNzU5MTAxOTE5MjY5ZTQ2YTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4947a0f826f5454d8063cdb9393a4a72",
+      "statement": "The linear portfolio baseline fits a pooled ridge regression over valid asset-period observations and projects predicted cross-sectional scores to configured gross, net, and per-asset constraints; it exposes only checkpoint 1.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/linear.py#L104-L138",
+          "version": "repo-lines-v1:sha256:8906317418c73a51793da72a97a7db92ba0605cec04f72596db705791ce99300:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYmQ0NzBhNzUyZmY3NTNkZjAxZmY1M2IwYzU1ZWE5NzJlZTE4OGQ2ZGRmMjY0YjYxNzY4MjY5NjRmNTU1NzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjY2ZkZDhkN2YxYWE4ZDBlYjFkNmIzMTAyNjA4ZGY3ZWQxNTI2NGY3MjdlZmJmYjE4YjBhODU2N2UyN2Y2ZjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4MTQ2YTU3OWE4N2U5M2Q3N2Q4NjkwYzNhZWI3ZmQ2MDVhMmU3MTQ0MTI5YWQ3MmVlNWFhYzAxZmIxOTZlMzkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/linear.py#L35-L103",
+          "version": "repo-lines-v1:sha256:a0c86786d134e75b509cd770095b3c79bbc900fe08c5f17e1a841d470be0836d:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2ZDFhNDAzMDE2OWVkMTUzNGQzNmZhZGM2ODJiZmVhODkzZDhkZDU0YzFhYjM2YTE5YjQ0OGI1ZmIxNmFiZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhODUzNzQwYTE4NmJiMTk2ZDYyNGE5YWViN2U0ZTE2YjQ1NGY3ZjgwNDZkOTIzOTZlYjk0MjI1YzEwNTA3MDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRlMTZlNmViZDFlOTRkY2RjMzM5N2E5NTJhNjdiYWY2ZWQxNDRiMjM5MGYwMDcxMDY4YzM0YTk1YTU4MDMyNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllYTA3YTAzYWY1NjI1YzQxMGUxZWMyM2U0MTg0YmNlMTQxZDY0NTdlMDI1ZWUxMTJmNTY5M2E2ZjJhMTQ1ZjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8734feef44064d25aa2840302d51d4ac",
+      "statement": "The LSTM policy combines static asset and optional group/cost context, FiLM, variable selection, context-initialized asset-wise recurrence, and a masked tanh head to produce bounded raw weights.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/components.py#L11-L108",
+          "version": "repo-lines-v1:sha256:3e3a8236b2767458aca1bc192045710cb2149836975755a579c136d26320df66:eyJzZWxlY3RlZExpbmVDb3VudCI6OTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzNmUyNDUxM2VlYmI1NTcyMzkyNjJlODY5MTE0ZDQ4YjIyODFjNDViZjk5MDg0OTJhZmYyMzczYTA2ZDNhYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIyM2U3MTEyOTlmMDhhMzE1ZTcyM2Q0N2NiZjlhZjc5NWQ0MjkzNDdjZDk1MzJjZTMxZjM3MGM3OGNmNjIxOGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxZjVlN2RkYjEyNWViMzkyOWFlNWZkNmFkNWI1NzdkYjljMDdiNzExNzAxZDEwZDRhYzIyNWQ0NTQ2NjM0ZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3OTI4NTA4MGI3ODg1MmYwODMxODM4MDgxMmU4OThiNWFhNjU2ZWVhNjU5NTY3N2ZkNjMyZDkxYWQzYTY3NGMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/lstm.py#L35-L125",
+          "version": "repo-lines-v1:sha256:5a9f3a95fad372324ebbfb9d8f63acea4b7bde54a8dceba0be8d411cf2a6e2cd:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2YzEwNTdkMjYyYmMzNThkOGJiYmUyNmYyOTc4MDQyMzYxNDhkMzVmZDg5ZmM2M2VkYzMxYmI0MTgxYzNmOGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0NDM4NTZjYWE4N2MyYzc2ZmU0MWZmOWVkNDY2NWRiM2Q2ZDU2Y2Y3NzEzOWE5NThlMmVjZGY5MDNiZWI4NzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2OWE0ZjcyMDBiMmNhNTAxNTMyNTk1MzNjYTE2ZDhiMmMzNDRkMmY0ZGQ1OTdhM2ZmZGI1YjVlZTlkMjAwZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxMmU0MGQ5NmI2MTMyOGM1ODU5NmZjYWQ2NWRmZWI3OTg0YzlhOWQ1OGY0ZjI3NTZjZTRmNWYxNjJjNDJhZjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8027c4eb129b4240b9ddfcd3cd7a2f42",
+      "statement": "The deep policy extends the context-aware recurrent path with causal temporal attention, lagged cross-sectional attention, and optional adjacency-masked graph attention before a masked tanh output; a lag with no available history uses zero history rather than a wrapping slice.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/components.py#L128-L265",
+          "version": "repo-lines-v1:sha256:4e447ce3ac5479bc27346c99664d2bb855f81307203da08b111ce747cb5068b3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxOTM1YjdhZjMxN2EzMmUwNDA2NmVjMzY3Njg3YWJmN2YwYmE4MDdiYTQ4MDkxMzg1N2RjOTVmYzg2MzgwOGVmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjYzZjYzhlZTYyNmI1MmNkZDI5MWQxOWQ5MzU3ZGVjZTIzMWY0ZTA1ZTI4Y2U0MTExNGVmODE5YTJlZDE2YTI4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0OWYzMDY4ZTc5MjQxOTYwODE5ZDEyYTM3MjhjYzBmYzk4NmZmMTI5MjczMGFjOTg2MDdkYWU3YmRhNzY3NzlhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/deep_portfolio.py#L42-L174",
+          "version": "repo-lines-v1:sha256:63b9ebe3d4eaaaa910d4ed4259078a2688c5a5a42985afefef7cd6fdf730aaff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmYWZiYTA1MjdjMzk1M2M0YjZlMGU1YjU3MzliYTgzNjEyZjgwNTNiY2RjOTQ2NjczMDE5M2NkMWQ1OTBiNDA4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjMjVkODA0MzY4N2QzNTEyZGZiYTkwYmNkNTBhYTA2MGM3ZDRkYjBjZGNjNjAzMzc0OTlmMTJhMWI4MDE1NjdjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjOTFhODIyNzI5NjRkNzEyMTA4YjMwN2M2Mzc2ZTI0YjcxMzc4ZjkzMmI4NDg4ZDNhNzExYjQ0MzBhYzNmY2Y5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwOGI4ZDU5YTkxY2UxYzIyZjEyZTZhMDBkZDAxNzRmZmE0NzIxMGVjNWRiZDg4OGY0MDRhYzAxYTEyNWE0ZjNjIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d9fe53417e8d40a5a7fe8b0ffd1ba3ba",
+      "statement": "The robust portfolio objective computes masked mean gross returns from raw weights and forward returns, computes turnover from volatility-scaled weights starting from supplied prior holdings or zero, subtracts cost and turnover penalties, and maximizes pooled Sharpe plus a soft-minimum of window Sharpes after burn-in.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/losses.py#L21-L162",
+          "version": "repo-lines-v1:sha256:090466be354c4f8c3d63ecfb9c7f8d49b87de8b62bd387ffe01a44947cfd18b2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwN2NjMTNlNjc3ZDAzMDQzODI4OTAzYzU2NDU3ZGNjZDc2OTBkMTA4OTk2NTdlZTQ4ZTY2M2Q2MDM4NGY4MzA1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzMDIxMTQwNjQwMzUwZTQ4NzUwZGUxMDQxMTE2MjA4MmExNzJkNDk5Zjg1MjEzZDU1N2U2YTVlMmNlY2I5OWUyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_e663689e08864b6e87d45c6025d13391",
+      "statement": "Neural training chunks only policy forward computation, concatenates all chunk outputs before one global robust-Sharpe loss, and uses AdamW with optional gradient clipping.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L282-L306",
+          "version": "repo-lines-v1:sha256:e28306ed6204829c55688dc7e539574c280308489509b7626827e1fbbcd956f6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExZTgyOWY1ZjMxZmFkNDdhN2E5YTUxM2FhY2NjYTY4NmU4NDZlYTE5ZjUyNmU5YmE2MzRjZmY5OWM4MzEzYzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFmYmY2ZGUyNGMxNmYxNzliYmMyNWFiOTliNjI2NjhlMjljMTk0ZjM3YzYyOWE2Y2E3N2JhNDlmOGU2YmZiMTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L31-L108",
+          "version": "repo-lines-v1:sha256:67bdaf0db53d8b2a94d66a02da9cc7e493fb0a24a1c06e556e9ea2f65a972018:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyZmIwYTQ2MjBlZDhjNDY4NGZlZjVhY2FjNjY2NDViZjk1OTkyOGVjMzdlMDM3Njc3NzJlOGIwMzNlZmYwZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MDMyZTk2NGQwOTMyMzUxZTVkMTg1MjY5MjgxYjE3MWEzYTA5YjA4YjI4NmU2NjFlYTQ3MDMyM2M4MmViNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3MjA1YWFkNDg5MjNkYmE5OWNiZDg1OTQxZWRmZTMyMjg0OWQzYTkwMjQ3YWFmZjQzZDg3OWJmMjEzMTM2MzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxMDE2MmJiOTE0NTUyMWY5ZGExMjY4ZmJiMmI2NzYwZTUzYWZlOTc3NGY5OGE4NTQxZTk2ZWVmYjJiYWNlM2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_37d95ac677dd4a5ba6974ed0323e91c2",
+      "statement": "Neural evaluation occurs on both evaluation-cadence and checkpoint-cadence steps; scheduled checkpoints retain cloned CPU states, while the exact state with the best raw validation Sharpe is retained and inserted into the checkpoint map even when its step was off-grid.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L63-L90",
+          "version": "repo-lines-v1:sha256:960c515c94bd916e97708e3275c430453f664b388c0458be171c714a12a1da5c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjMDZiNjRmODU3NTlhNTJkMTFmMGM2YWFjODY0YjU2YWQyMWRmMjA2MDE1MjNiOTUzMDFiMTRkNDlkZWRhYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzMmViMzUyNDU2OTQxNWNmNDEyNGI0Y2YxOGM4MTA0NzFmMjM2ZjBjZjNkYmNlZGRjNDdjNTk4M2RkOTM3ZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlZTBlMDE0MzE3OWExYWY2NjAxNTEyZTg5MzY4YzllNTc4YzNlODMwZTYxYzk5MjdlNTI3YjA0ZWNjYjc5MGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxMDBlMTYyNGIxYjA5OGE3ZGMyZjBkZTAwNTVkMzcxNmRjMjhlYWRkMjkwZTJhZTE1MjA0MDRkYTQxNDMxYTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L120-L173",
+          "version": "repo-lines-v1:sha256:a79e265a4153a88e47253950107fa1f71b2ed3b072e4ca5357d515a6c5d58d67:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyYjA2NjRhN2RiNDcxZWRhODA1YjdkNmQ3ZGNhNTVkNGNiYWViNGQ2ZmM0MjA0NDFmN2YwYmVmMmU4OTYzY2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4ODk4OGQ4ZmQ4MTY3YjNiOTI5NDNjNjNmYzY5MzEwZTQ0YjkwZTllYmZmYWM5YzU2MWJjYWQxOTAzMjdjYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI4NTNmNzJlOWY0ZWNiODg1Zjg0Y2Q2MmJiMGQ5MTJmZTFhY2UxYzcyODgyOGY3NWVkYWUyZjY3MjFjMWNiNGMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L43-L66",
+          "version": "repo-lines-v1:sha256:04afc8b5aa57373a7089f93c6734dcb6a62cbcf8c535557b33347b99a4497dd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1ZmZjYjdhNzZlZjE4MTA2NjliOGZhOTliYTA3NGJiOTE4NmE1ZDc2OWQ0MjY4NmY5NDUyNTg0MGExMGFmMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzMWExMmIxMDc2NmVlM2Y5N2YzOTAwNDZkOWFiOWE1MWYwOGMxN2YwNTJkYTNlMDhmNGU0OTMwODJhNDAwYmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkNzFiN2ViZDIzZjQwN2RlYTAyM2JjMDU1NDQwZWQ1N2M5YjgxZTY0YmViMmM2NDYyMDk1MTlmZTQyZGY5ZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiMmM5MGM2NTcyYjAxZGY3MTM4MzEzYTA5NTJlOThjMDU4N2VjYmZkODgyY2Q0YjIyMjZhZDE0NWZlNzY1YWUifQ"
+        },
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L292-L328",
+          "version": "repo-lines-v1:sha256:6c544bdbf1ade88c09bdc050022af6fa04756742a27683ace0db4a12cb0d48a1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNhYTgyZjc4YTM2N2JmODU5NjQyNzU3MDhhYTZlYjhiOTMxMzMyOTUxMzQ0NGIxYjQxNjhkOGVkZjY3NmUzOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5MzI0NjE0NDZjMmIyNzM0NGRkZmQ1NjdiZThmZDlkZDJkZDUxODI0M2Y0ZmQ3OTJlNjcxYzRmMzI1NTgzZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE2NzA1MzdkNjcwNzMwY2VmNjgyMjA1YThjOTI1NWYzMmIwZTBhNmIwYTA0YTk0YmEzNjJjYmRkNWI4ZGEyY2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5efe6fefffff410fbe7129eebe4ebee7",
+      "statement": "Portfolio early stopping tracks an EMA of validation Sharpe after a burn-in and counts evaluations that fail the configured minimum-delta comparison against the best raw validation Sharpe; best-state retention remains based on raw validation Sharpe.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/configs/portfolio.py#L38-L80",
+          "version": "repo-lines-v1:sha256:ac7fcdbff8a3fa1ed04f43e1bb2c0a3bf7e712a9cb9b4fd64e83225410d54fe6:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2NTZiY2MzZmI0NmYxZDY5NDVjYzM5N2RlM2UxOTM2OTdhN2UzMWUyYzFlYzY3ODNmYmZjNGY1ZDc3OTg5NmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNTM5OGM3ZmEzN2I5NDE4MWRjYjNhYzBjZWE1ZDMxN2JjMDFmZWZjNjE1NTIzNWQ0ZWJlOWU2OGRjNDRkNTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlYzZhYjA2MGVhYjg5MzA5YjFkOGFkMDE4Mzk3OTA3ODExMmM1M2I0NmZhZTBlNjk0YzBiOTg0MjczODY5NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUwNDVmNTEwYjc5YTk2ZTQ3NTUyZDE3YmY1ODE5M2ExYzNkMTNhNGQxOGI5ODYwZTk2MDFhM2QxYjdhOWI5NjMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L127-L166",
+          "version": "repo-lines-v1:sha256:3731a3022815fedb35340d8890522d937da3def89fd37d14252394ace795c816:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVkYTYwMGQzZDI5ODljYjBjODIwYTM3NzVmYWRmNzFlZTY5YzQyYzBkYWJkMjdkZmJiYzVmNjFiMzkwOTg2Y2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1NThkYjQ1ZGE5MGI2YzY0MGRjMzQwNzNjYTA4MTFkNTBlMDdmMmMzNTMxYTk3NjYxOTRhNzAyMTVlZmNmMmQifQ"
+        },
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L616-L640",
+          "version": "repo-lines-v1:sha256:dacdc940fccc3c44f625e8b848b02ab1ffd78add97c13f1272591267e5dbac48:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViMzRiNjFlYmYzNjk1M2M4ZDliYzFmMzk4Zjc3OGNiNDUyNzQ5ZGYwNDEwZTQyMzI1Y2Q2ZmQ5NDk5NGFiMjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliMDRmN2Y3M2E4OGNkODBjZDRlNGU2Mjk3ODQyMjBiOWVhYjY2Y2E3OTg2ZmExMGU2MWIwZjk5NWY2ZGI5MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_37cbd08b91f0485e90a0a5b01fce9efc",
+      "statement": "The neural runtime raises FloatingPointError for non-finite training loss, parameter gradients, clipped gradient norm, post-step parameters, or validation Sharpe rather than retaining corrupted training state.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L91-L127",
+          "version": "repo-lines-v1:sha256:059733455d808fd3c72eb768c2d7d373e36f7161d7035fe382ae8116e4cba8ee:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0NmVlNDM4NTIxODFkMjhhODYwYzZlZjc1OTM0ODgyNGQ1MWMyMTI4ZTc1ODBhZDQ2MWU4MTkyYjQxZmE0ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxOWRiOTZhYjM4MGVmOGQ2MjhiMTliZTFlM2Q4NTViMzNkNWYyZDM5ZTFkN2E0NjY3NWE4ZTBlZDhlNzJjMmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3NmE5OTcyNDZkMWFmM2U0NzBiNzFiYWU1MjQyYmY0NTExMjU0ZDY3MmE5MGJlODM4MzdkMWI2ODM1Mjk2ZmMifQ"
+        },
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L538-L615",
+          "version": "repo-lines-v1:sha256:861846af595211a33a4bfe680640ca1aa57a97780f3e7b6fc9c08d599a852570:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIwZDM1OTA1MTllMTdlYzExY2FjZjFmY2U0MjkyMTQ0MTk5NzdjZjcyYzZiMDZhZjI4NjdhNGFkYTBlOGM1YTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzN2Q5YzJlMDVhZmI4MDc1NjA3Zjg0ODVlYmZkYWEzZmI3YmNkNmY3NWNiODRkZGIwMGU2NjRhNTQ0YzI3MzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmOGQwMjJkZmExZjRiOTI5MzJkOGMzZWM1MGQ5ZmYwNWJlNzkzNmM0MjJhZjJiOWM2NmY0YzdiN2I3MGJlNTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_090fbcf47b8f4a91bb7bca5333366c8b",
+      "statement": "Neural prediction selects an explicit checkpoint first, then a configured default, otherwise the greatest available retained step; it reconstructs the policy, loads that state, and performs evaluation without requiring returns.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L93-L112",
+          "version": "repo-lines-v1:sha256:42fc78ea7956d8e1f0c0b2303a34b6e2d6b2c58777b0ad0fb93f741d82bbeb01:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwMmRjN2E3NGJmMDJhYjE5NDFiMThlNWM0MzNjMTgxNWFhNWJjZmVmMzg2MDRlOWQ3ZmY3YWFiZTc5YjFkMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2YWJkZjhkNGNjN2Y4OGUwZWU1Zjg2YmQyYTZlMGZiYmQ0NTI5MDljZGQ5ZDRmNGQzNjY5NDFhMTVlZTFkMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlNmJhZTUxOGVjMzRkY2JkYzhmNjA4MzIzZWI0MDU3NjZmZmI1NzI2MzkyMzI0YTM4MDYzMDYzMjg1MDk5YmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjZmQ0YzcxZWU0NjJhMTE3YWY3MjY0Zjk4MDBkNzRkMTVlOTcyMDIyZmJkMDNlOTM4ZTQyNTNjZDMwMDdlZjYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/deep_portfolio.py#L284-L339",
+          "version": "repo-lines-v1:sha256:c042edbd6834e587455befac973d51b41edbb9be2f328a84036b0cc3663296c3:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzZGEzNjFlYTg4Y2VkMGM4N2I3ZmZiZTg3Y2ZmZjY0ZjgyYmViOTA0MjgyMzkwMDJkZjRmMThjZDQ2YmI3ZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkzNWQwMjQzODBmY2MyMjJkMTI5MTVlMmYxNjFmMmI5ZmJmNmZhZjlmZGExNGNiYzYyNzk2NDM0NjE4MDgzOWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZiZDVmNjU5ZThiZjQ1ZDBkZGUxYTQ5NWI2ZjYwMDIwNTE0NDk1YmU0OTc0YTFjZTE3ZDFmZjQ5NjZmMzZkOTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5ODI3YmE1NjJjNTJjYmU1NmI3ZTVkY2ViZTlmNjAyYzAxZTYwMmM1OWQ5NTE1YjhhNjJlNTIyYzJjMjgwOTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/lstm.py#L216-L270",
+          "version": "repo-lines-v1:sha256:b97f1ccd198e5043292fb72501c605b4bf036fdc025b10532121bb322870d5b8:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxMTliNmQ4MjlhMmY4YzYzZGY2NDIyNTFhZjYyOTFjMjIzOWQyZGI2NjhlMzk4MzIxYmU1MjQ3NTg1NTU3ZTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyMzQ3NGJjYjFjNjlmYTAwNDk5YWNjYmExMGMzZjQ4ZDM0OWUzZWYxNzZjMDU3YTJjNjc5M2EyM2ZjN2JlZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmYjNhMDI0MDFiMTQzODRjZjU0MDRlZjdmMTJlYWRlNjEzNzE2ZjE5YmRhZjI5NjgzNTMyNjY5OGEyODIyYmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYzZGM4OTYyMDU4ZWI1Nzg1YTdjZGQzYzZjNDQyZmI2NzllNTc5MjBjYTAzMjQ4MjVlNTZlOGIzNGZjZDI1YzIifQ"
+        },
+        {
+          "resource": "repo://tests/test_portfolio.py#L255-L294",
+          "version": "repo-lines-v1:sha256:1274afb845b4efaa134250941cbdd160ad218f8f8ee7157deed33dc512daa8d1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0OTU5ZjM1YmIwYTYwZDU4MWU4ZmI4NzM2ODdlYzY4NDQ5NTE1OWE5MjJjYjNmMjQ4MTFlNjBkYmUwZTY0NzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2YmI5ZjA1ZjE3MzExYzE0ZTQ4NGM4YzU1NDkzNzM0YzMzNWYzMzljODI4MDIzN2M1ZGI3YmFiODllNTk4NzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc3YTJkNGNiOWIwNDBkYTM0ZjUzYTQxZGZlNzMwMTI5MThlMGMzZDE1ZGNkYmVjOGM2ZjMzYTlkNjczOGZlOGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhNjJiNDM3ODQyNzE1NDY5MGYxYzNiOGJiZTUyNWExMjIyMmFkZDg0NDgyZWIxMzc0OGUwOGVlNjUxYjEwMDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_042b8307a6f34191a81a4ff80beebced",
+      "statement": "Deep portfolio prediction reuses fitted adjacency when the prediction batch omits it and rejects a supplied topology that differs from the fitted topology.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/deep_portfolio.py#L232-L239",
+          "version": "repo-lines-v1:sha256:803d336db58ed96ed1c843cf8f2ab2531ec29fcd153976e4e1926cf21c41e947:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDA0YTM0YmY5ZmUwODcwZWE1Mzg1Nzk3NTc5Y2EyMTQ3MjMzNGM4ZTE0YmEzNzczYzFjYzliYzQ3ZDgzY2Q5MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjY0MDU5NjNmZGZkOWEyMmM4MGE1OGJlNjM5ZWM2YjA1ODdlODEwMTQ1OWJkMGRlMzAxNDI4YjcyOWVlNzFjOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzA2ODAxNjI0OWY3NTQyYzcyNGUwNGIxZDVlMmJkMTM0Y2I5NGMzMjNkY2E4MDg0MDU1ZDhiZTNlN2VmYTAxZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGNjMmFhY2FhNDE5ZWFmODRkMTdhYmIwM2QxYThmMmJhMjBkZDkzOWM3NDUxOGI2MzM4OTc5MjI2NmFlZWFkMyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/deep_portfolio.py#L340-L358",
+          "version": "repo-lines-v1:sha256:5bfeb7bfede7c8675c96670537781b29c33659e02b6fb3f9aa93be00a4a706e3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyMDc4MzkyZmZlOTM1MTNhNGNlYzA2MjQ2ODZhOTcyM2Y4MzgxYjM4YTNjNjBmYWQ0NmYzYjEwYTc2NjVlN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjY2EwMzE2Zjc5MjNlNWE4YTZiNGVlOWUxMWIyYTc1ZDExMzFjOGViNTU3OWJlZmMyOGY5YTgyZjQ1MzkxYTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiODAxYTI5ZDA0OTBhYjlkYjVkODIyOGMxYWMxYjhhNTNkNGU5YTM4OTI4MmE2ODdhNTA3ZmM0MzJkZDkxYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiMDIwZjU2MzRjMDIyZTU4NDdlNGU3M2UyNmM0NWJkNTJiZTk0YzdkODMyYTI2ZjBjYWFkMzE3N2JhMWVjMzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6f7fecf784e141199acad4822d0e3711",
+      "statement": "WeightConstraintPostprocessor jointly projects available positions to gross, net, and optional per-asset limits, rejects infeasible or non-finite requests, and can sequentially cap L1 turnover from batch prior weights or zero; turnover scaling can leave final exposure below the projection target.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/portfolio/postprocessors.py#L12-L91",
+          "version": "repo-lines-v1:sha256:85279998372ee1f312a56ba4afe930481e92a9c677462b83caf72b617cf3076f:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlM2ZiMWU1OGZiYzkwNDc5NGQ1MDczMTRmYTkxYzlmMmYxOThjODhkM2ZmMzk1ZTAwODI4OTAxYzM3ZGM5MWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1NDBlNWY2NTY2ZTI5YTU0MDU2MTkzMjE2Y2IzZDE0MDE2M2Y5Y2Y5NTAyMmRmMmNhOTI5ZWNjNTNhNGExNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYzNDM0MzNlMTI4N2NjNDk4M2MxYTY4OTZhMWRkMDJlMzAwN2MyNTU5ODU5NDY4NTg1NTE5OTliNzU2ZjE2OWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5M2UxZWQzZGFkNDQ0Yjk3NGQ5N2UzMGIxZDMzMWZhZjM1YTM2OTdmNjhmZjU4YzNhNmNjMjZjZGMwZGNkOWEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/postprocessors.py#L203-L246",
+          "version": "repo-lines-v1:sha256:b208e22a3e2ded09d6df17e2f1ebc3839cbb29747cf9a83ab8c7ac4e01a331ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzM2E1MThlODIwZDA5Zjc5YTFkYmFmODEwNzRhOGNmMDdhZWMwMzAwNDQxNjBiOWU1YzZlYWQ2OWUzOGQzNzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxOGNkNzExM2U2MWNhYWFmOWQwMWI3N2NlMTg2Y2RhYmFhY2MyZDU4NTU1YTkyMmU3NWRjNjNkNWYzOGIxZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3NjA0NWEzYzAyMjExOTg0NmYyN2Y2OTVkMWRhODkxN2M5ZWE2MDViYTRmYjVhZWJlOGYzZjU3ODg0NTBkZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/postprocessors.py#L94-L138",
+          "version": "repo-lines-v1:sha256:0636a9b9f7407c7386b4acb24ee3a64d48786bde6b2aba706606918c181c9290:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM1Mjk5Y2NmMTgyMDk4Yzc2ZjlkODNmNTk3MmU2NTQ3OGMzYmM4ODgzZDI4NDk2OTM1ZWQ4Njg0YzZjZDA2MTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzNmMzNDJlNThmNjQ4ZTI2YjBmNDhjOTE4NzIxY2MwYWZjYmY1ZTkxMjVhODQ0NTQ4YmI3OTNkYmU5MGFmN2YifQ"
+        },
+        {
+          "resource": "repo://tests/test_portfolio.py#L178-L228",
+          "version": "repo-lines-v1:sha256:71270f642267b7d3e43d70ae26792073ff6c04a450d4811622ef52f92ddcb2ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjZjY3NzY2ZjczMDEzZmJhYjFlMWE4YmVhNDYzOGQ4OWU1MzAwZDc2YTMxM2FmOWUwNjdlNGMxNWQ1YjMxNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1MmQ2Zjg5M2M0YTNjZDFkMWVlYWQ3MWQ2NTA4NTNhNjlmMzMxMDkwNTZhN2Q0MmI4NWNhYmYyNDM3MWE2ZmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgxYzUwZWFhZDFjNGE4ZTQxYmM3NTcxOGYxNDk1YjliZDlmM2M2ZGM4ZDBmMTc3OGM1Njg0YWU1NDllOWRkNmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMmU2MWUwOTQyMGE3OGYxNDg5ZDUxY2YwNDRjZWViYzJlZjM5ZmQwZGE0M2JkNjNmNjU2NzY5NDU5YTU0NTYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

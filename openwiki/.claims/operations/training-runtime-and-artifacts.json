@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4d82f09f4db266b0d4851a39b7f01c4cd2c8ed8eb341b6916c7c347315cf0596",
+  "claims": [
+    {
+      "id": "claim_065e9c722e2f4f308ac54766b32b2ac4",
+      "statement": "Public model configurations inherit immutable shared seed, device, and dtype settings; construction validates supported device and precision names, while specialized configs validate checkpoint bounds and model-specific numerical and architectural constraints before training.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/configs/base.py#L12-L73",
+          "version": "repo-lines-v1:sha256:ebd7cfab1bc72c6b5211c7fa599c2495b9d665c33b8e56f40c110fec8eda4914:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczMmYwOGI0OTAyZjVmMjc1ZGEyMGQwYWU3MzczYjBlN2I4ZTA0NTY3MTBhM2Q2YzJmZGVkMTZkYmRmNTllMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2ZjY1MTU1MGVjOGI5MmZlYTJhMmMyMGEwMDQyNDYyMzVmZDBhYjA1OThhYmM3ZTJmNWZmMjE1ZTFjODQwYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2ZDc5ZDhhMzMwNWJmNTQzMzMxNmIyZjliNTYyM2M4NjU2MTNjNTdmMTBlNzMyMDM3YTA0YWQ3NTgyMDc3MDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/configs/latent_factor.py#L23-L209",
+          "version": "repo-lines-v1:sha256:863e511e0a90691ca7fed3704326108630df6c99ebdd0726f640f442c8fa95fe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwZWQxN2JkODhkOTJkMTEwNTJiYThkZDZkYjY1OTYyMmQyMzczNGVhNDk1ODdlMWVkOTgxMDdjZTUyOTZlYjc3IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1MTAzNDgxYzU3ZDBmMGRjMGY3NmNkMmNjOGIzNjA0YzRlODI5NmRhNDEyMmFkZDE5ZTgxNzQ1ZGM3ZTMzMWE2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiYzYzMWI3MjM3YTdmZWU3YTY2MGFiZjhhM2ZmMWY3OTg3MTU5ZjRlMWZmMWJmZGIyYjZiMDEwODgwODM1MzRlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/configs/portfolio.py#L19-L174",
+          "version": "repo-lines-v1:sha256:225f422b4fdb7af73fb54484a26d030e2d6d1a663b439381131b2b6006857ca3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTU2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4Njk0NTExNDZkZTIyNmUwZjZlZWQxMzQ2MDZmZTQwOTI5Y2NhYmRiNDU1ZGU3OGJjODU1M2U1ODI0NzFhMWJmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1NTAzMmU5NjRkMDkzMjM1MWU1ZDE4NTI2OTI4MWIxNzFhM2EwOWIwOGIyODZlNjYxZWE0NzAzMjNjODJlYjRkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5YThiOWNjMGZiZmRlNmNmZTBkYjYxZTEwYzhhZmE5Mzc4ODQ5MWU2OWVlYmRkYTIyZDVmYzllMzg5MTgzZTM2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_929590c66cfe42ef9ce2c783b1dfd995",
+      "statement": "PyTorch is an optional dependency declared for Python versions below 3.15; neural runtime paths import it on demand or lazily expose portfolio model classes, and missing Torch produces a focused installation error rather than preventing supported core workflows from loading.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L65-L78",
+          "version": "repo-lines-v1:sha256:2894bf2e32e9cfcd71d2dcc241f8ddf3c959980d1e02cd17ddc3c6b74e8ea31d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkOTVmNWU5ZWRlMDE4MTYwNDNjMDc5N2FjZThkYTJhYzRlOTlhOGE2YTYxMGZhOTg1NzBlZjM0YjkzNTYxMDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YTMzZjViNmM5Y2Y4ODc0ZGE5Mjg0NmZlM2JiZDM5Yzc3ZmRmODM5NWViNWI4NDJjYTcwNWRkNWIxNDNkMzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4NzRmYmY4YzIyNWUyNmYyM2Q2OGM1YzEwOTViMThlZjFhNWE5ZmJhOWQxMGRmMTk0NzQ4ZTMzMWQyZWNjOWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcwMjBkNTE3NDE3NDNjZTY5YWQyMjllM2IwZmRkOTNmMmU4MzdmZjA4YzRhNDVkY2M0ZjgyODlhMjQ4NWE2OTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/__init__.py#L158-L197",
+          "version": "repo-lines-v1:sha256:b9bdbcb321b8c9a8a75b6859dc484ac207114aa0ada2d591748a8da6d56bd649:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNjM2UwY2RkMjdlZTYwMzA5ZmYwYmRkZWFhYmU5M2EwOTY4MTBlMzkzYzE1NmZiZTRkYjMzZjAzNTcyNjdmNzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5M2ExMzA2MmYxMGVlNGYxMjE4ZDkzZTM3YTZmODFkMzQ2ZmYxMWVjN2U1NWRkNTQyZTJkMmQyZWYwNzExZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjZWNiZjBiN2Q1OTdhMGVhYmVlNGNkNGNkYTY3OTk1Zjk1NzYxMjFjMmZlZWNkMjlkNzk3YzE5MWU4ODFlMmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/torch_runtime.py#L9-L17",
+          "version": "repo-lines-v1:sha256:b3945bd90bfc64db8b313940e5c7ce34cbadad210ec54db07011255489da1fb6:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDcyYTY5YzRkODA5ZTg1NTg0ZDM1MzdmN2M1M2MwNDdiYjIzNTZjM2U3NGZjZGM1ZTEyYmQxZTViMjYyNTA0ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWQzN2EzM2QwNzNhYjhkYTI5ZGM3NGNlNmE4OTEzMTgxOGE1MmE1YzE2NWQxNmYzMWQ5OTE5OTdmMGU2NmNmNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjY2ZjdmMTBiZmNlZjAzMWRhZTc4NWRmMjcyYTEzZWI0MGVmMDYxMmUyNTUzNWM5N2IwMjBmZjIzYzQzMDM3OSJ9"
+        },
+        {
+          "resource": "repo://tests/test_repo_hygiene.py#L100-L130",
+          "version": "repo-lines-v1:sha256:5a2c06cdfd396fdd7680d64e68ef841ada7653de6140354658c38236d8d8b501:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxOTQ5YzI3Y2E2MTA2NGJiZmEyZmQ3MmQ1NDIzM2RhZmQ1ZDgzNzc1N2Q0M2IzOWIwZjViZjJjYjg4ZWQ1NWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5Nzc0NzI3YmNhNDg0MGY2NzVkZDU0YTQ2NDllZDBiODVjZmE1Y2YyOGE1YmYzYjk3OTFlZmY3ZjczNjQ4NjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5NDZkZDk0NDA4ZGI5OTUzMmE1NGY1MzBkYzM5M2JhM2ViMWE3Nzk0MDY5MDY3NTZlYmRiMDhkYjlmZGY0ZjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bc6b00a3a23b460992104cfcd6136aaf",
+      "statement": "The shared Torch runtime rejects unavailable or out-of-range CUDA devices, unavailable MPS, unknown device names, and unsupported dtypes; seeding configures device-specific deterministic controls for CUDA and MPS in addition to the global Torch seed.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/torch_runtime.py#L19-L72",
+          "version": "repo-lines-v1:sha256:10e736f64121c21d2ba64165521251ae4cec66c1224654a50fff0ce8777aaf52:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3YjVhOWVkNDFmZGJhOGUzZDI4NDcwNTc5ZGQ3OTk4NTlkMGQ3YTAxNTVmOTRjMzViZTg1N2FiNzg4ZWFlNTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMWM4YWNhMmI3NjE5ZTBhMWZlNTQ3M2IxOGM0YmE2YjJiY2U0OGM0MzIxNjBmYjkyOThhYzI2MTJmMzVhNDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIzZjZhYzA2NGY4OGU5ZjM3ODc1ODQ3NTEyOWQzMTg0OTc2NWExMzZlZTQzMmRlNTU3MTJmYWNiNWI4ZGY2OGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_torch_runtime.py#L75-L163",
+          "version": "repo-lines-v1:sha256:fba09cf5e85f4e3dae65c55efbcf7bfa253e16b15ccb5e25768a6a021cad22c0:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4ZjVmZmEyODM1NzIyNmI2OGRjZTllMjhjMDQ3NDIwYTFjODgxNGUzM2ZlNTMzZDU1NmFhNzk1ZGUzMmIwNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzOTg2OWNhODBlNWM1NzJlNTFiMTkwNDBiOGZjN2Y3OWZlNDA3YTdjMzI0YTBhNTk5NDY1NzkxY2Q4OWNkZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bf1bb6a6e7c3404ab1b49178b2b51d59",
+      "statement": "Observed fits produce a schema-versioned, redacted FitRunRecord containing configuration/runtime context, input dimensions and SHA-256 fingerprint, stopping status, skipped updates, elapsed time, and error type; successful records enrich FitSummary and ordinary failed attempts remain available through last_fit_record.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/observability.py#L121-L196",
+          "version": "repo-lines-v1:sha256:ef5b6cd552501b555971be802f34eccb6a8ccd4a23cf76781e4419447696e1bf:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVhNmQyYzVlNTg2YjAzOWM4MDNjNGNmNmQzMDQ1ZTJhMTliYmMxMjM5MmZhN2QwMGExM2VmZGUxMjA3NzY5MDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyYjcyODk3ZGEzNGUwNGRlNjc0MThjNDViNmRiZmIwYzU4YzRmODM4ZTViM2JjMmEwZmJlYWMzODNjN2E3MzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxZDg3MjI1N2FhMzM4OTM4ZGFiOTgxYTRmZTFkNzg5MDJiZmU0NTk0NWY2OGYxODQ4NDdkOWM2MmFkOTIyOGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/observability.py#L18-L118",
+          "version": "repo-lines-v1:sha256:e57d2574c463c5049bafab9b17dfa7f387bdd9ba1b38af542af947c8368b7e27:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmY2U4MTQwZmE1MTE1YTdkMmQxN2JhZjk4OTI0YmRjNjI2NTIzOGUwZTQzNGI2MDk0Y2MzNGNiMmYyMWY1ZGZmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmZDMwZDI1NWMzYjRkZDg4YWE3NmRjNjM4MWE0ZjdhOGY1YmRmMWU4ZDE0NzFlOTI1MzRhYzNkZjYzZWUzNGM5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiMTAxMjk3MzE0YmZhNTRiYzU5YTFlZjg2N2NiNTU2NTc0ZWY4MDhlZjU3Y2FlMTA2YTViZTQzNzhjMDY1YWQzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2MTUyZmExYzRhMDYxMzE0ZmRkNzIxMjRkZDljY2EyOGNmNGY4MzRjNGQxNGU0N2FkMTcxMjhkNmM5NGUyZTRjIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L290-L340",
+          "version": "repo-lines-v1:sha256:6a99bd2bf3022b3c0ca3755f3b3cddfa5a5e06c11a7dd1e69242e637b7b097ec:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjMzViOGUwYjQ4ZmE2N2Y0Y2M3ODA1NWFiMDA5YmRmOWQ2Y2UyOGVmYmZhNWUwODk5ZmMyNGMyNThkYjQyNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExMzZiNzBkZmQxMjJmOTU2MzQ2YTcwYzhjMTU2ZWYzY2Y2OTI3Zjg2MWY5ZWY0NzA3MWJlOWFkYmVmM2ZiZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjljMDcxZGQ2OWZkZjY2MjMzMzYyYjYyNjE2ZjQ5OTk3ZGZjODhiZTcyNmJhNmM3MzVjODQ1NDIyMjIyMzhmYmEifQ"
+        },
+        {
+          "resource": "repo://tests/test_observability.py#L47-L95",
+          "version": "repo-lines-v1:sha256:cd1a20b9f5973fe5d23303394b65dd780cdf20e8207d52f226f11cd5d1794cf3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhNzZiNzliNjNlNTAzZmRlZjAwODU1MmZkN2IwYTlmZWY2M2Q1ZjgyM2IwYWU5ZGRkM2JhYzRlMWZmNGU0YzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExNWEyYmU0NzZjODE1ZTc3NDBhMzk4NTIwNjI4ODE4M2ZkNjBmNGYyMjNhNTc0NzE2N2U2MDA4OTczMmFlYzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc3MWRjMDU3MGUyYTVkZmIzMDFjMmZkMmVjOWU4OGU0OWMxZjI5NGJjNzQ2NjRjZWVkYzZjMTQ3M2U2NTM1YjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmNGQ4NTNmOTkwMmFiZjg0MjM5ODUzZjc3ZjE3ZTc0ZTc3YjBiMGI3YzJkYjNmMzVmZmI2YzYxZTBkOGE4MTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_96dbaf568a254bbd915a0209fb96b22b",
+      "statement": "Neural fit methods place @observed_fit outside @atomic_fit, so an ordinary failed refit first restores the named prior predictive state and then retains a new failed FitRunRecord; atomic rollback catches BaseException, whereas failed-attempt recording catches Exception.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/lifecycle.py#L11-L26",
+          "version": "repo-lines-v1:sha256:82d0491bf9232a021945479620dbe24e1ed4dd6b48bba2ebd5f53eaba6743f68:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzYzI0ZTFkMGM0YzU0MjUwN2UzODUxZmU4MjVhOTNiYzUyODliYWFhYjczM2ExMTZlMzczZGI3OTExZmMwOTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyMTA3MDVjYjk0YTVkMjY1MjMwMTkzYTk5NDdlNTliNWZmYjRiNTM0Yjk3ZWZiM2I1NThmYzEyOGNkN2NiOWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/observability.py#L49-L83",
+          "version": "repo-lines-v1:sha256:4bd4a54e4c7be5c3d327b6669a1f64467daef65c41f139f9181b28e136ff1078:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjYWIxODJmNzQwOGQ1MjZlNWYyM2U0Mzg2ZTQxYTk4ZGNmYjM2Njg2NWMzNGI0YmM4Y2UxOTM2ZjgxNjczOGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NDA3YzliMjJjMDZiYzZjMTQwOWIwMTkzNjUwZTcyODQyMTJkOTYzOGQ4OWZhYmY4NDhmNDY0MDI3NjA4MjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJkMTg1ODIxYjYxYTNmY2RiNjBmZjJjNGFmYTYyNGVkYTM2OTg3MGUyMGU1YTE4ZGNlMmVhOWMyZDdhMDc1NzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRjNWRlNzFlNGM4ZjljYmNkYTczOTUxZTczZTlkNTRkZjMxNzAyYzEwNTlmZWRlOWJmN2JjZDEwNWYyYWIwYzYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/asset_prediction/sae.py#L53-L84",
+          "version": "repo-lines-v1:sha256:4f7af110197899e49d90c6279fae75b4c528a7bd11c9957a74c8a2dc2d4d2fc6:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjMGViMTE2OWYwMmY5NWJkMjc5ZWJkODliZGE1NzYyZjkzNzg0OWJlYzEwZTdkY2I5Yjk0Yzc3NTBlOTc3ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlMTQ3ZGNjYTllMzA0NWMzMDYxODRkYjMwNmRmZTcwMjNiNGE3YzA2ZDJkOWVkZmYwNTA5ZTdmMWRiOWEzMGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmMjc1MzA1ZTQwYzgxOWNlZjA3NjJiMmRjZTdhYjg2N2QzOThkOGNjMDgyNTJiZjYxMWQ5YzM2N2E1Nzk3MGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2ZGUyODc2OWU0NTc3OTcyMjkyY2JkYWZkNDc5YTFhMDhjNjc5M2Y5MGIyMTc0NDJjOWI3NjA5ODVlNmMzNjMifQ"
+        },
+        {
+          "resource": "repo://tests/test_lifecycle.py#L119-L166",
+          "version": "repo-lines-v1:sha256:1e66eae2ab5bc18e0b727b8c41f499df4e5001e0df91a94643c16756eff2f853:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3MGRhMDMyZmJmZGJkMWI0MjRlODE0YzIxMmFlNTg0ODRlNzZmNTdkYzU2ZGJmZDEzYmY4MDM3MzZkMzI0YjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhZGQyNDZjZmM2MzRiNGEyYTJmYWQ1YmFiZTJiN2YzZGI1Y2Q3MzFiNDVjYjI3Y2FkNzkzMmQ5NzkzZjZkOTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZmMjVkM2U1ZTVmY2I3M2JjYTNlODEyNDRjMTNlZTA1ZWNiMzM3MWQ5YjY2MGI4YzgzZmJhNTc3ODkwYmFiYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkZTk2Y2RjYzQ5ZjE4MGExNzg1ZThhMGNmZWY4MjJiODExMjI3MzYwOGYzNDZkMWM1NjBhYzI3N2E4NjIyODYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0592f6206b7f4a8197cd347b07c7c03d",
+      "statement": "Shared epoch checkpoint resolution sorts and de-duplicates schedules, includes the final epoch, and requires explicit or configured selections to exist; CAE additionally stores validation-best ensemble states at checkpoint 0, while portfolio training retains its best validation state and may expose a checkpoint inventory shortened by early stopping.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L61-L108",
+          "version": "repo-lines-v1:sha256:3d2fa748e5b2b5a442b1d15a0ed4dbb981ae066e36c45a764c1677b876261abc:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2ZDQyYjYyMzRiMzI2MWJhOTVjNGQzZTNlYTUwNDY5ZDQyZDE3NTM0Y2M4NGM0MGRhMDA2MWEyZGMzNmQ3ZjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4YTQ2NGI2NjQ5ODk1YTkyYjkxM2I4NTY0YWRiNGI0NWI0NDk5ZTgyZTlmOGJiODVkZGQzY2JkZGEwNDBjMTYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L180-L275",
+          "version": "repo-lines-v1:sha256:4fdb6c68e10dbf22bce8fd8aafc796b9dcd7deb1c2ab1362e8dcdf74e4bed8c1:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjODcyYzgzMmZhZjQ1N2UwMGVjODYyODZkOWI2OTU3OWZiMDc5ZWU0N2I3ZmU2Mjg0ZTNjNTI2YjA2OTRjYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE3ZGE5ODgwYzRjMGM5Mjg3ZmEyYWQ1Y2Q2NDQ5YzU4M2M0NTY3NTdmM2VkMmMyOTAwYTZiMWQ3MmU3ZGNlNjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3ZDFjNjU3OGM5NzIwN2Q3YTI0MzZiMTQyNGU3OWMzMjAyZDE3YzMyMzQzOTZlMmI1NWM4NGI5NjJmZjI2MjkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/runtime.py#L31-L165",
+          "version": "repo-lines-v1:sha256:62df7dc6236610219e76a7846436914d025fef15f1fef94c31f665176496e4d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxMmZiMGE0NjIwZWQ4YzQ2ODRmZWY1YWNhYzY2NjQ1YmY5NTk5MjhlYzM3ZTAzNzY3NzcyZThiMDMzZWZmMGY2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjMmU4NDZkNTcyMjZkNGQ4MGVkNGY5Y2U1OTA3M2FhMGQ0NGJmY2ZkZjc3MjEzMmMwNmNiZmJhMDUyZDc0MjZmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0NzIwNWFhZDQ4OTIzZGJhOTljYmQ4NTk0MWVkZmUzMjI4NDlkM2E5MDI0N2FhZmY0M2Q4NzliZjIxMzEzNjM1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5YTc0NTM1MWJmZjAzYTg4NWNlZTQ1MzIxNGRjNTkwOWE3MmI3OTc3Yjc4ZmVjOGI5ZTdmYmQ1OWZiYTVhYzRjIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_91b034f27c4c4eedb43416720d0d28bf",
+      "statement": "Each persisted model artifact is a ZIP with exactly manifest.json and arrays.npz; the manifest records schema version, model type, encoded config/state, the array-payload SHA-256, and every array's dtype and shape, while object-dtype arrays and unsafe metadata values are rejected.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L21-L85",
+          "version": "repo-lines-v1:sha256:d6fe2731e2e866d3edae1ee36ddcebae675a7692f3b90ff70bd063f88cbaa4ef:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyYWYzYTI0MjgyYmQ5YzY4Njg4MDA5ZDRhY2I1Y2MzZDc4Nzc0ZGFhNTcwZmYzYWEzODNiMWQ2ZmYyZjE4YmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkZjVmNDhkOTE1ZTc0MzQxMjY4YTgwYTg2MjU1YjMwMGRiMTgwYjI1NGE1ZDgxZjNlOWI5ZWY4M2RhOGM2MTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ZjhiNWM2YTNmNjJjNjNjOWJhYzkzNWFiZTFmOWUzZmM4ZTEzYTgzNGY0ZDFjNjc5MzI1ZGYyZDJjODkxZWMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L249-L306",
+          "version": "repo-lines-v1:sha256:27b2c3c2cf706ec000fe95a91962522f6626c4c68f9ee4e721fb37979e5b2fb4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0NzE3OTAwOGUxMDg0MmE3ZDI1NTg3M2I0MzFhNmIzMDhhYzVkZWE1ODMwZGRjMmI1ZWY1NzgwN2UyNzc4ZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkZDc3MjVlNzk4YWY4NGE4ZDc3Mzk3OWI4NzM3MmU5ZTRiNjFjZWZhZmZkYTUwNDI4NDZkNDAzNjE3ODU3NjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0NzI3NWMyN2RjZjlhMmRiMTBkYjNmYmJlMDIzMWMwNjdkZmFkZGY2MjVmNDc4OGFhOWY5YTMyYTQxZDRhM2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFiNDM0MWIyOGJkZmViNzQyNzlkMWZlNTg3MThmZWQ0ZDQyNDQ0N2NkZGM5ODg1YjdhOTdmZGUxNDY0YzU0MmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d90b397b98004aca82a8afecbb2ea193",
+      "statement": "Artifact loading validates the exact ZIP member inventory, UTF-8 JSON, schema version, expected model type, payload SHA-256, no-pickle NumPy payload, and array name/dtype/shape inventory before returning decoded config, state, and arrays.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L261-L270",
+          "version": "repo-lines-v1:sha256:dcd4c25da96db09401603b6dcf6cfa733686eacd8d4ca0745e233465f7c1c72f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5OWE3ZTNlNTE1YzU4ODhmNDZiZTMwODhiYjBhODE4ODNkOTE2YTUzZWE2MjY4OTNjYzMzZjE5M2E2MzI2M2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0NTdlMTllYTViNmUyY2Q0OGUwZDc4YzYxZjg5YmZjNjQ0MjFiM2Q2YzJkOTliMzZjYzYzZTA0N2Q1ODQ2ODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1MGFlMTIwMDI5YjcyMjU4NzRiYjgwN2YxN2RkYWEzOWFhNGY5M2ExNjQ5MDlhNjFlYzE4YTkzODkyYTM2ZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViNTkzNTc4MjRiZTZlNzk4NDRhNzA2MGU4YWI5MmJjNjQ0YzQ1ZmE0NzkyZDAxMmQ2ODdjZWZhMGI0MTczYzIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L87-L139",
+          "version": "repo-lines-v1:sha256:190ece278efe71cf1c40cd70712327359231aa3aa978b98a226234014f8fb253:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0OTc2OTY3ZTk4MDY5ZGExYjQyMGE1Njc5MjRlNmQwOWNlZGJlNzM5YmU0MDE4NmUwYTFkZDI0ZTA2ODhkOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwZjAxMzQ4OWU2OTVkZTQwZTVkNWRmZDQ0OTdjMTg0MGFkYjY4MTQwODdlNDZmOWMwNDQxZWVkYzI1OTFiMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2YTEwM2RiYzFhODQyODgzMWRmODViNWM3YWEzMzE1ZjE3NDUwZWMwODBkZWFjMzQ5YmU1ZmRmYzQ4NDkyNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU1YzNjZjU2MjJkYjI3ZDhkMDYxZmJmYjE3MTFlNGUzN2YxN2IwZDcxNjQwMjk1ZjI5MzU2M2VkNDY3OTk2MDgifQ"
+        },
+        {
+          "resource": "repo://tests/test_persistence_validation.py#L44-L129",
+          "version": "repo-lines-v1:sha256:b8b973753307937d4bca18117c5778e881aa71ae7d690ac2f6362c76453bf139:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5YzJhMmVlMmY1YjY1ZTZmNjM3N2NmZDE5NzA3ZDczZjBkM2IzZmZhNzM3ZmFiNDk2ZDVmNWQ2MDQ3YTk4ZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkZDk2ZTcwYTFkZDM0Y2Q1YTU5Mjc5ODgyN2YxZDc3YWUyZTQwMmI4ZjgxYjYyNTc3ZDVmYmMxNTE2MzNmYzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhNDYwZjU5N2M3ZjZiNTM3ZjhjZmQxYmJiODRmY2FlZTVmNjZhNjdlZjg4NTQ2NThiMDU1NzE4ZGUxOGUzZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY1ZjYyZjFhMTdjYmVjM2RmZjIxY2I0Mjc4ZDVkNTM0NDM0Y2EyZmFiMmZmMDQ5Y2NlMDdjYzA4ZWEwOWI3N2UifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_82723589845a4707abefe705ea6e6b87",
+      "statement": "Torch checkpoint structures are persisted without pickle by encoding dict/list/tuple topology in JSON and tensor leaves as NumPy arrays; unpacking rejects missing, reused, duplicate, unsupported, or unreferenced content and reconstructs tensors from copied arrays.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L173-L247",
+          "version": "repo-lines-v1:sha256:7b9b17b44723fd091feef524fc96bfd6fa2427226d1764199114bea483004344:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmOTE0MmE5YzQyMTRkNjIyZWE4ZjJkZTU5MTEwMjIxNzQyYWFkN2I0MjAzZTAwZTg1NGM2NjRjMWM4OWI4YWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzYTlmODRjMzliYWU0NzBiZTkzZWJlODZmNDM1NTgxMmMwODBjNzZjMDAzNWJlYTM1ZjIwOTM1OWQ3MThmMDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY0ZThmNmQ2OTZjNzFjZTVlNzdjNGE4YzEzZTA0YTVkZWI3ZTA0MTBkNzg3YmJjMzI0NjliMGQ2NDNmMmNjNDkifQ"
+        },
+        {
+          "resource": "repo://tests/test_persistence_validation.py#L156-L239",
+          "version": "repo-lines-v1:sha256:0592c5a3a943a0188126f4e5c6975827077d9f56cc3208e685a461f684e3e4ca:eyJzZWxlY3RlZExpbmVDb3VudCI6ODQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyOGYzNjhlYzVhMDA1ZDVlNTlhOTI3YjA3YmI2OTEzMTJhNWM4MzFmMWZmMDI4MzJhNGEzYjAzNzczYmY5ODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjODE0YTg4MjJkNDNjN2UyYjQ0OGJjZDhlZjUzZmZmZjI0ZjU2ODVkZTU4YzQxZGJmYWUyZjNkNjgyM2FiZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4MjE2MjdhYTQ2Yjc3NzdhNDM0NDMxNDM5N2FmZjg1NGJjY2Q1NjRlNzQ0MGQwZDA5MzlhYzMwNDliMjMxNWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8624c20032244462b4ca5756eb824fd1",
+      "statement": "Artifact saves use a temporary file in the destination directory, fsync the completed archive, atomically replace the destination, sync the directory where supported, and clean up temporary files; a failed replacement preserves the prior artifact.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L309-L316",
+          "version": "repo-lines-v1:sha256:57cc53944a137f91f2f1228e5613def15575477f03408dd19c50bc7eed79f490:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTZiNTBmZTM2Zjk3YzNmYTE5MDg0YzZjMzc3MWExMGM4ZDY5YmEyZWQ3ZWQyNGZkYjg3NzZkYmZjZDhhZTY3NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjFhZGE3NDc1NGIyM2FiNTJlYjRjY2M2NjBmNWNkN2RiNzZkYTNiZGRkOTIzOTFlYzIzMWNhMWJlZWNmNWZiNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzU4ZTYwOGUwMzVjMjM5YjE0ZjM0ZDRmZTk5NjcxOWJkODc0NjAzOTU4NzQ5YmU3M2FiYmExMGY2NTg3OTJjOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/persistence.py#L59-L85",
+          "version": "repo-lines-v1:sha256:6364838d5020a1425280073478f3dda2e3650c19f44e9f4b794af9f509e5971c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzYzQyNjE5M2M4YzBiYTFiNWFjMWM3NGZkMGE1YjY0YTUyODU1YjdhNDBhMWI0OGM1YThmZDg3NmRiMTczODQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyYWYzYTI0MjgyYmQ5YzY4Njg4MDA5ZDRhY2I1Y2MzZDc4Nzc0ZGFhNTcwZmYzYWEzODNiMWQ2ZmYyZjE4YmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmZDZiY2UwZDcxODM5MzA0NzRkM2Q3ZjMxM2M2NmY5NWQ0NzUzZGM4ZTU4MzYyZGUxNDAyZmU5OGJiODRjM2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ZjhiNWM2YTNmNjJjNjNjOWJhYzkzNWFiZTFmOWUzZmM4ZTEzYTgzNGY0ZDFjNjc5MzI1ZGYyZDJjODkxZWMifQ"
+        },
+        {
+          "resource": "repo://tests/test_persistence_validation.py#L276-L319",
+          "version": "repo-lines-v1:sha256:3476b34798e281c718f4aeeb1093ab265200310697e40ddd571fe50fe2689c26:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3MWIzOGE1ZDNjMDFmMjhhMWU3MjYwZGNhNTZmZDZkMzhlMjk1MjM5MTQwY2MyODI5OGRkMzgyY2E4MGQwZjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2ZWVkODc2Y2UzNWE2ZGVkYjZmOWJkZTRlODliYWIwNTdiZTYxNzAyZWE4NjI4MjA3NDYyZDZkYjg5MjNhOWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAyMWYxYjQyMjI5ZmMyMjg2NzgxNzc2NWU2ZWNmODIzYzcxNTgxMmEyN2IyNzVjM2FmMTRlODIzYWY4MDI5ZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmZmE4MTdiMzAyZWVmNTk2MTJhODNkNTQ2YmNlYWMyZmM3YTQ0ZGEyMzA5NTFkYWUxZDRjYTc4ZmFhN2NkMWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_88357668f7b5450392fe6a72ac0bc879",
+      "statement": "A fitted model cannot be persisted without a FitRunRecord, and loading rejects missing or invalid persisted records; successful model round trips restore the original record along with prediction-equivalent fitted state.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/observability.py#L27-L46",
+          "version": "repo-lines-v1:sha256:2be5a4707ff137532833a14c8e7965c71a41bd27df377424f39202b4fefb0dcb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyZTk3NjEwMmEyOThhYmNkOWQ4YWMwMDNhYTZhODYwMjRlMzg0NjYyYzM4ZTI5NTBlMTZmYjMwMGY3ZmNjN2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3YjRmMGQ1YTc1M2IwMDIyY2FjYjg5ZjQ3Y2ZlZDk1Y2FkNzE0M2RiMTRhNThmOTk0YmQ1NDNkODlmZGYyZTgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/asset_prediction/sae.py#L263-L305",
+          "version": "repo-lines-v1:sha256:560ef718b9c5dfcb5858b7b3261c721e8cbd5cd5da472b69b729ffb228e782cb:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwMTIzYjNhM2U0MmExOTk5OWJjNTRhOTllZWRiMDA1Y2M0ZTA1YTI1ODk5ZmVmOTMzNDZmZjc1M2VhNmI1ZGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxYjJhOGFkMTBlMTQzNDdhM2RmNDhkNGQ2ZTFmODEwYWRiYzIwZmE5YTNmMWMyYWU2MTM4OGU2ZWM3ZjZjZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyNGRlOGRiYzU4YmIyMmRjNDIzNjhlODY3MWMyNmJhOWQ1NGVhZmEzZWE5OWJkYzM2N2ZlZmFiOTJhMzE2OTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1ODAxNTljOWQxNzJiNjBiOTU3OGQ2NzAxZmYyODZhMTE3NmY3MTk5MmQzZGM4NGJlMjIxOTViYTMxZjdhNzcifQ"
+        },
+        {
+          "resource": "repo://tests/test_persistence.py#L42-L72",
+          "version": "repo-lines-v1:sha256:67fbcd969ea2a091cb041a50c40c475b9acf0aee6495290012ccfff74c02d460:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxMzE3YWZiYmYzYWVjZGI2NThkNDBjMzU2ODQzMGNmMzhkNGI4ZWM1NGIyMGM3ZDRjZWYwOWIzMGQ1Zjc4ZTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkZDI0NDU4MmI2ZmIwM2QyM2I4NDE1YWJlY2QzNDZiMGM5ZjQ2NmI2Zjc1MmIwNjgxODljZTdlOWEyZGMzNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5OGIwNjNkOWI0N2U2NTM3OTYyNTU3MmNjZTE5NzY2OWQ1NzY3ZTEyYzE4YmUwNzU2NTJiOGNkOTgxY2U4ZDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2OGI3YjIxNGNkZTI0ZmVlY2QxOTcyM2RjNmY0MzcwNjdkODM5OGY3ZGExMmVhZTYyZTkwOGQ0YTdhZjAyNDkifQ"
+        },
+        {
+          "resource": "repo://tests/test_persistence_validation.py#L322-L345",
+          "version": "repo-lines-v1:sha256:6ccea25af9b91fbbf848bd5671192f840bab6d4628b56b3c57a10f5cd2a78b72:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiNTcxOGVjMmNmZTkzZjQwNGEyNzA3MDljNGQyZTQyMzBiMWVjNmM4MGVlNGQxZDgxOTUxYTdmYWQyZWI5NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwMTM3ZWEzOWE3NzFlZjI3YmUyMjAyYThjYjBlNDAzYWFkZTFhNTk3YTY0YTFiYjFmZDdjMWUxODY4NGQ3OTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5NmU2OWMwMzYwNzdiYWUyZWQ2ZTdhZDQ2MTcyN2ZjNDY4Njg0NzZmOGY0OTA1YmU4YzQ1YjMxMDE1MGZhOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

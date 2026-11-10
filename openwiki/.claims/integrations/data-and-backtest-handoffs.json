@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:49092bd8cfd1f5e85991bbf6a2f8d96518654b6a7808458bf7bdd29711fcb46b",
+  "claims": [
+    {
+      "id": "claim_070a11a0133c4370840ec82f5830856a",
+      "statement": "Long-frame schema resolution gives explicit timestamp/entity arguments precedence over normalized schema metadata and then ordered frame-column candidates, supports nested metadata/schema objects and common timestamp/entity aliases, and rejects resolved names absent from the frame.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L15-L81",
+          "version": "repo-lines-v1:sha256:bd475932a24f4eb533a624693a181e5a2275639ec5944408c53f552f26cf62ab:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlZWEzMDgzMDI1ZDJkNDgzZmY1OTZjNmQwNzY5OTU1ZThkNzVkNDA5YWJlZWY0MWRjMDMxZmRkZmM4N2JlMDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmMGMxNzc0YTAyMTBlOGMwNWU5Y2VkZmJkNjdmNzQxYjRiODcyNTBiMTIwYTEyODhmNjM5NDBmMTgwNjA2MmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdiMjhhY2RkY2YwMTIyZDlmMWQ4ZDM1NTU4YzFhNjQ0NGM5YmI1OGJmNDhlNjIyYTdmNGRiNmI1OGI5MmNkYTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmZDJlMzRiYmM0ODkzNzQ2MTNhNDJlNWU1YzdiOGIwNTMyZmUxY2ZjN2Y3ZWIzNWY2NDQxMWQ1MDFiYjNjNTIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L236-L289",
+          "version": "repo-lines-v1:sha256:a71f2230f6b5b0f3407998b13367a0c167b42599c0cc46a28be3543a8d2656d2:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlOTBhNTBmNTkzNGM4OTQ4ZGNhOThlNTQxMzU0OGZjODVjM2E5YjFjZmJiYWU5MWNiYTUzZjFiYzNlODI2OTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyM2EyMDJkNDg3ZjE3MTQzNmU3OWIyYzc1MDViODgzOGRkZDU0NTE1OTk5MzQ5YWEyODA4OTUxNGRmMGY5OWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAyOTBlYjY0MjE2MmEyNTVkYmFhM2FjYWM1NTU2ZmYwMGU3ZjBmM2ViZmUxMTc5ZmM3M2Q2NTQxYjU0Y2U1ODYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4MWJlYWU0ODFkNjBmZDQyMmVjYjlhNDA3NmU3OTY4NWE0MWJmM2E4N2UyODQzOWU4NDZlMzdkYzUyYmY2OWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3a71cc148ef845a8890a447c8d32049a",
+      "statement": "Both long-frame batch adapters sort records deterministically by timestamp and stringified entity and reject duplicate timestamp/entity pairs rather than aggregating or overwriting them.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L134-L207",
+          "version": "repo-lines-v1:sha256:f8b1201c475e36f118b2fcc163ba42b9467ca1f2479c91749202d8e5560f5c37:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMjIzNGRjNTk4OWUxNTEwNDg3YjAwNmU5NTRiMGM2NTA5MmUzNThlMjk5YzNhMDgxMDViOTllYzBiZjhhYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4NDU2NWQ1NjllMTU3OTJiNGQyZWJlZjhmZjQwNGM4ZDNkMjc5Yjc3MjNiZTEzM2MyZDE5MjFkMTRkMDQ4YzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyODIzYWNhNGY2ZWIwNDc0MzYyY2U4Y2UwMDc1YzhmOTU5NTk1MmVhYTM2NTYyYzI5OTllZGUyNDBkZmI0ZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyMzIzMWM1MDlkOTE3NDZhNmY0MTgzZDBjYjQ4NGMzOTQ1MjdkZWY0ZDdjNjU2ZjVjNzRkYjQ0NTBlOGNjNWEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L312-L318",
+          "version": "repo-lines-v1:sha256:4fc26b589f80bec02ba4503510efe8dcde05ac1bef31412e2dfc5346ee12b48f:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmIxYmY5MmY1YzA0MWQ3YWQ3NzE0ZTAwMzlkYjk3MGMyZThkNWJjZmZmMWY3ZGIxMjBjZjM0OTM4MmY1Y2VjYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGM0MTE1NjZkYjhjM2VjNjViYTY0NjIxZWZmNGUwMDYwMWExNzFjMDQ3OWVmMGJhYTA1M2UxMzI1ZTNiYWEzZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmE2YTQ1MzM4YTNjNDg0Yjc5NWIwOWI1YmY1MGE0ZmUyZTAyMGQ3OGE5ZTBkOWE2NWRlZjU0YTVmYTY2MGE3MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWExOTZlNGJkZDk2Y2EyM2RkMDk4OGFjYTZkY2U2YzYxYzhjMDE5OWRiMWEwNjI5ZDQ0YTY2MDk3NTJjNjg1OCJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L84-L131",
+          "version": "repo-lines-v1:sha256:47a55f47c1dc5758149ac65037fb0fc1d186fe09db93ef2abae34b7db014065c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzNTI1YzcxY2ViYTU4OGYwZmI3ZWU3Njg5YWE1MmRmZjU1ZTNhZDMwOTc2NmJlODQ0NDkyZjcxMmU0MmI2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNTU1YTAxNWQ2NzkwZGQ5YmViZWE4MzYyOTJhMTJmNjM2NzEwNGUyNDRjNDQyMmQ4NGRmYzQ0MGJiOTU4ZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1ZjNjN2NiMDA0YjE5OGIzNjFkMzRmNWZkYWMxMzhhMjIyZGU4NzljNjlkMjZjYjQ4NmEyMmQyYWJkN2ZlZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmMmRmOTA0YjhmMTliN2JiODM2NjYxZDYyOGE5MGRmOWE1YmNlOTNiYWQ0ZGExNDgxYzMzYWE2NWU4MmQ3YWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a8a600d63cc4b7cbf4353e578968b1b",
+      "statement": "The persistent-panel adapter creates optional return and characteristic arrays on a stable timestamp-by-asset grid, initializes absent cells to NaN, and converts non-finite or nonnumeric observations to NaN.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L333-L337",
+          "version": "repo-lines-v1:sha256:133070e0580ca53b3d00237a82b8d5a361022efc642fab961eba44737ab3fcaf:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGU3ZGZiYTA4ODdkOGEyYTc2ZjlhYzA2ZTY5ZDM3YmY5ZmFmM2FjNzI5ODFjNzRmMGQ0ZWVjMzA1ZTYwYjFlNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjk3YzcxMjQ3YWYzY2QxZWRmNTU1YTdkMTA3NTkzMTU3ZjZkYzJhMjJhZjBkZTgyZTc3NzRhYmYxMGY4YWRlMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDcwMTQ5ZTA2OWFkNjdlY2NmNDczNjQ2ZmYxYzc1MDA1MGQzMjlkMTEwMDE4ZGM1NzY2ODc4ZWFmYTFkNjA3ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L84-L131",
+          "version": "repo-lines-v1:sha256:47a55f47c1dc5758149ac65037fb0fc1d186fe09db93ef2abae34b7db014065c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzNTI1YzcxY2ViYTU4OGYwZmI3ZWU3Njg5YWE1MmRmZjU1ZTNhZDMwOTc2NmJlODQ0NDkyZjcxMmU0MmI2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNTU1YTAxNWQ2NzkwZGQ5YmViZWE4MzYyOTJhMTJmNjM2NzEwNGUyNDRjNDQyMmQ4NGRmYzQ0MGJiOTU4ZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1ZjNjN2NiMDA0YjE5OGIzNjFkMzRmNWZkYWMxMzhhMjIyZGU4NzljNjlkMjZjYjQ4NmEyMmQyYWJkN2ZlZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmMmRmOTA0YjhmMTliN2JiODM2NjYxZDYyOGE5MGRmOWE1YmNlOTNiYWQ0ZGExNDgxYzMzYWE2NWU4MmQ3YWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5c595ce446d4482f85ab264555118034",
+      "statement": "The cross-section adapter represents ragged universes with a Boolean presence mask, keeps missing values as NaN, and requires every finite value of a context column to be constant within a timestamp within a 1e-12 tolerance.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/data.py#L134-L232",
+          "version": "repo-lines-v1:sha256:8bb63c37fceeebe69cd7b5ae1007aac5dafe3cf2a95193edaddecfc94d301fdf:eyJzZWxlY3RlZExpbmVDb3VudCI6OTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMjIzNGRjNTk4OWUxNTEwNDg3YjAwNmU5NTRiMGM2NTA5MmUzNThlMjk5YzNhMDgxMDViOTllYzBiZjhhYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3NThlZjZhYjFjOTdjNTU0Y2ZlYjkyZjAwNzMyZDNkODA3NDBkNTdhOGM5Yjk4MjYzZTNmNjY1NWM3NjU2MTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyODIzYWNhNGY2ZWIwNDc0MzYyY2U4Y2UwMDc1YzhmOTU5NTk1MmVhYTM2NTYyYzI5OTllZGUyNDBkZmI0ZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAyOTBlYjY0MjE2MmEyNTVkYmFhM2FjYWM1NTU2ZmYwMGU3ZjBmM2ViZmUxMTc5ZmM3M2Q2NTQxYjU0Y2U1ODYifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration_data.py#L114-L186",
+          "version": "repo-lines-v1:sha256:6d5c9f337271551927ccc3d61a16889cc5bff064f91b6e2b14fdb8cdc509a6b0:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0YTlhZTAwODZhMmZlODQ5YjM5MTY5ZDEzZGU5YmMwYmFkMzhlZTlkM2YwZmMwZWEzOGRiMTY4OTU5OGFhY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwODg5YjY1Yzg5MzMyZWM4NzZkYWRkODNlZTI4ZmE2MDIzYjcyMzRlYTVhODMxMmNkM2RjMTY5NTEzOGMzOTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5YjYzZjg5YmQ1MjMyODlhMDU4YWUwMmVhNjIwZGExYzUyZWUwZjE1NGNlNTE5ODQxODQxNGFjYTBlYmNmNTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_00b84cb2b2d948389b064d234c5d7cb5",
+      "statement": "Result-surface converters expose fixed prediction, signal, weight, and wide-context column contracts; long prediction/weight values are filtered for finiteness, multi-batch portfolio weights gain a batch_id, and wide context replaces non-finite weights with zero while rejecting multiple portfolio batches.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L302-L411",
+          "version": "repo-lines-v1:sha256:a6ca8c3e9e005433de6753cab14ecb5af246d6092e985743142952860ad5a666:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZDNmYjU0Y2YyMTAzMzU5YmJkOWU0MGU2NGIxMjAyNWMwMmU1MzA4ODhjZWQ4ODBmMDY5OTFiZjg2ZDQ0ZDdjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3ZjZkN2JjMjRlZWMwODhjYjNiYmVmYjcwZjcwYWVjMzI0MGM4NTAwNDRjODM4OTM0MGUwMDk3N2E4N2FjMWJkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiMTYyYmNlZDdjOGM2NjZhOGY2OWJkN2JiNjU1ZDgzMGE3N2E3Y2E0YTg0ZDhhZDE0NGM2MmU5NDIxM2Y1MTI5In0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L75-L241",
+          "version": "repo-lines-v1:sha256:3c38ea003df0d80194b12cf183e1b4e3eab8b7de81b74b2f59cc7e46a20f4fd3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiMTk4MTFjOTNjYzdjYWI0MDU2YzY0ZjMzMjQyYjQ1YzU5MTljNDM1MjcwNWQ3ZDdkNzMzZDkyODZkMTkxMGM3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwZmYwYjI1NDc3MGE5NWM1ZTBlMWIwZWE4ZDYxOWUxYTMxODA2NTdhY2U0MTc4ZTIyZmE4YzNlYzc4ZDQ0OWYzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NjA5MDU4ODMxMTUyMTY5ZDE2NjZlNzhmYjU1ZjAxODhjOWJiMTZkOGY3ZjM3ODE4NWU0ZjQ3YzE4YjFjNjJiIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_05b5891e921446ee9e885f509bbdd856",
+      "statement": "ResultsFrame supports dependency-free dictionary and columnar inspection, while Polars is imported lazily for DataFrame/parquet export and absence of Polars raises an installation-guidance ImportError.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L25-L55",
+          "version": "repo-lines-v1:sha256:f708c471b8608dffba2de2e10b6a4afe2556225cbbb04280e4b81e1ff6082365:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwOTk2ZmM1Njc2ZWU5MWFmOWU3NzMzMWI3NjYxNTg1YTU1OTgxOTI4ZTkzOGExMjc0MDE2YTUyMTFhMTljZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0YjhjOWViMzdhYmJjODI4YzkzMjRkYTk2YWM3NTRmNDBmYjhiNTQ2OGEwMGU3NGZlYWRiYzBiZDgwYTVkNTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlhOGI5Y2MwZmJmZGU2Y2ZlMGRiNjFlMTBjOGFmYTkzNzg4NDkxZTY5ZWViZGRhMjJkNWZjOWUzODkxODNlMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5OTc0NjJjOGVlZTAyM2FhNGE5MDQ2YTdjNGUzNzFlNGYwOTUyOWVmYjI5MTFkY2M1NWUzMDI1NWVjMWNiZDEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L436-L452",
+          "version": "repo-lines-v1:sha256:f392f85947d442b598a304ebc28ad659077b2008b7b5ff7a6d371f5b5b4aa3b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwNTA2YWM4NjA1MDMzYWFkN2FhZjM2NTcwNmFkNDBjOGZmOWMwOTIzYWRlMDhlZTk3NjlmMjkyNzZjYTdjMGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNjU3ZmFhOTA3MWRhMGZjNWZjOTE1N2EyMWI1NDYyZmEwNTNmY2FhYjM4NjRjMTAwZThlMmRkN2FlZWQ1NmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYWQxNWZiMjQ1YmMyYWQyZGUyYzc1NmQ2MTJkYjYyOTBhNTFkYWE1NWUwNjFiYmRmMzdkNDJmYjE3Y2QzYTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c671dfdba0674a4ab714eef724e85505",
+      "statement": "Backtest frame publication stages all requested parquet files plus a version-1 manifest, replaces the artifact directory as one generation so omitted stale outputs disappear, preserves the old generation on write failure, and restores it if publishing the staged generation fails.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/surfaces.py#L244-L300",
+          "version": "repo-lines-v1:sha256:10704af449ac11278298451237112e3eff533b898a55013a103f8f1271ab916a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZGU1ODExMDY3MTc0MWFkNjZhODk3NDYwYTljYWM0YTZiNjVmMjNiNWE0YWJmYTdmNGE1NTRiMDk4OWFiZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmMDM0ZDM1NGQyOTk0ZjMzMDlmZjA5MGYzMmYxZDkwMDVhZGQ3MWMyNDJhZDkzNjhlNGUxZDJhMGFiMGQxYTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNhYzA2M2QyMjRhMjI1ZDkyODU0ZTllNmMwZDIxNGQwZGIyYjBkYzRhNzMzMWJmZmNjYjFiYzU1MmQ1N2FlNTQifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration_surfaces.py#L191-L313",
+          "version": "repo-lines-v1:sha256:3de6adc223e507085e1ec4c12dda4d298f6aa25b484d973065ad586ecfdc5148:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4MjBlN2JiNmFkMzZjNjE5YWIxZjJiM2MyYjQzNTVjNjFlNWI1NTc3MmM4MmU2NGU1YmVkZmZkZDQ5YzQzNzMxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjMWMwOGY2YjI5ZmExZTljNGVmMjI0ZWYxM2Y3MTc5NGEwMTI5OTIzZDEzYzY3YjI2MjUzNjJmYzdjNGNmNWYyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkMGM5ZDQ3ODhlNTExNzBmYWYzMzI3ZGMxMWI2MGYyODljZTNkMDVhMWY5MDNkYTkxMWQ0NThjZGIwODVjYTRjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmZDY5NWQ4MWJhZTMxMmRkYTRlYTdiZWJlYzQ5NGJjZWQ0MmJlZWIwOTEyZmQ2MDhmYjk3MTA2ZmNhZDg1NzQ3In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_dab30abd58e6418699c0596ea81b34a5",
+      "statement": "FeedSpec mapping resolution uses ml4t.specs FeedSpec coercion when available and a flat-or-nested compatibility fallback otherwise, then applies explicit schema/market-column/time-semantic overrides and coherent OHLCV defaults.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L436-L571",
+          "version": "repo-lines-v1:sha256:f0592fea5123959290d5ad69f25146cfc6317256abaa78cf1df4966f5bff37af:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZTI2YTRlOTA2NTU5YmVhMGUzMDM4ZWI2MDkzZTYzNTJkZWZlMzk4NmQ5OGU2NzQxZDUyNGFhZWNhNDI4ZTZhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4MzZjZTNlODVjZjJmNGQ1N2FiNzBiZDRmOTcyN2ZiM2VlMDNmMTAxMzk1ZmQ2ZGMwZDIwYjk5NDdmY2IyZmE4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkYjI5Yjk3MzI2OWZhZGY1YmZkNTVkMzRlODQ3ODQ5ODBmYzk4ZTI2YmQ3Mzk0OWMxZDc3MGIxNGFiZGJhMjlkIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L64-L166",
+          "version": "repo-lines-v1:sha256:db34d45d791f0f12e254741a38aac393befd2b1245be56ddbea4960da655c61f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlMDNhOWY1ODdjZTQ5ZDczZWQ4YTc0ZDM2YjUwMjg5ZDZlMGFkOWJkYTllZmM5YWI5ZTc4N2M4YjMyZjhmYzZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5ZTQyMjI4YmUyYzEyYTE3MjMzZmRkZDVhYzkzNzdiODMwNGEzYWJjNjBjNDFlOTlhNTU5YWMwZGZmODQ4M2I3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzZDgwZTVlM2FmMTYxZmU1NjRhYmZkMmYzNzQxOWFmNjI4MWQ5MzRhOTlmNDdkNWEwYTA1ZmE2OWI0NDg4Mzk0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1N2Q0YTZiMzEyOWY2NGU3OTYxMzM1NTQwYjU5MTQwNDIxMTI5ZDBkMDMxZDQwYmY5M2NiMDBjZWVkYjVmNzBjIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9f15a62da1854bf791f2ea99d19e3fe6",
+      "statement": "Calendar override semantics distinguish omission from explicit null: an unset calendar preserves schema behavior, while an explicit name or None is written with time_contract_version 2, and invalid nonempty-name overrides are rejected.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L134-L140",
+          "version": "repo-lines-v1:sha256:6314442171cca0061c9a302d5a79cd6363cd07532540b86264c17e2e2e23ec34:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGM1YWM1MmZiMmUyYTZlMmMyZDZmM2MwOTk2NThjYTI0ODE5NTYzODdhYjg2Y2JlZWU1YmUzMTQyYzNjZDNmMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTdkNzMyMjljNjVhMGYwOGFjYThlNGY1NTRiYjUxMWVlNDZiYjRlOWI5NjRhNDg3NjVjNzBkNDY4MjhhM2JmMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2E4OTFkNTM4YmQ3OGQxNTRkMTRhOTEyODNiOTU4NTg4OTMxODBlNzgxZWE3YTFkMjM1NjNiZTc4MDk4NzA1NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODc5ZGQ2ZjFjMGI4NmZlMWQwMWZjZDdhMjUzNTg0ZDI1MTVlM2E3MGQxYmU1MjNlNjczZjVmZDFjMTZiMWU3YiJ9"
+        },
+        {
+          "resource": "repo://tests/test_integration_backtest.py#L395-L480",
+          "version": "repo-lines-v1:sha256:36173ffc087df28e9523de5a701c0bd5185d618d03928dc47bda130580d9241c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmYjE4NTM1ZWE2NGM2NDFjZmU5ZTVkZDYwZWFkOGMzODNmMzU4OTZmNDU4MmNiMzMwMGQ0NzEyYjFhNTM2YmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjYTdmNmY2MTRlZTQwMTBhNDAwY2RlZWFlODEzYjBlNTQ4NjVjODM5ZDZlNWI2ZjIxYWI3OGU2MTI5YjUwMGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjNWQwN2JkNzE4OWRhZWQ5MTVmNmIwM2Q1MjhiZDgzOTRjOWQ0Nzc4ZDIzYTdiZmQ4Y2RkOGRmZWQ5MmU1MGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiYjNjN2IyZTEwY2MwYTc0MzI1YzE5NmU5OGNhNWM2MmE2NjE0NTIzNTNiYjIyZGRmYTdiZTJlMmZiMzAzM2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5be3862f67ed4f6890bbc8bc9194a569",
+      "statement": "BacktestDataFeedInputs requires exactly one of an in-memory price frame and a price path, and serializes that source plus optional result surfaces to DataFeed-compatible feed_spec, prices_df/prices_path, signals_df, and context_df kwargs.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L169-L241",
+          "version": "repo-lines-v1:sha256:85c141a84a8ee3fbb176a528c592f43200c9aea0be6d0fb94e13fb01a46ce4e6:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1ZGQ3YmUwMTc3MmNmMzJhNzYzMmY3MDY0OWIyMDgyZTVmZDFkZDdkMmNjNmQyYmU2OTUxMWQ3MzY2YmIxYWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0ZmRlNGY1YmE3OTUwYjcwY2E2ZTc0OGQxNjM0MGExYTI5ZjYwY2JlYmEwYTAzMjRjMWM2YzkyMjU2NTAxYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5NWRmMDkzNGQyYmUyYWVhYjk3ZDk4M2M2YTQzZDY3MzFlZGJlNGY3NmJmYTdhM2FiYjQ1YjRiNjlhYWE4N2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzNTBlYTQ3YjRiODQzNDVjZTBmOTFmYmE1NDMxYWY1ODE4M2EzYTUzZWNlNGMwMDBjMzllZjNmYTRmMTczOGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L36-L62",
+          "version": "repo-lines-v1:sha256:d73e7f6b5b6b054aa6b4370d91398a39c1e7db3db42b31198c61004fdd40c9c7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMzY3OWI2YjQ3Yjk4ZmMzMTMzZmJmYmUzYjUwMWIwMWE2MDgwOGE2NWJhMjJlYjlmMzMwMTU3Njg4ZTE5ZTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlMGMzNDA4NTVjZWFjNDRiZjE2MWFiZWI5MzUwMzA3ZDc0ZGEwNDVlZGFjM2RjYWE4YmFhOWIzZDQ4YWQ2MDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlhOGI5Y2MwZmJmZGU2Y2ZlMGRiNjFlMTBjOGFmYTkzNzg4NDkxZTY5ZWViZGRhMjJkNWZjOWUzODkxODNlMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAyMzc1MjVkMDY1OTk4OWU5ZTBjYmUwMjYzYTJlOTRlODg0ZGRmZDliZmRiNGQxMDEyYWFhOTYwZGEzODg5NzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1df3c9811197442694ea20528dbbb780",
+      "statement": "Convenience handoffs map forecast and asset-signal results to prediction signals, while weight results can be emitted either as a long weights signal or, with as_context enabled, as a wide context frame instead.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/integration/backtest.py#L244-L434",
+          "version": "repo-lines-v1:sha256:1bb9af7df59dc3871f49f9025a1738e4c51dafdc76802c56732ac61ac8e37fad:eyJzZWxlY3RlZExpbmVDb3VudCI6MTkxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmYmIzNWMwNDFmZTkzMmFiODE4ZDg3NWVlOGU0MmJiZjBjNjI1YTkwYzRlMzRiMWQ4N2ZlOTUxZDNiNTI3MTVkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwZWZlMGMxYjhhOTZjOTVmMGZmYjI5MGZjMDVjOGU0NWZlZjkzMGVlYzkxMzQ0ZjljZTJmMDE3ZmY5OTUzYzIyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1NjkyNmJkNzRmMjkxYmYzMWUwMmYyOGNjZGZkODVmODA5NjIyNDNlNjZhZWU4N2I3NDE5OGRlZTExZDBiNmI1In0"
+        },
+        {
+          "resource": "repo://tests/test_integration_backtest.py#L152-L229",
+          "version": "repo-lines-v1:sha256:2d2cbd4875c28c805bc9f589525ef2cc1813e433135e156e1aeca2a4cf8a19b2:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllNWQ0OWU0YmJhOWI4Y2YxOTNkOWMzYmIwMmNjNzQ2NTIyM2Q1ODA5MjkwZjVhYWFmNjIzMDM4MGQ2MzQzMWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiOTgwODMwMDkzMDYwY2ZiMzRhZjBmYTFiMDRmYTJkZDMyNDE5YTgxNTgzYzllZGQzZTI2ODc5ODJhZDlhNjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3Njg0OTE2MjQ5OWI0ZWE2N2E2NTY2MTgxMzcxZTE4NzBiYWQ2ZmY5N2EwNGMyZjFhYjU2NzE5NGQyOWZiMGUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

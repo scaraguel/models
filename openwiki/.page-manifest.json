@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/model-families.md": {
+      "pageVersion": "sha256:2f3bdb44213ba89b650cf83fbda3211234eecf512230eb090df8536b43f2d48a",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/architecture/system-map.md": {
+      "pageVersion": "sha256:6d96f0d3d98fcc69eba36c95b588654358239ad3042c929807e6becac08b5852",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/concepts/contracts-and-public-api.md": {
+      "pageVersion": "sha256:9f2e680b7279012d66116b407f432e2904263362bd7126d124749c3fdc7a5f87",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/integrations/data-and-backtest-handoffs.md": {
+      "pageVersion": "sha256:49092bd8cfd1f5e85991bbf6a2f8d96518654b6a7808458bf7bdd29711fcb46b",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/operations/training-runtime-and-artifacts.md": {
+      "pageVersion": "sha256:4d82f09f4db266b0d4851a39b7f01c4cd2c8ed8eb341b6916c7c347315cf0596",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:24c650f37c1475e9b1391af29bea7a4894203571fc19557b270d7de46e0c22b3",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/testing/change-validation.md": {
+      "pageVersion": "sha256:002afd306285f2add31cf66f0d218d0e1a59f7e72703c0f8ac1291edf42804cb",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/workflows/latent-factor-forecasting.md": {
+      "pageVersion": "sha256:c92a9ae62d89db5b911a71940626acf38293c00db6e1a12e10b910c3168c902f",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/workflows/portfolio-learning.md": {
+      "pageVersion": "sha256:bdcc5498c7eeb833fba581486b448419b5ac45e2816854a3dbea557169b7f8d5",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    },
+    "/openwiki/workflows/stochastic-discount-factor.md": {
+      "pageVersion": "sha256:297c322045e420aa1d198299d03c7e5396a90afbb5104b25852d3bcf99a64532",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "352c1472-23fe-4a70-b206-b6b66d9fa503",
+      "gitHead": "5f988317bcec888fd034c8f27b04697a3505ac10",
+      "sourceFingerprint": "sha256:5e6b7a04f56f7a92893907690919e1e78193928b5c332074730e0d538056ec63"
+    }
+  }
+}

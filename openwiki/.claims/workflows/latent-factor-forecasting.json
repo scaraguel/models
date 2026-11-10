@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:c92a9ae62d89db5b911a71940626acf38293c00db6e1a12e10b910c3168c902f",
+  "claims": [
+    {
+      "id": "claim_6b13eea4a8694d3a8881e99705ff412b",
+      "statement": "LatentFactorForecastPipeline.fit first fits the structural model, then extracts a LatentFactorState from the same training batch and fits the factor forecaster on that state; predict separately extracts the target state, forecasts factor premia, maps them to assets, and returns all three outputs.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L37-L73",
+          "version": "repo-lines-v1:sha256:62707a703dbc254be7e9793872d060d31a6aec5d1cfeb1e62273acf1771a815c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRjNzJiNjczMjMxMjU1NmZlZjE1OGIxN2Y1ZmZlOTFjZGJjZWQ1YjFhNTU5NTNiMGNlYmFlODkwNTNjOThlMjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMwMDJjMTRmYTgyMDIxNGE2NTVkNjM4ZGM3NzRmNzdiYTJkYjNmNGU2YTkxNTY5ZDlkYTcwZDQwYWQ5MGZlNGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_10e55dddf57e496c9b5ea3b4124c5b4b",
+      "statement": "The pipeline's forecaster training depends on extracted training factor_returns, while prediction can operate on a target state without factor_returns because the built-in forecasters retain fitted premium parameters and use the target state's period count and timestamps to produce the horizon.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/forecasters/base.py#L32-L49",
+          "version": "repo-lines-v1:sha256:6828beb309185d3a9f8d72da49251fd095ad26cf5f145d3cb1de0ea0d2c444a4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4Nzk1MDY1ZTViZjhhMDNiYWVlYmNmOTBlYzYwZWEyMmE1ZjM2NzhmODkxYjJhN2Y0ODAyNjM2YjQ2NTI0YjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNjNDQyNTk0ZTJmNTU1YmFjOWZkMjllMjc3NzM0MDgyMjFkY2UxMjNjYjUwMGM3MDkwZGM4NjBiNGRmZjU2YmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5MDkwNTkwNzQwZmU3ZTg3MjJmYmZjYTdmMzBmOTE5ZjNlOTk1NDA3MjU4ZWRkODk4Mzk3NmYwYTM2ODQ3NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/forecasters/mean.py#L31-L64",
+          "version": "repo-lines-v1:sha256:df3d7be7ed221a7b642b455bb5159b439ef104da91faee602b8ee39f3044fc4f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczOWY1ZDc0YWM2YTIwMjI4YmM3NmFiNDk0YmRjNjQ4ZWU4YzAyZDc0ZTUzNDRjYjE4NmY1MGU1MmQ0YjAyNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzOGNiMjcwYWFkZTczMzRlMDdiMjA5MWNjOWFkNjY2MDk5YWRiN2VmMDA2ZWM0MmVkN2RlZGQ0YThkMzc3Y2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjMzk0ODg2MmQ5MWQ5ODg0MjVhM2UzOTk2NGVhNmEzNTI3ZGFkMTQ2MWQ4NzdmOGY4OTQ3ODRmYTQ2ZDc1OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxYWVjNzdhYzZiOTEyZDNlYTI2NjVkMWFiNmU5ZWFjNTRmNDIzMDViZWE1ZWE3OGJhZTIzMjI3MTJjOGMyNWQifQ"
+        },
+        {
+          "resource": "repo://tests/test_cae.py#L136-L177",
+          "version": "repo-lines-v1:sha256:a533eda032266db7e51c6fe8cc613e681e62375d4c65ab22121e0425e2c29638:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhYjE3NjBmMDg5NzZhODMzY2M0MzkzYTM0ZmJjNDM5OTkzOWM5MmQ5ZDk1ZThmZjFjNGFhNTNiMmU2ZWY2Y2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MDMyZTk2NGQwOTMyMzUxZTVkMTg1MjY5MjgxYjE3MWEzYTA5YjA4YjI4NmU2NjFlYTQ3MDMyM2M4MmViNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhYmU3Y2I0YjhlZTVjZjAzOWRlYzY0MzYzNmE5ZDI4NDU4ODFhMjk0MGU0Y2I1MjRmZjdkNzY4YjZhODM2ZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyNzdhYjczOGQxZjVjMGIzNDM2ZWU4NWZiNjgyNjIxMjMyYWNlOGQwMWQ4Y2IyNDZlNWM1NTdjOTVlYmUzODYifQ"
+        },
+        {
+          "resource": "repo://tests/test_pca_pipeline.py#L15-L48",
+          "version": "repo-lines-v1:sha256:3b8fb22dd7d7223782f5de9af7b60d50f227e9f2255f63b1edc5d0d1a3a82522:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzYjE0OTU5MmQxOTkzNzUyZGY2Yzk2MWU3ZDU2ZTIxNWUzMTc0MTE4YzMxNTljYWZmNTc0YzQ2ZjY0YWExNDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1NjQyZTg3NDFiN2U3Yjk4ZjRkNTZhMjJhNDIzNzExNmUwYzE4NzNjNTIwNDcyY2VlYjlkYWI3YTAwYTk4YTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwM2I4NTY3NzhhNzlmMjNkYzdiMjRhZTEwNGQwZGVlYWJjNWQ0NmIwYTczNTFiNWZjMjQzMGI2MzE1M2M1M2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fc87f5aad96e4d8fadf2bd680cd69cf4",
+      "statement": "PCA and RP-PCA require PersistentPanelBatch inputs and training returns, produce static fitted betas or loadings repeated over target dates, and reject non-None extraction checkpoints.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L171-L175",
+          "version": "repo-lines-v1:sha256:94906e7548093512cc7cc45337cbb9f7137fe94ca44001bc84ef867db748fe5b:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTliOGI5NjE3Mjk1MjNlNjJmNjg3MjlmNDc1NGY0NGNiYjhkNDg1YjFhY2E1Y2FkMWQ0OWYzNmE2MmE5ZDAwMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmFlOTEyOTZmYzQzMjY1MWRhMTU5ZjE0YTI2MWQ1ZDU1NjU3Njg0NjIyYjI2MmRjNzNlNzg5YzVlZGQ5NTJiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWE0YjMwMTAwNDIzMWVjNWMwY2MxZDZhYTg2YTYyNGI0NDlhZTNkNDU3YjJkYmE2MDZiMjk2NGFkNTUyOTZmNiJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L35-L117",
+          "version": "repo-lines-v1:sha256:bc825c557c4a06536775ac1e98dbc3f7e9e25e0678e0c24243acdcd2c7f80533:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2ZDFhNDAzMDE2OWVkMTUzNGQzNmZhZGM2ODJiZmVhODkzZDhkZDU0YzFhYjM2YTE5YjQ0OGI1ZmIxNmFiZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3YjJmN2RlZmUzZjk3OWE5MGY2YmU5ODQ5ZDE0OTUyYzBlZTljMzkxZjQyNmEwMzQwM2RiYmVhYjIwOWQ1NjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVkMTAxYjYwODdkODVjN2VlNjhmZGFlYmRlNTg1MjZjYTZlNzBlOTc1M2M5NzA4MWZmN2NjZTFhMjIyYjU5MTAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/rp_pca.py#L206-L210",
+          "version": "repo-lines-v1:sha256:f16be2f3db9cc481b9e765d8816977120571acb720a2a5e075b521a0de67614a:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWEzYTQ5YjkxNGZmMmI4MDVjNGQ1MmQyOWUxZjE1NDRmNjc4Yjc5MTBiY2RlYmQ0NGU3NTYxMzZjMmM1MWQzYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTFiMjZkOTEwNjI3NjQ3MGIxZTBmNWFmMzBmYjNhOWU0ZTZhZDRmYjgwOTNjMzgxNTE0YmZkY2I4MjkwZmQ2MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODU3N2MzOGNhMWJlZTFlYWU5MWYwNzllMWI1NTRhZWQwMGI0ZTQxNzlhN2NkZDFiM2U0YjAxODNhYmQyNmJmMyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/rp_pca.py#L38-L155",
+          "version": "repo-lines-v1:sha256:614a577416ba8e7fda8d0c891c6c1620e127d5414a460bba69501d05311acc51:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiZDJiNTIwNWVmZWU5ZDIwYjE1MDc0ZTRlYjgyM2I1NmFiOWE5ZTU5ODZjOWMxNjRmODJiNmRhNzQyMDY4MDRmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlZGY1MmY4NGRhMWEyOTEzZTRlNzM5YmY2ZTA1ZGJkZTZkZjNhYjc2NzE2YmNhYWI1ZDM5YmY0NDE4ZjI2YmZiIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzMWFlYzc3YWM2YjkxMmQzZWEyNjY1ZDFhYjZlOWVhYzU0ZjQyMzA1YmVhNWVhNzhiYWUyMzIyNzEyYzhjMjVkIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9143d6905cf3404cb1368600e61bdec4",
+      "statement": "For persistent PCA-family extraction, supplied target asset identities must contain exactly the fitted identity set; fitted state is reordered into target order, while omission of identities falls back to positional alignment.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L178-L192",
+          "version": "repo-lines-v1:sha256:33ea726888773bc53de2e1b1687a5a7bf8971457a7df28e8d5755f6d9163cb26:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0Yjc4ZWI4M2Y1ZTZlODljNWNlMzFkNTFkMDA5OTU2YjM2NDVjMzMzNTU3YWVlNjg3MTllOGEyOGYyNDZiZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3N2QzZDA1ZTA2ZjFjNTFmMDBmYjQyOTM1ZTNjMTY0ZWQ2MDBiMmNiNTQwYzZiZGU5ODUxYzY2ZGQwNjRkMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzNWMzMWJkYmEyYzZiZDUyMzRmYjA3OWViMDgwMjgyZTFkYTk4OGEzZjA1ODNjMGM0OGVhNDgwODRjNGU5ZmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L94-L117",
+          "version": "repo-lines-v1:sha256:de4784a768b0d80998534353e340b00fd0692eb609fc3342c9ed9cc2ae6f1a68:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjODcyYzgzMmZhZjQ1N2UwMGVjODYyODZkOWI2OTU3OWZiMDc5ZWU0N2I3ZmU2Mjg0ZTNjNTI2YjA2OTRjYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1YzJjZTkyNWM2ZWM0NzY0MDU0YjdhMDcxODkzOTk5MGNiMGZjYjhjNjAzOTM2YWE1NDEyODFkMGU5MWM3NTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVkMTAxYjYwODdkODVjN2VlNjhmZGFlYmRlNTg1MjZjYTZlNzBlOTc1M2M5NzA4MWZmN2NjZTFhMjIyYjU5MTAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/rp_pca.py#L124-L156",
+          "version": "repo-lines-v1:sha256:ad38a59f5fb1368d352c9a736d5bd19d90e6c7fc89d05a78d06e9e093365f7d1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4YzFmYjAwMGY5OWUwMmVjOWY2ZWIwMGUxZTg0ZTE1ZjQ4MGU2Mjk2MDE3YjY0NDc3NGExNTQyYWU4NzYyMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0OTcxYTQ1Yjg3NDA0ZWRiN2U0OWEyYTI3MjFlYWQ0YzkzZjBlZWJlMzZiNDMwMTAzNjIzZGYwZThhNjM4YTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiMDIwZjU2MzRjMDIyZTU4NDdlNGU3M2UyNmM0NWJkNTJiZTk0YzdkODMyYTI2ZjBjYWFkMzE3N2JhMWVjMzAifQ"
+        },
+        {
+          "resource": "repo://tests/test_pca_pipeline.py#L69-L109",
+          "version": "repo-lines-v1:sha256:5326eb46be6c3144b2a25aad4cc263803bd7c4b86122974bdf6e93d50a6e0154:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5MDM3ZTE1NmZjZDA2NmFiMmI5NGZiMzk1NjlhNzA0NjkxODljYzBkMDc3M2RiZmJkYTdiZjhiN2Q4ZjVjZDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a896de898d4549979ee49c46ca2c2a33",
+      "statement": "IPCA requires CrossSectionBatch, fits characteristic-instrumented betas and date factors by alternating least squares, and can later compute masked target betas from characteristics alone while leaving factor_returns absent when target returns are absent.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/ipca.py#L178-L268",
+          "version": "repo-lines-v1:sha256:f1c69ae2e8c10181183d8e2ded25f0ed48e21e6509c81f076c78fabd23535638:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiYTBjMDIxYjEwODMwNmVmOTJlYTQ4NTNiMDBkZmZmNzI2MjA1NjQ5MmI5YmY4ZTMzYzIxMmJkZDc0NmY4ZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MTc1NTY4Y2I1MjRlYzU4ZGE0YzNiYmZlOTkyNmU2NzJmOGVlZGZmMGEzMDRkM2NlZmM3MzI0MzgzNGU5MmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiZDU5YWRmYWI1YzIxNDYxMjZhNjUyZmE1NjM0OTMxYWY0NjM4N2ZjMzlmYWFkZjcyZTcyM2I2NDFmM2M2ZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2MmVkY2QzODIzYmE0NzBiYWVhYzM3Y2NhZjhkYjAyOTQ1NWNiNzlhODc5MjU4NjdmMTg3Y2VlN2EzOTdmNjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/ipca.py#L48-L176",
+          "version": "repo-lines-v1:sha256:1c006a07f5f8aa788d3bb7bb85220b9a17df286393a5ece1f69c71f57b7aa106:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmM2QwMGNmMjcwOTY0ZDQ0YTEzZGZhYzg3NTJiMDlmY2M0MzViMGYxOWIzMTZhYmNmODFhN2FhNjRiYjEyMmQ2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkNjQ4NjM4ZWQ1NGQ1YTE4ZTQ1MTg0ZmY3ODAxNWIxOTRmODU5NWJmNmUyYWJmNzllZDIzYzE0MjBhYmRiNWFkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyY2RlOGYyNDhkYTc5OWI3OGQ0N2UwMzc5MjIwNmI4NTBhODRkMjhlOTI0Y2JlYzc5ZWZlZTBhNzI2ZDA4YmZmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4ZjJiNGE0ZmEzZTQyMTY1MzI3NTM3NTlhZjBmZTg4YTFmNGQ5OTViMDAxMzM3OWI1YjE0NGNkNjFkZDZhODNkIn0"
+        },
+        {
+          "resource": "repo://tests/test_ipca.py#L48-L87",
+          "version": "repo-lines-v1:sha256:5370d400f162ea3d474a8015111efa83931277a66a46cfc12f09a7a5fe6dccf4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1ZTFmODgwYTM3MzlhNzZmMThlZTAwYWU4ZWYzOWQ4MmRjZWNhYTJkYmM4NWVkYWU3MzRmOTg2YmM1ZDQyZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIwMmViMTA3Y2MzMjRlOTE0NWIwOTk5NzlkNmFjYjYwZWYyNWQ4MTgxMjRiZGYwZDUwZGJiM2UyMGRjOWNmZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk5ZTQ1NzM1MzM2YTcyN2ZkMzBiNjVjM2IwOGU0NGJmODA2Mzg5MjRlZmExYjIwZTQ0Y2FiYzFjYTU3ZjQ0ODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2ZDg1OTNmZGEwY2ExOWU0YWU4Y2NlMDgxMTI4ODRmMWFjNmIwYjcyNzc5MmIxZmIxOGM4ZDdhNzE1ZDg1NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_54f41c8691af415eb245bc015a52a0ed",
+      "statement": "CAE requires CrossSectionBatch and training returns, builds managed portfolios by date-level cross-sectional least squares on characteristics plus an intercept, and can extract ensemble-averaged future betas without returns; classification additionally requires the alternate continuous factor_returns panel for managed-portfolio construction.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L38-L59",
+          "version": "repo-lines-v1:sha256:2ac207ee0f4e0f1b84671dddceede8470e7032ab8b4fb1c77c54b2cf51e52234:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlMTI4MTE0NTE0NjA1MTJhNjYwZTU3ZGJhZjQ0ZWM5ZWU5YzdiMDhmNTYzZjIyODVhOWZlNWU4MGJiNTAxZGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlZTBlMDE0MzE3OWExYWY2NjAxNTEyZTg5MzY4YzllNTc4YzNlODMwZTYxYzk5MjdlNTI3YjA0ZWNjYjc5MGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L273-L352",
+          "version": "repo-lines-v1:sha256:d58189047a1287b814a965247d713205fc05f84ecdb36fd249ecc72b6d19f88d:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxYjVhZTA5YTEyMTNmZWUyYmZjOTliMWVhMTY3M2Q1ZTczMjgxNWQ1ZGE3YzM2MTNiZDE5YTBkY2Y3NGRmN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkMzE4YjMyOTI3MGQxMTgxZjQ0NzQxOGJiNTRlMDY4MTk5NjEzOTA0OWQyMGVlZTJhODJlYWIyNDE2NTkwMzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3ODI0YTAwZDllOGQwNzNkMTM4OTkwYWE3MTk0MmRlOTk1NjgzNjBhNmRkNjEzZmExOWEzNWNjYTU0MTdhZGUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L522-L550",
+          "version": "repo-lines-v1:sha256:273f4cf3c4883d91b3d42553e29c00a4e69ace7c26091b663ae8ad611c0e8ad6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmOTI4ZTk3NGQyNzY4NGNiOWUzNTNkMjU1ZmY3NWJlZmFjZmYwMTk2NDEzZTAzZDZhYzkwOGU1OTJhODMxMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NjM4OWE2NGUwNjk1MjczODczNjAzYThkYjc3YjZjYzQ1YzI0M2Q2M2ExZmVlN2IyYjE2ZDJhYjNmMmY2NzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhMDE4MjY0NWFkOWJkOTU3ZDFmZmJlYmRjMjE3MmNhODAwMTY3MzMxODBhOWNiMDBiZThhNjhmMzMyYTIyNTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhYTljZTgzNmY0N2JkNTJmNjcwYWUzYzc2NmE0ZjkzZjdiNDZkNTljMzMwNzFjM2MwNDRlN2E3ODk3MGY4OTIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L55-L110",
+          "version": "repo-lines-v1:sha256:633b3eac4649918ae982439e459188476e24eecf5719364ae5e8f7ae18ef815c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwZGM1MTM3NDJkMzk2NWUyN2NjZmNjMjgxNmNkYzBkMTc0MzU0MDM2YjFiOGNiMWVjYWJmYzJiOGMzNjZlYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4NzhjOGM2YmIyYjFlMjdhOTAzMzk1ZGIxOGJiNGNlMGVlYmVjYjI0YzMyYWMwN2UxMTMwMmI5NDNiMTA0MzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3ZWQ1OTgzMjJiMTZiMWU1MGQ3MmM3Y2Q1NWQ1YWU0MDlhMDVjODZjOGZiNzlkYTNiOTJkNThmOTZiOTcyZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3OGVmZDI5ODZjM2VmMGU3YWEyM2ZkYTk5ZmQyOTBkZjM0MmE1NjI3YWIwY2VhOTIxOTA0ZDUwYTdjZTI3MzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_78a77f6438f646a5946e852abbfbf100",
+      "statement": "CAE stores reached scheduled epoch checkpoints per ensemble member, stores validation-best member states at checkpoint 0, defaults extraction to validation-best when available or otherwise the configured/latest checkpoint, and rejects checkpoint selections outside the available set.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L62-L110",
+          "version": "repo-lines-v1:sha256:de655bcf44377a406e2b7431ae6e0f2a9cec2289026b7cc54b2200013a0d77db:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MmFiMGZjY2YyOGYzYWMyODVkY2I4ZTIxZjYwYmVmODI5Njg0MTRkMDQ1Yjg5NzhiMWFlMjBiM2U1MDkyY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1MTJmODkwMDNjNjM3MWYzMTg1M2RmOThhNjRhNThhM2I0NDllNTY5NjU3YjBhN2FlZTE4NzQwZDY1NTBhZTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ0NDg3YThlNDM3MzFlYThjOTkwYzZlYmIwMzg3NTMxNzY2NjkzOWEwYzAzODgwYWY2NjNlNWY5YzRhZmQwYmYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L129-L249",
+          "version": "repo-lines-v1:sha256:ed5ca8711c5fe44bf0e89d0a97456a0c2e903a4fa8d38ad38e4f196aebd8a79c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmN2NhN2VmZTI3NGRjOWIzYzYxYzNmOTkwNjNhZmI4YjM5NjJmZmUzMjZiOWZmNDJlNDM3YzQxYjc1NTVlMzZmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3YTBhNTFhZjQ3OGJhZTJkNmIwYzdiMmMxNWI5MDIwODEwZTNhNzYzZDRkZTM4MTRkNjBmMWQ5MDYyNDg4MWQ5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1NzRkZTg1MzcxMTU3Y2UwYTU4M2E5YzNjMjBhYjg1MDY2ZDFmNWQ1YWQxYmJhZTRlZDNmYWJhODhiYTc0NWUyIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L273-L327",
+          "version": "repo-lines-v1:sha256:e129101ac32b03934ad003b7328f4eb4de315f98e26bc4bc7fb4753aefd84c19:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjN2RlM2Q1MjhiNjg0MTZhNWU4NWE0MzgxMjhlYTEwYjk5YjQ1ZjJlNTQ3ZDY0ZTM0N2VkYTRiMGUxNmUxY2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkMzE4YjMyOTI3MGQxMTgxZjQ0NzQxOGJiNTRlMDY4MTk5NjEzOTA0OWQyMGVlZTJhODJlYWIyNDE2NTkwMzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjOTk1N2I2ZDdiZjJmNmIzOWY5YjRkODM3ZTM0Y2M3NjVlM2ZkMGM0NDJlYzhmYzgyODg0ZDMwMTBmMWRjYjIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L76-L82",
+          "version": "repo-lines-v1:sha256:143501a09db22fcfb10a4b097b69282ae670d0df26125df89458bfbd4be2fa9c:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTkwOWE1M2E2MThkMDI4ZTFkMzAwMGMwYTdhYmNlZWNiZTVmYjM3ZjRlNTExZWZlNDY2NDNmYWQ2ZTY2ODcyZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTc2MDA4ZGM0MjMwYjkyMTYwZjgzNzZjMzFmNDg2OWQzNDRhZTRhMGYxYWYwNDlmZTA4MzljOGUzMmI0ZTE1ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2FkNmU5MWE3OTJkZjI2YjRkZjUxZjE1Njc3ZWUwNWIxZjk3YTQ4ZTZmNDllM2QxM2Q4NTIwNzBiOWMyN2FhMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTJjYzAyNzY2MmI1NzVhZjdkODExOTdmM2Q3MGUzN2Q3NTVhYThlNTk5NWU2MmM1NGQwZDhjN2M2NWRiMWI3NCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a1c1bebae3e34f62bdd6cb4885c59431",
+      "statement": "Because pipeline fitting extracts CAE training factors at the model's default checkpoint but prediction may request another checkpoint without refitting or rotating the forecaster, checkpoint basis consistency is an orchestration responsibility.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L236-L244",
+          "version": "repo-lines-v1:sha256:be5569689796e4ea79cf92b0a215236efe9d3ce75b8081fc801dbb52326f6067:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzM5OTA4NTM4YzlmNWVkYTIwZDUyMjQxM2EyMjNiOGM4NDljMzUyYjhmNTA5MTEwMDIwNjk2OGE2YmRjYWFhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTc0ZDQ2ZDQ2YThlOWRmYjdjMDU1MDBlMDUxYmRhMGE4NDU3ZTg5YTRlYjkwMzUxNTJlM2IzNDBkNjM4MjljNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjQ2YTAwOTFjZWI1MjExY2MyYTE1YjFhNDk1OTBkMjQzNDE4MzM5MDkyNTJkYmQyYWVmYzA5MjljMzg0YTA4OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDY4YzExMTY3ZWMwODgwZDg3MGIwZDdhNjhhZTIyMDdmN2VkNGZiZTg0MmNjNDIxNDJlNGE0MTYzODlhOGEyMSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L290-L327",
+          "version": "repo-lines-v1:sha256:edd58178c17c95e0e6321c5d6c867cce4ab169c773e7a652986a1489fc454a22:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MDMyZTk2NGQwOTMyMzUxZTVkMTg1MjY5MjgxYjE3MWEzYTA5YjA4YjI4NmU2NjFlYTQ3MDMyM2M4MmViNGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjN2RlM2Q1MjhiNjg0MTZhNWU4NWE0MzgxMjhlYTEwYjk5YjQ1ZjJlNTQ3ZDY0ZTM0N2VkYTRiMGUxNmUxY2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjllODY5MTAxNWZhZGIwMDgzYWY5YmU0ZTViNGE5MDY2Yzk2ZDUwOWY0ZDg2ZDQyNjZiOWJjODMwZGE5ZDg0NDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjOTk1N2I2ZDdiZjJmNmIzOWY5YjRkODM3ZTM0Y2M3NjVlM2ZkMGM0NDJlYzhmYzgyODg0ZDMwMTBmMWRjYjIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L49-L69",
+          "version": "repo-lines-v1:sha256:58b46a5f3953b2d05cfb34c1943b604d2be01fabcb7a2b7c5c4af3acd0710ae0:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNDE1ZjA0ZGJjZTVkOTExZDRkN2ViZDA1ZjFmZmE3Y2EyYzViZDk3MGJhMmQyNjc4NjNhNjMxMGQ3ZTc1MTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2ZGVjYmMwZmI1NzZiMGY5YTQxOWIxNmEwMGJlNGE1Y2RlZDQ5ZjJjZmMwM2MwZjIxOTYzMWRmYzM2MGViNjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhMjIwZWQzYjk2YWM2MWJlZmUxOTkzMDQ2YWM1NDAyNGIyMjA0NDM5ZDNhODMxYjMyZDViMzdhNjE1NTdhODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0Yjc1YzhhMDQ1ZjM4N2EzMjA3YjZkMDY2NjQ3NzM0Yjc1Njk4M2QwYWU3M2QzNmFmODg4MWE2MTEwNTIyNGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fc9ff9d836274ae395c7edea26fd8e4a",
+      "statement": "The built-in premium forecasters respectively retain a historical mean, a terminal EWMA level, or independent AR(1) parameters and last values; mean and EWMA broadcast constant horizons, whereas AR(1) generates a recursive path and uses a mean fallback for insufficient history.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/forecasters/ar.py#L35-L112",
+          "version": "repo-lines-v1:sha256:1f97f63292b165ca4ba0935de071d198fd83de8f6b078f01462cc2b819466fd3:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzOGNiMjcwYWFkZTczMzRlMDdiMjA5MWNjOWFkNjY2MDk5YWRiN2VmMDA2ZWM0MmVkN2RlZGQ0YThkMzc3Y2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3NzgzN2I5YzMwNjA0NzcyYzkxYTZkZjBiMDE4ODYyOTFlYzFmYmI2MWJiNDg5NDE0ZDZlZDA5MzdhNjE0NjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxYWVjNzdhYzZiOTEyZDNlYTI2NjVkMWFiNmU5ZWFjNTRmNDIzMDViZWE1ZWE3OGJhZTIzMjI3MTJjOGMyNWQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/forecasters/ewma.py#L31-L70",
+          "version": "repo-lines-v1:sha256:ba4fe41f5307ae8e74590d55e494cda153358630ce1595e533e8fb7c77fb6334:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjMDFkMzQ4OWVkNDc0NGVjYWNlMDk2MTg2MDQ4NDMwNWQ0NzU5NWM2NTdmMTFhOTBlMTZiN2Y2MWI2YmNkN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwZTk3YWRiZTNmY2NiNmMzNWFjMTkwZjZjOTkxODczZDk3Y2U2YjFjNzBlMzJjZGQ3MzY1MzM1NGNkMGMxOTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2YTkwZjMyYmFjODZlNDA5YzYyYzU2MWYwYTgwNWFiMWZlZGY3NDA2YTdmMjAxOWFiZTdlMTU1OWI4ODcyM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxNDFlMTk2YTQ2MWZkZjQwNTMyMjQ1ZTQ4NGY2MTdlN2Y5MWI1YjExZDhjYzc1Mjc5YmQ4ODQyMjNjZmIxNTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/forecasters/mean.py#L31-L64",
+          "version": "repo-lines-v1:sha256:df3d7be7ed221a7b642b455bb5159b439ef104da91faee602b8ee39f3044fc4f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczOWY1ZDc0YWM2YTIwMjI4YmM3NmFiNDk0YmRjNjQ4ZWU4YzAyZDc0ZTUzNDRjYjE4NmY1MGU1MmQ0YjAyNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzOGNiMjcwYWFkZTczMzRlMDdiMjA5MWNjOWFkNjY2MDk5YWRiN2VmMDA2ZWM0MmVkN2RlZGQ0YThkMzc3Y2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjMzk0ODg2MmQ5MWQ5ODg0MjVhM2UzOTk2NGVhNmEzNTI3ZGFkMTQ2MWQ4NzdmOGY4OTQ3ODRmYTQ2ZDc1OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxYWVjNzdhYzZiOTEyZDNlYTI2NjVkMWFiNmU5ZWFjNTRmNDIzMDViZWE1ZWE3OGJhZTIzMjI3MTJjOGMyNWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5354ab71c79047ec811714afbfb65432",
+      "statement": "BetaLambdaMapper validates agreement on target periods and factors, computes expected asset returns by contracting asset betas with factor premia, and propagates timestamps and asset identities from the structural state.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/mappers/beta_lambda.py#L12-L41",
+          "version": "repo-lines-v1:sha256:4ac0053e40de82f20518d0ccdd967ce444a22f3a5ed13ffbc0d4cf902c7e4771:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlYjMxNjBjZmRmODhkODg0MDY2NDZkNjg0ODZhMzQ2NDE2Y2UyNWEwYTc0ZTI0NzMxMWJmODJlOGFmMjU2NzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMwNjY2YTRjZWQ1NDIwNzhiY2UzYjE3OGM5OTdkZmZlNzY4NTYzNTQ2MDc3ZDJhYmExZmE1N2Q0ZDE5MzdlMzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0464760e598843edb07853f6c1b9f463",
+      "statement": "Typed latent-factor contracts enforce asset_betas shape (T,N,K), optional factor_returns shape (T,K), factor-premium shape (T,K), expected-return shape (T,N), aligned timestamp lengths, and unique non-empty supplied asset identities.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L333-L390",
+          "version": "repo-lines-v1:sha256:e8e34b83b3fa1c4fcb9b909e7273fb11d7acd69f39a6418c7933f99b496697ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2ZGYwZTEyN2QxZjQwYmRiNzkyMTVkNWFmOWE2YzIzN2FjMGMzMDYyYTkyNTc1ODEzYjY1NWUwOTM4ZjFhZmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0YjdjN2ZlMDU3ZGQyZDc1N2NlNjNhMmI0NDQ2YjY1ZDgzNzZkMDBiNDE2M2RiNGIxNWRhMWIyY2NkMDQzY2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ5MmJjMGY4YTdiN2YwODExZmY1MDk1Njc2MTIzYWQ2YjA4NmRiM2NlOGRjYThjN2IwY2Y1Y2I3MWNiZWUzNjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0ZmY3NWIyNTZjOTAyNTdmNzU0ZmEzMTQ5Y2NkNjQ5MWJkMDhkN2U2OWZkNGJmNGI5NDYzZGNiYWM3M2RmYjYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L393-L430",
+          "version": "repo-lines-v1:sha256:a45eea83e6a2de4d14828ca5dfaf102bffbd2058b5fa9fe7d02e3907314c0d71:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiOWQyNTY1ZjQxMzhiZGFjNTViZjc4ZDk3MDNhMDIzZDhjYWU0ZTEzMDkyZDBjNmE5ZTIwNGYxNzlkNTU2ZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJkNzFhNTQ3NTgxZjNmNThjOTY5NzlmY2Y1NDE4MTA3YjY2YzUyNWUzNjk5ZmQ2MTk1MjgxM2Q3MTAyNDgxOGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhYzRhYmViNDI4MWMwM2M2ZTM5MTE5ZjllOGVhNWFmY2I1ZTJiOTZlYzVhMDA5YmVkNjk2ZjUxMjljODliYmQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L50-L67",
+          "version": "repo-lines-v1:sha256:65b1d8095b90911b3b52143fa5b9fbb2e562bd359a2a2789965660b287b518db:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjYWE5NDg4Yzc3NjMxOWQyMmMxZDMwYWIwZDEyYmMxNzkwOTcxYmU0YTUwODc3YjI0ODBiZTA1MTU1ZGM3OWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5Y2U1OTMwOWZiMTI2MGZkZWY2NGNmZjdhNDAwYWY0YWRmYzkzMmZmODc0NmVlZTUyMjc5OTAzMTRjYjI4YTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjliNzIwNmYxMjBkYjg3MzQyYTdhZGVlMjYxN2JkMTIwNjNlNzQyNjFjNWM4MDAxYzQ3Njg5YTRhNzNiMzIzZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhZGY1Y2M1MDRlNTlhYzhkNjdmYmYyZGNlNmFmZThhMDRkM2FmNTg2ZjUzYmM5YTIwMGU0MTc5NDkzOTY4NDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_05c9ab8f0e3d48399df70c3a772919d2",
+      "statement": "LatentFactorForecastPipeline.fit forwards only the training batch to the structural model, so CAE's validation_batch and patience controls are not available through that pipeline convenience method and require explicit stage orchestration.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L54-L75",
+          "version": "repo-lines-v1:sha256:ff6ce6caa8b574bde19c4536b40e86004ce6adfa1339bde17a70fefa92ea1dcd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjMGViMTE2OWYwMmY5NWJkMjc5ZWJkODliZGE1NzYyZjkzNzg0OWJlYzEwZTdkY2I5Yjk0Yzc3NTBlOTc3ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkM2ExYTg1NTY2ZWM5YzM5YjdiNzAzYzI4YjgxYTZlZWE0YWI1OTQyNmVmNGU3M2IyNzA1N2ZkNTIzMTlhMDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmMjc1MzA1ZTQwYzgxOWNlZjA3NjJiMmRjZTdhYjg2N2QzOThkOGNjMDgyNTJiZjYxMWQ5YzM2N2E1Nzk3MGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzYzMxMjdmMGRmMDQ0YmVhNTE5ZGJlYzQ0YmJkMDViMWFlMzZiMGY2OTI1ZmM3YmJlMjBiNzdmNzdlM2NkN2IifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L49-L57",
+          "version": "repo-lines-v1:sha256:f43ed8373747fba61f4488efb564d4d7a5ff94b4a52cb96a964470cd8d724c99:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWY0MTVmMDRkYmNlNWQ5MTFkNGQ3ZWJkMDVmMWZmYTdjYTJjNWJkOTcwYmEyZDI2Nzg2M2E2MzEwZDdlNzUxOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTllMmE0NjNkZTk0ZWNhMTQ2MTVlNDQwOGZiMmFkZTE1YmQyNzA5MWIwMjYxOTkyN2JiOWI4OThkYmIwMGYxMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmEyMjBlZDNiOTZhYzYxYmVmZTE5OTMwNDZhYzU0MDI0YjIyMDQ0MzlkM2E4MzFiMzJkNWIzN2E2MTU1N2E4NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmI2OTQxY2UxMjdmZTkwZDVmNDQ3ZjJiNWEzNjM3ZWNmMDgyYTRlNjJjZTE5MmQ5YTk2YmVlNjdjYzNiZmU1ZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9cafd9d5246c4043809e9aefa4e34a8d",
+      "statement": "CrossSectionBatch represents dated slot-based cross-sections with required three-dimensional characteristics and optional aligned returns and masks; IPCA and CAE derive target betas row-wise from characteristics rather than enforcing or reordering against a fitted persistent identity set.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/cae.py#L273-L352",
+          "version": "repo-lines-v1:sha256:d58189047a1287b814a965247d713205fc05f84ecdb36fd249ecc72b6d19f88d:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxYjVhZTA5YTEyMTNmZWUyYmZjOTliMWVhMTY3M2Q1ZTczMjgxNWQ1ZGE3YzM2MTNiZDE5YTBkY2Y3NGRmN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkMzE4YjMyOTI3MGQxMTgxZjQ0NzQxOGJiNTRlMDY4MTk5NjEzOTA0OWQyMGVlZTJhODJlYWIyNDE2NTkwMzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3ODI0YTAwZDllOGQwNzNkMTM4OTkwYWE3MTk0MmRlOTk1NjgzNjBhNmRkNjEzZmExOWEzNWNjYTU0MTdhZGUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/ipca.py#L178-L268",
+          "version": "repo-lines-v1:sha256:f1c69ae2e8c10181183d8e2ded25f0ed48e21e6509c81f076c78fabd23535638:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiYTBjMDIxYjEwODMwNmVmOTJlYTQ4NTNiMDBkZmZmNzI2MjA1NjQ5MmI5YmY4ZTMzYzIxMmJkZDc0NmY4ZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MTc1NTY4Y2I1MjRlYzU4ZGE0YzNiYmZlOTkyNmU2NzJmOGVlZGZmMGEzMDRkM2NlZmM3MzI0MzgzNGU5MmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiZDU5YWRmYWI1YzIxNDYxMjZhNjUyZmE1NjM0OTMxYWY0NjM4N2ZjMzlmYWFkZjcyZTcyM2I2NDFmM2M2ZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2MmVkY2QzODIzYmE0NzBiYWVhYzM3Y2NhZjhkYjAyOTQ1NWNiNzlhODc5MjU4NjdmMTg3Y2VlN2EzOTdmNjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L113-L180",
+          "version": "repo-lines-v1:sha256:da6659a7474fb3d5bf6893e4176631f498d271fbe06d50df6948e5acecd9b6c1:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwNTE3YmFlNjIzMGIwZGMwNzFkMDMzZWYyNDk5NWYzNDcwMzdlZDczYzllMjkwY2Y5YmRjYzJkODdmZGFhZmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjMzI1OTQ5ODAwMDZlZDg2MDFmNmI3OGE4ZjcyNmQwY2ExNTU5ZjdkZmZlZDg1MTM4NjNlYWVjOTQxYmNmMTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM2NzM4ZjgyNTliMDNkYmNkYTE2NWRiZTY0OGRkMWE1ODYxYzVmNTI3ZDU2ZGJiMjE4NzAyNzZmMDk4YWM5MTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY1ZWIyZjJiNGIwM2YxYTQ3NmFjMjdmNWRhNWNiZTExOWQyNDI2YzJjNmRmZGI5Zjk3NTllNzk1MWE2Y2VkMWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e451fd28a51a4d8b935a243a2525f169",
+      "statement": "The pipeline has no aggregate persistence API; structural models and factor forecasters expose their own save/load artifact boundaries, so a deployed pipeline must be reconstructed from paired components and a mapper.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/forecasters/mean.py#L66-L98",
+          "version": "repo-lines-v1:sha256:d0d680aba79de42724ca8f17caf60b32153e0f8ee4b48e3fd1753aa99c4243b9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiZmVlMzE5NzFjZWI2NDNhOTkzNmE1NzZhOWE1N2I1MGVkZmZmNzVjYjE5ZDAxOTk3ZTA5ZjE5Mjc2Njk0MDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiMWQyMGVhYzQ2MzE2ZmU3YTRmZjVhMDZhZmViMGJlOTQ2OThkMGJkZTU0NDRkZDIyNzcwMWI0YTNjZTdjYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L119-L168",
+          "version": "repo-lines-v1:sha256:de208361c795a6df7e47717f7e354debd9e5bc66f8132de8302ce6f3577480a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyYzFlMzI3ZDVkZWI4OGNiYjEzNmNiNWJmZWI4OTM5NGEzZWE5NWFmMjZmODZhYWFiNDg0NTY5MGJjMmY0ZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5ZjJmODc1YzFiYmVmNTk4NGE1ZDBkZDdhZWEyYmRjN2M0NWQ3MTc0NmFmNTNhY2E0NzQxODBjOThlNDI2YzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlMjVjOTNiYzdlMjhiMjY5ZDVmOWJiOGViOTNhMjkzNTM3OWYxOTBiMzIzYjM1MzhjYmViN2RmMDZjNWI3OGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxYjI2ZDkxMDYyNzY0NzBiMWUwZjVhZjMwZmIzYTllNGU2YWQ0ZmI4MDkzYzM4MTUxNGJmZGNiODI5MGZkNjIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L37-L73",
+          "version": "repo-lines-v1:sha256:62707a703dbc254be7e9793872d060d31a6aec5d1cfeb1e62273acf1771a815c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRjNzJiNjczMjMxMjU1NmZlZjE1OGIxN2Y1ZmZlOTFjZGJjZWQ1YjFhNTU5NTNiMGNlYmFlODkwNTNjOThlMjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMwMDJjMTRmYTgyMDIxNGE2NTVkNjM4ZGM3NzRmNzdiYTJkYjNmNGU2YTkxNTY5ZDlkYTcwZDQwYWQ5MGZlNGYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

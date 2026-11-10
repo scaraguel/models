@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:297c322045e420aa1d198299d03c7e5396a90afbb5104b25852d3bcf99a64532",
+  "claims": [
+    {
+      "id": "claim_044992434d174028b464b374dd95fe99",
+      "statement": "StochasticDiscountFactorModel trains a weight-native structural model in three ordered phases: unconditional SDF optimization, adversarial moment-network optimization with the SDF frozen, and conditional SDF optimization with the best adversarial moment state frozen.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/stochastic_discount_factor_nn.py#L204-L271",
+          "version": "repo-lines-v1:sha256:cb8617398685639edb00d102d3fffe5cc6aef7fbde8d34a3008fe65a0842dd31:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMmM0ZmYxNzkxMzAzN2RjNTc5ODAwNDg5MGExMjhkMGQ1MzczYWI4MjQxMTY1NDI5Y2IxNWRlMTU1ZGI1ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyNzc2ZWZiMTBhMzdiNDJhYThkZTQxODA2ODJmNTY5MDJmNzc5ZjBmOWQ4NGQ1MjJiMjk4MmJmZmFjY2NiNzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxZDU2MjRjODBlZjNkZWE2Zjg2MmIyNjMxNWQ0YWE2ZTFhYzJlNDIxZmE2NjIxMDljMDllMmM5NWU4MWQwZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1MDMzZmJhNTQ5MTFlOTM2ZWYxMTk0ZjM1OWVmNjhhZDc2OTFkYzg3YTYxNDZmNWFiYWYwOTY3NjY0YmUwMWIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L64-L299",
+          "version": "repo-lines-v1:sha256:59ac4b22a7858afa379583df604003dddaecb619314af2261cfedeab28b2350f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjM2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5NDNhNmQ4MTEwN2ZhYzgxZTUwZmQ5Y2MxMTY2ZDQ3NWY2YzNiYThjYWQyMWVjZDc3OTFhMjFiMmMyZTRjODM2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjOTRjNmRiNWNjOWFjNDhmNjIyZGIzZTNjZTgyMGQ0MzVmYzZlMzFlYmY5Mzk1NjYwZDNhYzJkMTJmOWM4MzE4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0YWVlNjMyNDgxODAwMGI3MWI1NGY2YWQ4Zjg2ZGRlYWU0YTNkMzBmMDIwNWY2YTk5OWUzZGU2NTMwMWIzYmMxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0ZGYwNjZjNWNmNmE4MjdkMjk4NDMzZTEyYWUyNTIyZjg4NGE0OGNhNGU4MGFjNmZlNzQwMTY3YzEzNjhlMmUzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_42931de7fbd14c10868c24f8c5305c8d",
+      "statement": "The SDF is constructed per date as one minus the cross-sectional sum of weight-times-return, and both unconditional and conditional objectives mask invalid observations, normalize moments by per-asset valid counts, and downweight sparsely observed assets.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/stochastic_discount_factor_nn.py#L195-L271",
+          "version": "repo-lines-v1:sha256:2adbb65feeed5d0a8997de4ae10c072818354b02670e74d30278ce32eb7d90bd:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2ZjY0MzliMTdiOTY4ODg0YTIwMDc0ZGY1OWM2NTAxZWMzNzZmNjE5MmM4YmMxNzYzYWZiNjEzYThmMGE2YTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyNzc2ZWZiMTBhMzdiNDJhYThkZTQxODA2ODJmNTY5MDJmNzc5ZjBmOWQ4NGQ1MjJiMjk4MmJmZmFjY2NiNzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4OTkyYWU0ODg3NDM1Yzk5ZTNiZGIzODI4YmI1N2YxN2I5ZDk5ODAwNjE2ZDIzMmUwYzgwMGRlYjlmZTdmYzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1MDMzZmJhNTQ5MTFlOTM2ZWYxMTk0ZjM1OWVmNjhhZDc2OTFkYzg3YTYxNDZmNWFiYWYwOTY3NjY0YmUwMWIifQ"
+        },
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L96-L131",
+          "version": "repo-lines-v1:sha256:f2b4430b633e112faa25e390554ee9a786175daa5eeb60615d142caa7c81088c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzYjM1Y2E0MWZkMjZjMTA1YzY3MGI1MDAwOTAwOTUwZmE5MWQxMGM5NjBiOTNhZmMwNWE4OWYzNDdjOWFkNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY2YmQ4MThkNjQzOGY5MjA4ZjQwY2IxNGRhOGIwMThhOWM5NGZiY2VmZWQ1NTVjNzFlNmJhZjEzOGRiODAyZmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_17c741b46fd0449f8a3f90ccb2f75194",
+      "statement": "SDF training requires returns, and its effective observation mask intersects the optional batch mask with finite characteristics and, when returns are present, finite returns; training and validation reject panels with no valid observations.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L493-L501",
+          "version": "repo-lines-v1:sha256:7df18c840543f5dc5b17837fc24e0fad5794776c324435d412ff746c4c481be6:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjA4YjUzMzQ4MzU1MTgyZjNlOWFhNzkxYTE3Zjk1MzI2OTQyMDQ3YjAyY2IxMmY5MmE3YzhkM2E3NjEyYWY5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWY4MzBjZjkxZDgzNmEwYTIxNmEwMmQzZTY3OTVmOWZiMzFmMzhlMmMzODM5NGU0MjRmM2MxODFlOTk2ZWQzMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTI4NTI2ZjgwYjNmNDZhYWU2MGU0N2Y3YTkyN2NmMWI0ZDc3OGVjMGM2NTJjMzVkNWMyZDQzNDg4Y2NmMTcwMiJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L584-L604",
+          "version": "repo-lines-v1:sha256:ccedfd0020ec9d5519f4ff465aa5e8546fda876a8555764dbfc754f2dcc59128:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmNGVkYmNjMzljNjU2NDYyM2I3NjkyZjE0MmM0MTA0ZDliYTlkMDM2NzI4MTg0NTM2MTU2N2RjODNkYjM0MGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmNjc2M2JlYzlkNTZkOWQxNDViZjYyYmVjYTJjYjYwYTliYzg1M2U4NDRiOWE3M2IxMGU5MWI3MTZkYmQ0OTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY2YTEwOGZjYjEwYzQzZGJkNTk1M2IyMzM0N2M3ZWJhMDVkYzc0ODNlNGQzZTQzZDc0ZWI4YTYyYzhjMjE3MjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhMzgwYWVhM2U5M2EzNDJhMzQ4OWY5MzZkZGI3ZTQyZThlNzIxYTUwZGRmM2I0YjI2YzM2YWM1MmY3YWQ1YzQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L64-L105",
+          "version": "repo-lines-v1:sha256:de2e4d050a54fa6875d5a6f7a2183de1eff2c7cabe55f85a323e4d102f1bdea1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0M2E2ZDgxMTA3ZmFjODFlNTBmZDljYzExNjZkNDc1ZjZjM2JhOGNhZDIxZWNkNzc5MWEyMWIyYzJlNGM4MzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxMzRjZjRhMmZlNWY4NTM1YmI0MDg4M2YwOTJjZTc0Mzg5ZWRlYjViYjJkYzUyMTQ5OWVmOGFiYjM1Y2U5ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRhZWU2MzI0ODE4MDAwYjcxYjU0ZjZhZDhmODZkZGVhZTRhM2QzMGYwMjA1ZjZhOTk5ZTNkZTY1MzAxYjNiYzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhNzlmMWNhNTk4MjZkMGQxZTNmOTJjYzRkMmJhYzBmNTA2MDZhNmM5YjllMjNhNWJkMDgyOGU3MjI0ZjFjMzUifQ"
+        },
+        {
+          "resource": "repo://tests/test_sdf_validation.py#L92-L115",
+          "version": "repo-lines-v1:sha256:8ec235b0e087b7a9a7128038589bb37d6e70d9ec9a3d23e97e74559744a7a040:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4OTQxZDYyOTliNTM4ZThmZjIyNzRjYjg1NTQ5NmEzZmIyZWNhZmI1Y2JiYTI5YWMxNTJmZjNkNWUxNTE5YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdiMmU1NzM0YzJmMjgwNTM4ZTQxOGNjOWQ0YTYxNGE3MzU5ZGZhMDZjMWY3MDI2ODhiZjk3NDg4YmZiNjlhMmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a28ffcb3ecef45519df1140a8069b564",
+      "statement": "Normal SDF checkpoints are phase-tagged tuples created only at scheduled post-burn-in epochs of the unconditional and conditional phases; the schedule is resolved once against the longer SDF phase, while the moment phase creates no extractable checkpoint.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L65-L94",
+          "version": "repo-lines-v1:sha256:46fa2263ce282361ae40b7f39cb7965065e42b428473d98e33026ad06514fd52:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyZmIwYTQ2MjBlZDhjNDY4NGZlZjVhY2FjNjY2NDViZjk1OTkyOGVjMzdlMDM3Njc3NzJlOGIwMzNlZmYwZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmZGI2NWVlNjJmNzgyNTgyMzcyNjVhZWU0YmM5ZDU5NDg4MDdkZTc5YmJmZTFlMDM2MjVhMjcxYmFmZWIwZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3ZjdhNzJmZGJmOWM4MGUxZjQ2OWE1MGYwMWNlZDVkYjM3MDMwZjVhYWJmZTMzMjY0MzViMWRhOGIzMTk2YzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzNTE2NmY0NjFlYWQyMjk5YTZjYjAzNzczYWVmMDIwMjM1YjRkYTBhYzM3MzRjYWEwZDEwMTA1ODI5ZTliNWYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L137-L148",
+          "version": "repo-lines-v1:sha256:4d749a8cd2c19bb1191753413c05089bb113f73309cceb88c34d473f03223717:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyNmJjOTJkZjFhNmNjY2RlMzViY2NmNjE0NjljYzdjNjQ4MzhhN2Q1OTI1YjI5M2IyODYzZTcxMTU0NzM4NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MzI4ZWM3ZDgzZTdjYjc4ODZhZjg4OGNhYzQ5Y2M4OTdkYTNkMTdhM2ZiMjc1NTA2MmE4MWYwZmYyNmNjMzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0Y2FkYTRkZWNhNTA4NTAzNGM5MDY3YzI0ZmIwOGYzODllZWUwMzFiMzZiZGRkN2E5ZTM0YTQzYWU3MDkyOTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZlZmZmNDgyMGNhODgzMDg0MGE2ZDZjNzNhYWZkZmE1MWVjYzZjZDdmOTZlZmFjNTY3ZTdmNTRiYmZhZDJjOTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L156-L299",
+          "version": "repo-lines-v1:sha256:3444e22a7c1df61eea29324cefc370cb075115674516861dd18f819cc59627e4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmZGFmMjMwMmI0M2M0NGNjMGViNzAxZDlkYzNmZGNlNDUyMDk2MTk4YzBmZWVjMDRiOTIwNDYzNmQxMmNlMjFkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjOTRjNmRiNWNjOWFjNDhmNjIyZGIzZTNjZTgyMGQ0MzVmYzZlMzFlYmY5Mzk1NjYwZDNhYzJkMTJmOWM4MzE4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiZDhiY2I4YzI3YWZjMTZlYjNiMjhjNGNjYjcwMDNlNDliYzcyNjE2MjlhYWY3YTljODE0NDU3ODgzMjRiMjAzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0ZGYwNjZjNWNmNmE4MjdkMjk4NDMzZTEyYWUyNTIyZjg4NGE0OGNhNGU4MGFjNmZlNzQwMTY3YzEzNjhlMmUzIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L403-L418",
+          "version": "repo-lines-v1:sha256:773c7981ef828dcc60760866d7d0790fb7e096891d1a6c4baef2156a67423387:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5MmJiZmM0Mzk5Y2JjYjQ1NmFjMzNjNDkzM2FlNDUwZDIyZWUwODU2MmM5OTY1ZTA2Mjg1YjA2M2ZmNDVkYTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxNGYxOGQzOGUyYmIzNDU4YjkwN2YxNjk4ODg1OTQzMGZjNTJjYjM2OTVhZDVkYzllMDE3NTE0YTkwZjFmMjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxNDQyOTgxNmI1NDAyNDk3MmJjZjBlODViMWI2OTBlYTBjZTk1OGU2MmRkMDA1MmE5OWI2NzZhZjc0NmU3NGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjZGZjMzk0NTY4ZGIxNmJhMTIwZGIzNDI4Mjk5ZjA0OWIzMmZlMDE1MWZkZWNjZmI0OGE2YmJlYjU3Yzc1MWMifQ"
+        },
+        {
+          "resource": "repo://tests/test_stochastic_discount_factor.py#L143-L174",
+          "version": "repo-lines-v1:sha256:310d546157c21d83a836504fa07f1877cc0b726cb5a50726d6450f70076e8e84:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0MzgxYmVjOTU3MDNhMWE0MDE2ZjIwYmU2ZGEwODJiNTc0YTkwODg3MjE4NzRhYjQ5NmRlZDA4YjFiODk0ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4MmQzYmE4N2RjM2NkMjdiOWYzZTcxOWRkODc1MzE2Yzc2YjA4NDRhMzg2ZjJlMWE5Y2EwOTBjYTJhM2Q5OTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkMTNkMjBiNDVlMWZlMjQ2NThhNDM5OTUxYjczNzJkOWUzMmEwNzM2ZDkyMDZmZGZiM2RjYTU4MDYwMDZhYTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjYmI3NTJjODJiNGQ3NWY0NjlmODMzYTQwMTc2MDEwYzU5M2YwYTMxYzllMmMwNWVlZjIwYjNkMmY4OTZmNzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f7cff508998446e5b0d862932a659448",
+      "statement": "With validation, the model independently stores minimum-loss and maximum-Sharpe sentinel checkpoints for both SDF phases after burn-in; patience stops each SDF phase after that many epochs improve neither criterion, and its counter resets before conditional training.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L149-L223",
+          "version": "repo-lines-v1:sha256:d02054fa1a30f8060f7bf711e8ff826e7360b68abb320672aac4db6c57e960ed:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMDQ0NGVjMGY3Yjk2ZGUzZGNmNDNmYmFjOTUyYWI0NzM3ZmI1M2E2OGVmMmE4N2Y5NzQ2ZTc5MmJiZmRkN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxZDBhMDJhNDJkNzVhZmU5NzlhMWVhMjZlY2RmOWI5ZmRmNjRlYTQxNmI5NjIyNzgxNjIzZTQwNzU5NTBjNmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgyMjg1YmQ0NTA0M2Q4YWU4ZjFhOTc5OGY4MDdjNDc3OWRkZGIxNjYxMDk3NGI2OTgxOWU2YzJhNjY0ZDRhODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViODQ2MWIzY2U2NmViMmU0ZmM4OWRmNWNmN2I5ZTUxMzg4NjA0NGI4NjEwZWEzN2M5YzM0YjNhNWMxMmQwNTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L253-L299",
+          "version": "repo-lines-v1:sha256:06b4b118c7ac94b62dec18ea0d6a24c7b0f5618a8c0ac1b6f06af395297448eb:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5ZWE3NGVjMTg4ZTVlY2IxM2YwNTA0YWIyYzA5MmMxNTk5YmExOGZhMmVjNTM2MGI3M2E3ZmNlNWNkZGViODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5NGM2ZGI1Y2M5YWM0OGY2MjJkYjNlM2NlODIwZDQzNWZjNmUzMWViZjkzOTU2NjBkM2FjMmQxMmY5YzgzMTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5ZTI4NTBmMDMxMmU3ZmMxNWUxNTIwNWViZjZjNmQxOTY3ZWFjMzkxZWUwNGNlYzExMzVkNjdjZjQ4NjY0MDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRkZjA2NmM1Y2Y2YTgyN2QyOTg0MzNlMTJhZTI1MjJmODg0YTQ4Y2E0ZTgwYWM2ZmU3NDAxNjdjMTM2OGUyZTMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L34-L37",
+          "version": "repo-lines-v1:sha256:9dd4510911c4d917edbf6c3d6df1f5c71cff6fa28338cdb2124df2870c67f274:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzc0MmI1MWM1OTZhNWYyZjNiNDRiYTk4YTc1ZTA3NmEwYWZiMjg3N2MyYWJlODRjYzY5MjE5ZGIwNTEzNDNkMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmE0NmQ2NDFlODk0MzhhMzVlMjc5NjU1MWJiYTRlZGU5NjMwNGVkYjVhZjQ0ZDgwMDU2YTI4NDg0ZGQyZTY0NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDFmODcyMzc3ZjE4ZmE2Mzg0MjFlYWRjYzg4NmI3NmU1YzYxNWE0NjZjNWQ2MzYwNDQwMTAxM2U2MThlNWE5ZSJ9"
+        },
+        {
+          "resource": "repo://tests/test_stochastic_discount_factor.py#L176-L221",
+          "version": "repo-lines-v1:sha256:c83dd6d55823d0e4e851366edfd91d6e8b43ca89905ce113a68c5f3aa4027d35:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyYTYzOWUwOWVkOGRkNzFmM2RlZmU1ZGMxYTg2MTk2NGI2NGFmZDRkMDIzNDBlMmRjNjAwYjllYjNkNTI1NzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhZDIwMWE1YjZlMDYyMzAyNWY4ZjQ0OTdjZmM5OTFkNTU2NzQ4NmJjYWQwYmFlMDIxYTZmYTQzOGU2ZGY1OWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNhZDgzMWQxYTIwMmI5MGJhZjhkMjgzMmE0YzE5OWI0YjIwMjUzZDdlNzlhZTJhMmQ1MmRlZDc5NWJlNjg3MWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0OWQ3NTU2Y2RjOTk1Nzk4YTVmMjNlMzE4MjQwZmQ3NzE0MjhlMzI2ZmE0YWUwZTUxYzQ0OThhMTY4MzNhZDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a6c8f07ac3384a46aa87d656067de4bd",
+      "statement": "Checkpoint selection gives precedence to an explicit request, then the configured default, then the last positive phase-tagged checkpoint; it supports legacy positive epoch numbering and four negative aliases for validation sentinels and rejects unavailable selections.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L519-L572",
+          "version": "repo-lines-v1:sha256:0d5682aca47eeb268ee56b924a959de3cdb797e1dff650b44331fbbc190374ce:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4ZjkzYWJlNTlkYjRhMGJkYzAzN2UxNTBlZTlkNDIwZjE2NzQzNzhiMGI5NzY4MDc1NmNmZWFhNzQwMmNiYjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxYmI5NmFlMWIwMDg5ZTRiMDUwOTU3OTQzOThhODU2NjA2OWIwMmU5MDdmNGIyODY4NzgwZGVlMmM4ZDRiNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5YzJiNmUwYzBjMTM5MGNmZGRmMDI1MjgwOWUxY2NmZTkzODU1MmFmZjJlMjE1NjU3ZjQzODc1ZjM3MjIyYzMifQ"
+        },
+        {
+          "resource": "repo://tests/test_sdf_validation.py#L141-L173",
+          "version": "repo-lines-v1:sha256:4445e3ea3e0adc6d47a3440f2ba22b73f170021ffbf75c158eddfef2f5239d54:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4ZjcwNzIwNzcwN2I4NTQ0NjAyN2EyZTE1YWJiNDZhNmU2MzNhYjMzMGZmMGU2ZGFjMGFlNzEwYzdkOWE5NDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ODhhYzc0MmVlMzA1YzNmZGNjM2IyM2EyYWE4MTQzN2UwYWY4NTAwMTk5ZjYxN2MxMWQzNTBkNjFjMGYwY2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzNzY3MjExNDU2OTk4MTdlOTYxZTliNzMzOGE3MmIyMDM3NTE1NTA3YmRlYWE0YzVmMDE4Y2Y2YmVhNDIyNmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRhZmI5YTA0NDVjYzZkNWJhOTY4OGJmMDEyZmUzNDlhNjE5M2YzM2RlNGE4Zjc4MWIzNDVkYjEwZjI1ZDA3MTcifQ"
+        },
+        {
+          "resource": "repo://tests/test_stochastic_discount_factor.py#L212-L221",
+          "version": "repo-lines-v1:sha256:02d8922c0f30ec3d421cf11f707094a46346da581b7c68f77a70c7f8d74a8f09:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmZTY2ZWE2YjM4MGZlMjdkNGEwY2IyYjU3NWM2MzFhMDkwYTE5ZmYzZjIzYmVhMDIxNGQ0MGJlM2E3ZWE3ODYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhZDIwMWE1YjZlMDYyMzAyNWY4ZjQ0OTdjZmM5OTFkNTU2NzQ4NmJjYWQwYmFlMDIxYTZmYTQzOGU2ZGY1OWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRkNTRlZDAzYTUyY2Q4OTZiOWZiYjAyYTU4OTQ5ODJlNmM3MDMyYWE0ODlkZmM3YmUyZjcxMGMzZjdkYTc1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0OWQ3NTU2Y2RjOTk1Nzk4YTVmMjNlMzE4MjQwZmQ3NzE0MjhlMzI2ZmE0YWUwZTUxYzQ0OThhMTY4MzNhZDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_673248219bf746b9864ba7af1f980f1d",
+      "statement": "Extraction enforces fitted characteristic and context dimensions, reconstructs the selected SDF network, returns a masked weight panel with NaNs in invalid slots, and includes realized sdf_values only if the extraction batch supplies returns.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L328-L402",
+          "version": "repo-lines-v1:sha256:3154cd1786eb2333773cc0ce5d582ccdbb591a8bc8ca2fec25199927d1f08086:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmNGVhYjZkYjI5ZWQzMmE5MjkyZDkwOTFlMDQyMTU4ZDFjMjM1NzlmZjljNTBmY2ZmM2I3ZTQ2ZTYzZmUyYWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiMWY1ZDE3YzEyNjlhOWE4OTg4NGEyZTRiYjQzYWUzODQ1MDg0NDQwNjliMWFjNWFjNDY2ZDcyZTU3N2NmOTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjliZTRlYzQ1NzY5OGJiYWI3ZDY0MjI3ZDA2Y2Y3MWE1ZDU2YTZjYzIyMDY0ZmFhN2YzMjhlN2MxMWRmZDEzNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4OGYwNzkyZWJlMmM3OWZlN2UwZTdlZGU1YjNlYzQ5NjM0YTI3ZDM4ZTk2Mjk0YzY4YTgzNDk4OTM0YWRhODQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L503-L517",
+          "version": "repo-lines-v1:sha256:3846bf272ba82c9e0a2f483bd0f478baca621ebb52388bc44df608abfe01a0ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhNWIwZmViMTMzNTQ1ZTRkMDFhMDI3OTUwYTcxOGE5OTk2Y2ZiYTI2YWYzYTgyOTViZDNiNmE2ZmI1MWQ4ODUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEyYzc0ZDNhN2I2NmQ4ZDk1MzJjYjUxMzNkYzI0NTkwNTRmNTA1YjcxYzY4M2EzYzMzMzIxMjUwNjAxYTY1NzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0ZDg4MGI0ZjA0Y2I2ZDEzYmM4NWMxNmFhY2QyYmFjN2MyY2VmNjcyZTRiNDhlZTI4OGNjMjQ2NDkzNGNlZjMifQ"
+        },
+        {
+          "resource": "repo://tests/test_sdf_validation.py#L117-L139",
+          "version": "repo-lines-v1:sha256:204c10f16c14c4786608b73be14dc2486d04f5ebe06051eed6bad0bb23b9fc12:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4ZWQ5Mjk1MTk0Yjc5NjQ3N2Q2ZDMzNWJjZjM3MDI2Y2M0ZDQzOTllN2Q5OTBhMDgxYzgzMTVjMzI0MTJjNWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2M2Q1MzVjZTM4MDYzZDZiNGM1MWQ4YzM4NmE3ZjliM2U1ODBhMTRhMTBjMDdiMTk4ZGZhZjE5YzkzYTNiZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlMjdlMWEwNGNlOTRlY2YyNDNjNmI2MGQ4YjJkMDJkYmJmNjdlMDE0N2Q0YzRkZmViZGNlYzRhZjViMjgyZTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUwMzhkMGZmNTFkYjgzNGNiZWFmOTQ0MTM1MzM3MmVhMzNkM2ZhNDcwNDhmNWMyMzc3YzEwZDQwYTQyZDRiNzMifQ"
+        },
+        {
+          "resource": "repo://tests/test_stochastic_discount_factor.py#L16-L81",
+          "version": "repo-lines-v1:sha256:dc6d711fa2aae9d2d80d18c63685b0ea3fec859eb29fd605cf0b473f9bb80fdf:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4YmU5NzQ5NWVkZDhmMjk5MGQxOGI5ZDU3OTg5NTAzZmM0ZGFjNDRiZTY0ZTMwYThiMmUyMDI1MmFmMmU1NjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAxYjAxMDE4MzczN2NlMTMyMDM4ZDdiN2Y0NmU5YzcwYmYwNzQwZWZlY2Y1Mjk1NDk2MjZmODQ4ZWVmMTM0YmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ae48d05692614137a51957bddbe141a8",
+      "statement": "The model contract fixes native output to weights rather than beta-times-lambda expected returns; expected-return projection is a separate linear mapper fitted on finite weight/return pairs, with zero coefficients when fewer than two pairs exist.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/configs/latent_factor.py#L121-L146",
+          "version": "repo-lines-v1:sha256:805954f66dd1755c4a8938625a3ad23a26220192c8d851d95e51627358d3f592:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5ZjZjZmE0MWEyZThhMzJkMWJmNTI4NDMwYzY4OTY2ZTJhMzIzODcwODNmMzgzMTM5YzI2ZDBkYmNiMTU1MTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1MWViZDFhMjY4MDRhMWM1ZTAzOGUyNjA2ZWFkYTg2ZDk4ZWNhM2M1NTE5MWJiMGJiNGY0MzdjNDQ2NzFhNDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1ZjFjNDQyMDA5NzQzN2QyZDYzZWJkNTYwZWE1OWMwYmUxNzA4MWI1ODI4ZWUyYWJkODRkZWFlMzIyYTk2NjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4ZmZlNDBhOTI0MzE1YzZhN2VkMjk0Y2RmYzliNWNjNzQ2YTA0M2IyMDFmNzU4ZTZkZmZhNGE5ZTdiMDJlYjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/mapper.py#L43-L111",
+          "version": "repo-lines-v1:sha256:ce07110626cb93f957651b159eae7d139d2483cee987812107a74fc0bb9b2779:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzZDRhZDdlMTQyODJlMDgzN2ZlNWVmOTVlMjg5MDAzYzAyMTcyYjJiZDFhYjYxZTM5Njc1YTEzNzhiZjYwN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1ZGQ4YmZhOGJjYzViMGFlNDJiMWMxN2FkYTBhYzU2MjQ4MTI5ODYxMjljYWM1Y2ZlMzQ5YWYzNTVhYzE3MzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjNWY0ZmZjMzYwZGNkNzMxMGUyODE4ZGJjNGYxZWQxMjNlZmNmZTc2MGIyZDg1ZDM3ODVmZTg4ZTFiMDdlZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjOTI4MWQwMTczZWIzZjkzYjMwMjgzYjcwNDczNzY1ODRhOWNjYWZiOTlkYmVlMGNhOTVkZDkwMjEwYjIwODAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L75-L83",
+          "version": "repo-lines-v1:sha256:897b535dc11444388ea2a1486f3e20019e604c9c40643d9ea123c686c7d3caa0:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTk3OGU3YTU2NDUzZTc4YTM5ZWQwODljY2Y0NjFhNTc5MmUxMzZkMzUxYjlmMmQ2MzhmYjNkNzUxZTg3OWMzMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTgyNjM2ZmQwNDg3ZGQ2ZjVkYTRjZjYwNjdmYWZmZmQyOTBhNmExNWQ5NDE2OGM0NWZkZWEyZTA2YzZjZjg4ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjhhM2E5Nzg2OWRlMGUzOWI1MGYyN2EzMTE1ZjViNjNhNGYyZjY3YzI4MDNhNDk5NWY4MGM0ZDM5MjAyYjgzNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzc3ODhjOGM1MWJkM2U0YTRjNzY3YjRlYWY3YWZhMmJhM2VjZTYwNzQ2ODhhOTg0NmIwZTViZDg5MjZjMDA4MiJ9"
+        },
+        {
+          "resource": "repo://tests/test_sdf_validation.py#L61-L91",
+          "version": "repo-lines-v1:sha256:c64e4ac3c53c8b2764fd54bee8d28f823e3f6776fce94d8b84df40fe9a38d7a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1ZGRhNTU5NzkxNTU1NjZmNDZiYTA3ZDM2ODU1OGM5ZDBjN2MzODY3MDAxZjgyNjFmZDU2ZDZlYWU4ODU5NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmN2FiMWE5ZmNkNTA2MzliMTkxNjM3OTJlZGY0ZGVmOGE4Y2I0MGViODkzYWVmNjA2MTVjNTFhMWQ1NmYzZGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRlN2ExZDhmZTQ3N2I2ZWZhMWQzYzU2YTVhZTdkMjI4ZDk5YTNmMWVhNDJiZmNiMzlhMWYwNmJlZDE5ZWRkZjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9cb7a8f234d44731976a2c1b5d29781b",
+      "statement": "The optional SDF beta-network head is a separate signal-producing component trained from returns and realized sdf_values; it predicts AssetSignalResult values and uses its own beta checkpoint schedule rather than serving as the expected-return mapper.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/mapper.py#L129-L331",
+          "version": "repo-lines-v1:sha256:82dde3b78c0d62da19bc92b48c46a83225eea08d60f1a8fff5f3f36474fa80aa:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4ZWExMTk1ZWIyYzY0ODZlMjMzNjFjMTFjOGFlMDQ5OGVlMzAyNzYzZWI4MWRjNzQ1MGYwNzUxMGM5OGEzZTI3IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmNmQyYjQzMDkyYTViN2NiNDY5ZTcxY2Q2MTAyYzRmN2Y4MTg5MzBiYTQ1MWJjZjkyYzQ4MThmMTg5NWJkYWVhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMjBiNmU5N2E3OWI3OTBlNGFiNmI4YTVlMTE5NGMzM2Q5YjM5MmVmZjFjMGY3NWE0YzY3ZDJkNzhhOTE2NTdiIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmZDA5ZDUzNjA1YWZhOWU4YTYyMjZjNWJlNjdhMjM4NGY3Zjk0MzI3ZGZhODA1ZjFiNmNhNzU1OTdiZTg3NmI0In0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/mapper.py#L383-L442",
+          "version": "repo-lines-v1:sha256:32f2623a29ab29423b99fbb0980ebcc81c8fc572b63acf67083c1a87ee7e1e9c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjODcyYzgzMmZhZjQ1N2UwMGVjODYyODZkOWI2OTU3OWZiMDc5ZWU0N2I3ZmU2Mjg0ZTNjNTI2YjA2OTRjYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MzVmMjJlODBmODAzMzgwNzBmN2EzNzE4MTcwZjA4ODQ0MzNkMzM1NjljYzZkYzM5ZTAwNzQ1MzM4Njk4OGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmMDY3MjNlMDRmM2JkNTZmNjIzNTdmZTAzNTIwOGRiZDUyNTcwOTRlN2VmYWEyNTA3MTA3OTAwMzQ4ODBiZTgifQ"
+        },
+        {
+          "resource": "repo://tests/test_stochastic_discount_factor.py#L84-L139",
+          "version": "repo-lines-v1:sha256:494dc4d466375ca605a70342a8e623b27c2588b096e999219e7515ed578517b0:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA3YWFhMWE5NTQ0ZWQ1NTBjODAzOGJhOWIwMjEwYmY1ZjllY2MzOTNkMzlkNGJkOGIwZDE3ODRhMGRhYzk2ZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3MDhkZTM3NzZhMmYyYmVjOTZkNzE5MGEzOGJkZDEwOTUzZmI1OTE2YzJiMTY4Yjk4MmU0MWUwYmUxNDM4ZTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNlODA2NDJiODFhZjYyMGE5YTE1NzJhZDQ4MmJhNDYzMzc5MmMyZWU0NTc0MzA3NjI4MDhkNDRkYzgwNmFmNjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRkMTNkMjBiNDVlMWZlMjQ2NThhNDM5OTUxYjczNzJkOWUzMmEwNzM2ZDkyMDZmZGZiM2RjYTU4MDYwMDZhYTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_08a11624b0384666b60b1fca7987e0d7",
+      "statement": "Context-enabled SDF and moment networks process dated context through an LSTM and tile its state across assets, require context at inference, and require recurrent initial hidden and cell states to be supplied together.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/stochastic_discount_factor_nn.py#L9-L154",
+          "version": "repo-lines-v1:sha256:c952b0729d67fb53dbbca02d4561973bbddc4282a3d2e386a08e6cec19f0aaa3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5MWZlMDE2OTAyMTVmYzNlOWQxNGE5NjdiMjM4YTQzNTZmNWMzMmE0M2YwNWNjODgwZjlmMTUxOTE0YjgzNDJjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4NDEzZTllMzNiNzhhZTE3MTg2ZTAzYTAxZjQxMDRjMWY0YzM4OTI0NGRjNDI0Y2Y4MDNjYjhlM2VmYzE1ZmRhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhNDEyZDg2YmNjMGZkZmM5MjNhMDRhMjQyMjM4ODc1MjU2ZDg1YWFmMTQ2MzQ2NjhmNjdkMTY1OGZmODE3ZjgyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5NGJkZGRiMTE4MmQ1ZTBlNDcxZTlkMzc3MDVlZGUxMDZlYjI2YjI5YmIzMWY0YWRlN2U0YjVkMmE0ODYzMDMwIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L335-L348",
+          "version": "repo-lines-v1:sha256:457a862c4693e5d3bbfa74278ed2bf34b792348415eee4b2fe40ca3a9a1900a7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxN2Q4ZGRlMTA1ZTZjNDVmZjcwYTU5ZGY3ZWRmZmMxYmM0M2RiMjEyNjM1ZGFjNDFmOWMzNjkyMjI1N2JlNTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3NmY1NjYzYjM4MWY2ZmYxYThlMjQ3YjkzYzYyMDU1ODcwMTYzNDJjZjliNzVhMGFjY2RlMDVjNjU3ZmI5OGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5NzIxN2I0OGY2MTdiYWExMWZhMDAwYjVmN2Q3MjM1NzViNjA4NWZlNDMwZWEzNjQ3ZjY1YWVkMzA3ZGQ3MDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjZmYwMTFmYWUzNDdlODEzMDExMWUzMTY2NzA1MzQzMjI4ZjlmMzhmODI2MTMzYjBjNTE4MjI5NjAwNTU2ZmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8220c95bd1b34c588c6ea5af07b74a1f",
+      "statement": "The shipped SDF defaults use 256 unconditional, 64 moment, and 1024 conditional epochs with no checkpoint interval or explicit epochs, so schedule resolution normally stores only the final conditional epoch unless validation sentinels or a custom schedule add checkpoints.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L65-L94",
+          "version": "repo-lines-v1:sha256:46fa2263ce282361ae40b7f39cb7965065e42b428473d98e33026ad06514fd52:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyZmIwYTQ2MjBlZDhjNDY4NGZlZjVhY2FjNjY2NDViZjk1OTkyOGVjMzdlMDM3Njc3NzJlOGIwMzNlZmYwZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmZGI2NWVlNjJmNzgyNTgyMzcyNjVhZWU0YmM5ZDU5NDg4MDdkZTc5YmJmZTFlMDM2MjVhMjcxYmFmZWIwZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3ZjdhNzJmZGJmOWM4MGUxZjQ2OWE1MGYwMWNlZDVkYjM3MDMwZjVhYWJmZTMzMjY0MzViMWRhOGIzMTk2YzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzNTE2NmY0NjFlYWQyMjk5YTZjYjAzNzczYWVmMDIwMjM1YjRkYTBhYzM3MzRjYWEwZDEwMTA1ODI5ZTliNWYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/configs/latent_factor.py#L121-L147",
+          "version": "repo-lines-v1:sha256:d226e111a2bcc94cd91b3b43a7e4a59f6d87d95dd64a7819b2e926b7302ffde8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5ZjZjZmE0MWEyZThhMzJkMWJmNTI4NDMwYzY4OTY2ZTJhMzIzODcwODNmMzgzMTM5YzI2ZDBkYmNiMTU1MTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBhNWFhZmJhMjFiZmQwNTAzYzk2YzBhZjBmMzc1ODIyN2ZlZDNmYzU2MDEwODM2MDVlYTMzZTFlNThhNWFiNzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1ZjFjNDQyMDA5NzQzN2QyZDYzZWJkNTYwZWE1OWMwYmUxNzA4MWI1ODI4ZWUyYWJkODRkZWFlMzIyYTk2NjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlOTlmZmNjYTc5NGYwYTc0MjFlZGM5NmRlMDc2OGIwM2JhNjI4YTRmZGM3Nzc5YTg3ZDM2M2YxOTMwMzc4MTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L137-L148",
+          "version": "repo-lines-v1:sha256:4d749a8cd2c19bb1191753413c05089bb113f73309cceb88c34d473f03223717:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyNmJjOTJkZjFhNmNjY2RlMzViY2NmNjE0NjljYzdjNjQ4MzhhN2Q1OTI1YjI5M2IyODYzZTcxMTU0NzM4NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MzI4ZWM3ZDgzZTdjYjc4ODZhZjg4OGNhYzQ5Y2M4OTdkYTNkMTdhM2ZiMjc1NTA2MmE4MWYwZmYyNmNjMzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0Y2FkYTRkZWNhNTA4NTAzNGM5MDY3YzI0ZmIwOGYzODllZWUwMzFiMzZiZGRkN2E5ZTM0YTQzYWU3MDkyOTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZlZmZmNDgyMGNhODgzMDg0MGE2ZDZjNzNhYWZkZmE1MWVjYzZjZDdmOTZlZmFjNTY3ZTdmNTRiYmZhZDJjOTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L403-L418",
+          "version": "repo-lines-v1:sha256:773c7981ef828dcc60760866d7d0790fb7e096891d1a6c4baef2156a67423387:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5MmJiZmM0Mzk5Y2JjYjQ1NmFjMzNjNDkzM2FlNDUwZDIyZWUwODU2MmM5OTY1ZTA2Mjg1YjA2M2ZmNDVkYTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxNGYxOGQzOGUyYmIzNDU4YjkwN2YxNjk4ODg1OTQzMGZjNTJjYjM2OTVhZDVkYzllMDE3NTE0YTkwZjFmMjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxNDQyOTgxNmI1NDAyNDk3MmJjZjBlODViMWI2OTBlYTBjZTk1OGU2MmRkMDA1MmE5OWI2NzZhZjc0NmU3NGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjZGZjMzk0NTY4ZGIxNmJhMTIwZGIzNDI4Mjk5ZjA0OWIzMmZlMDE1MWZkZWNjZmI0OGE2YmJlYjU3Yzc1MWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_13c5a3e98ba14a1d974c4e4149c57804",
+      "statement": "SDF persistence saves and restores phase-keyed checkpoint states plus fitted dimensions, history, asset IDs, configuration, and fit observability data, and rejects malformed or empty checkpoint trees.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/stochastic_discount_factor/model.py#L420-L491",
+          "version": "repo-lines-v1:sha256:d09ea122a7186c27516f780b1167de5a9bf427d8ad63f004924431c5e1db94a4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYWUyNTY1OGNlOGQzMDc3MDljMGY0ZTAxZTY0ZDdlNTIwYWFkNzZlNjg3MzdhNjY2OGIwMDZjYWUxYWZhNDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5ZjJmODc1YzFiYmVmNTk4NGE1ZDBkZDdhZWEyYmRjN2M0NWQ3MTc0NmFmNTNhY2E0NzQxODBjOThlNDI2YzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmNDAzMzIwNTkyMjZlNjI5MWY1ZjNmZDUzMmU2MjRlYTc2NDAzMTQxN2ZlNzdhMjc3MzFkNDhjZTU2YWNhMjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxYjI2ZDkxMDYyNzY0NzBiMWUwZjVhZjMwZmIzYTllNGU2YWQ0ZmI4MDkzYzM4MTUxNGJmZGNiODI5MGZkNjIifQ"
+        },
+        {
+          "resource": "repo://tests/test_sdf_validation.py#L243-L274",
+          "version": "repo-lines-v1:sha256:42cf1d629c14422df7e0eea403525bbe38d30038d30dc53e3d65bd1a4f53b049:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwMjI0NzU5MmY3NTk3YmM2MzhkNTJlYjA1ZTFmOWY1NWE3ZGJmODE0YmJjOGM1NWJhZDk3OWJjNDA2MmJkMWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjYzMzMWJiMGQzYTA2YTg1M2IyZTM2NDA1ZDdlMmY3OTM5MjQxOWVjNjgxMDA4MDMzNThiYjEwZmFiNmRkMTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkNTlmMzQxZjYwMWEzNWMwNjZlZTkzMjVkZDRmNzg3ZTU4M2Q1MDViMjIyNmY3NDFlOGRjM2Q3MmJhODUxYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

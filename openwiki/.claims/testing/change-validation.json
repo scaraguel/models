@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:002afd306285f2add31cf66f0d218d0e1a59f7e72703c0f8ac1291edf42804cb",
+  "claims": [
+    {
+      "id": "claim_e4f73aadd6c641699eef2472c62f63a1",
+      "statement": "The repository's final local quality gates are Ruff lint and format checks, ty type checking, the full pytest suite with JSON coverage plus the custom coverage checker, strict MkDocs build, and package build; CI installs development dependencies from the lockfile with `UV_NO_SOURCES=1`.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L20-L49",
+          "version": "repo-lines-v1:sha256:c721d325ba2923cc2b3ef8e1bc1f991ef3c63b13031110d22c76685415a8a220:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YTc5NmEwMWY4NDU4Yzg5OWQ1YjIyODkwZTVkZjQ0ODAzY2E0ZDgwMTdjMzg3OGQ3Zjg3OTQ0NDkxMjBjOGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmY2EzNzZmNGFkNzg0ZDgxMWE0NGZjMmNmMzUyNjg2MDM2MGUwYTM2NThjYzhmMmY3NmU5NWVmYTUzYTYzMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcwMjU3NDRiM2I3MDI3Y2FjYzI0ZDBmMzEwMjRhOTBiMDk2MTBkZmViYTk1Nzc2NzJlMGNmZmQ0N2UwNjZiNzUifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/ci.yml#L51-L126",
+          "version": "repo-lines-v1:sha256:a30653a9df748b571b5258427f8703b31572cef8788e7e6174f589d15d6bab54:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmYWIwZmQ2MWI4YTJiOTRjNmJiNjQxMDQzODY1Zjk0ZTRhN2NlZjE0YzRiYjNlM2YwZjIzYzdjZDg2NDVhMzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkMGMzNDQ2ZTRjOGEwNzNhNDFjZmRjODMzMTFhOGQwNWRmYThjNzgzYTU4ZDU4YzQ3MWYyN2E5YTEzNDc0ODYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRkMjEyMTk2NGJjOTYxZmUxYTc4YThiMzY3ZWM5MzcxZGY5YzdlMTUxYTVkZWYyNjYwNGU0NjVlMWRhYjI3NDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY4MzA5ZGJkM2YxNWEzMTg2OGI1NTA0NzY4NmEwYzQwNjdjYmJmNTI4YjVjODVkMjc4ZTgyMGRhZTBkNzkyNjYifQ"
+        },
+        {
+          "resource": "repo://AGENTS.md#L45-L55",
+          "version": "repo-lines-v1:sha256:da3e2ab50a91575f97bf1f53b1aae8b9fe31e1daa251d7f4d14c2a93f72d4e3a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1NzkwNjEzOGNmZDE5NTgzNzBmNGMxMTk3N2IxMTg0YjIzYjg1NWVlZjAxMWU4MThhYjY1YTMwNTgzMGI5YjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkNzQ3ODVkMmZmMDZkNDI4NGNlNjdhNWVkZmQ4YzY3NzBlMmRiNGM0YTEwMTQ0NjU1NTI1NWU3ZWYzY2MyNzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4MTNiOGM4NTE1ZGE5NzI0NWRhYjMzZWNhZWY2OTAwOGQ1Mjg1OTFmNWZlM2RhZWIxMDA5ZjliNDc0OTcwNDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1NjBkNTg0MTg2OGU3N2ZmNzFkY2E4NzE2Y2Q5N2IzMDI1N2QzN2JmZWNhMmEwYmVlYjk0OGFiZmVlNDY0ZGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9d6590401ab54661b5efa0018cccac8b",
+      "statement": "Pytest defines strict `slow` and `optional_dependency` markers but its default options do not exclude either marker, so marker-based deselection is only a focused iteration choice rather than the complete default suite.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L119-L138",
+          "version": "repo-lines-v1:sha256:d3e3b1826ed18365a1d1509b5cc40e383ccf52f3b7fba51c24790ae62be60060:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3NDVmYWI4NmIxMjFkYzg1YjRmNzg2NzMzOWExM2ZlZTgwNGM4YTAyZjQ3MTA2NTcyZjJiZjA2NjRkNTk1MWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4NmJiMWIwMWFhNWFjODM0NTFjNGE4ZTJkZWE3ZjhkMjBmODljYzYyZDZkMDI4MDg5MWUxNDgxNDQxZTQzZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY3OTIwYzZiOTFiZTZlMzI0MTE5MDAxNjhmZTEyOTE5NmM4ZTBkYjliYjQwYjdhY2NjMTc1ZDNlMmY0M2I2YzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ecbae4cb05244df4822e24bd4c475f63",
+      "statement": "Coverage qualification separately requires 90% line and 85% branch coverage overall and 95% line and 90% branch coverage for named critical contract, persistence, integration, portfolio-runtime, and SDF modules; omission of a critical module from the report fails the gate.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/ci/check_coverage.py#L10-L67",
+          "version": "repo-lines-v1:sha256:26ddaea9040e23546183276779d49602be356ff0fbba4049897f42282716589d:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0MjU3OTIzODYwNThiN2FkY2M1M2FiNjZiN2Q4N2VhZGU4OTE2MmFjZTI3MTEzNzJkN2I0M2M1MDM1ZmRhNDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwMjU0NTYwNzIwODdhYjNiMjI0ZTg0ZjQxNzJkYzQ2MTk1YTkzZmQ1MDdkMzQ0NTY5MjJkOGRmYWYxMjYxOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjNjVkOWRkNzk0Mjk5NDI2NDdkMWM2MDFkNzMwOTlkZTA3NzI2YTIzOTNlYWM3NjcxNTBiYzRlYTQxZTRiMGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1YjE3OTJjYTVhYTllM2JjMGJmOWFmNzUxYzJjMmFmZTkwY2JmZWM1ZTk4MGJjMjA1NzdmY2UyYTYxZWZiNmMifQ"
+        },
+        {
+          "resource": "repo://tests/test_coverage_gate.py#L29-L57",
+          "version": "repo-lines-v1:sha256:6054b6a652040cdd93b9f009928c44fb5b05e98b32623b9ea9252f857084b3cc:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0ZmIwZmRhZDAxY2Y4M2JmNGVmNmZiMTM1MTZhODVmNjE1NTc4NjZiZmZlYjQ0MmFiZTNiMjJhZTQzZGQyZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiZWQyZWFmODM0OTZiOTQ2ODViYmNiZjU4MWI1ZDc2NzlmYTUzZGY1ZTFiYTY3OWJlNzc3YjJhYTNlZWU0NzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmYmQwMDkzMTRiYzI3MDg0MTY3MzRhMDJhZTVmZjM5YTFlNDhhMDUwYmU5MWY0M2IyZmFhOTIwMDJjNjJiZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3441a258f98c4e19b446fec7c3529d73",
+      "statement": "The supported API is guarded by an authoritative root export manifest and explicit submodule exports, while implementation bases and internal loss helpers are excluded from family exports.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_public_api.py#L18-L72",
+          "version": "repo-lines-v1:sha256:0e7dd4f7fe343ba3f0243677562f7d040750202acd4e8e67d2a373fdb2e4a8cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1OTEwM2ZkNTc5YzZiYWE4M2IwMDVmMmUwNTU4ODk4NzExMzc3MDFmZTcwMmIwNTE1NGIyYzNhNDdmY2ViYzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyYjgxMTc3NDMwMmI1NjMxOGNjZjcxOGI0NmRiMDJiMTEwMDE0MTJjYjgzZWE1ZmQ1NTYzNTljZjJkZDRjNDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAxMzI3OWJmOGY0ZTc5ODNkYmIzYjk2Y2ZiNzk1NmRkZjYzNjQ0OTEyODdmNTU5NjcyNDIwNjI2Yzc4YWRiNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b1fbec3f211341bfa42cb564f3b61ae7",
+      "statement": "The core-install regression runs a linear portfolio fit and prediction in a fresh subprocess that blocks all Torch imports, and requires neural imports to fail with installation guidance for the `deep` extra.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_core_install.py#L9-L60",
+          "version": "repo-lines-v1:sha256:f3fc3c9c5383bf67653c401de7ac1acb87cbd111a11b875e4f7a9f1811818517:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmZDYwNmE2MjAyYWJlY2Y3OTI2OTkyYWYzM2NhYTgwOThhOGQyMTcyY2Y1NTNlOWMxZDk1MDVlM2I2OTQxZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5MWJmM2Q5NmYxYjExOTY4OGRlZWE5YTAwNGIyYjNmZWJiMTgwYmI4ZmIyMzQ0NjI1NjE0YWRjODU5NTYzYWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_28a2434200b548a18dbe7548961dddab",
+      "statement": "Financial correctness tests pin cross-family economic invariants including the RP-PCA moment definition, CAE managed-portfolio OLS, IPCA identification without changing fitted values, the SDF paper sign, and masking of non-finite values outside the available panel.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L27-L166",
+          "version": "repo-lines-v1:sha256:b9c0c83850e1e8a4d44d5a903ca381f84786c6262f9571fc2f1891cf017911d8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkOTU3MDVlOWI4NjU5NGRiY2U3ZTA4Yzc4MDVmMjVjMmFjNjRiMDc4ZGIyNzVmMzBiNTJmYTlkNGU4OWIyNmVhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhOThiMDYzZDliNDdlNjUzNzk2MjU1NzJjY2UxOTc2NjlkNTc2N2UxMmMxOGJlMDc1NjUyYjhjZDk4MWNlOGQ1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyOGE4MzQ3MDRiYzYyN2Q2ZjM1ZDI1NzQ1NzlkZGZlYjE5ODYyNTVhOWNjMWJmYjM3OWJkZjcwMTdjZjQ1MWQwIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d77b6087c20742ffbc5095ddff0223e5",
+      "statement": "Portfolio correctness covers transaction costs from initial holdings, chunk-size-invariant training, exact evaluated best checkpoints, joint exposure constraints, turnover behavior, infeasibility rejection, and fail-fast handling of non-finite training and validation state.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L222-L331",
+          "version": "repo-lines-v1:sha256:f6db2755f44fb7ce9ac23f7b5cf3187ce28424daf87659da6ab6a0f8a34540b7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhMDRjYjg1OTgzODNmYTgxNDMxNGQ3YjJmOTFhYjcyNTVhZGQ4ZDMwYjY2NTBlYjBjZjlmZDY5ZTMxZWEzMGUxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4Y2M0YTdkMWNjNzk2YWJhM2U0NjcyMzMyN2Y1MTdlOWY4MTE5ODJkMjUwZjA3MDI5ODZlNGI1NzY0YWQ5NTg5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzMjM5MGMwMGNkYzQyOWIzZTY2OTBmYmUxZmU3MjkwOTBjNDA3YzAzZThmYzA4ZGM0ODBiOTA5OTEzNjdiMjYyIn0"
+        },
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L391-L537",
+          "version": "repo-lines-v1:sha256:9f7ce4e39b2d4ebfe187ee2da553e2de0f836d1a667a23663e7c96847518ba27:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZmY5Zjc2MzNhYzU2ZWU4YzY1NjU3NDAxZDY3OTVjNzE1Yzk2MzIwMmJiMWZiNDBjOGQ5ZjVkNTRiYTdiNjU5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwZWMwMGVmMGY5NWQxOWUyZWJjMzIzN2FjZTFmMmY4ZjcyNWMzOWZmYzE2YzU3MTFkYjQ5ZTgzOTcyZTcyNGUzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjMTZiOTE0OTkwYjAwYTlmY2M2ZDIwMWVlN2JiZGIxNTE4OWU1YTk0YWI4YTZhMzIyZmMyNWE5YzM1OGUyODAyIn0"
+        },
+        {
+          "resource": "repo://tests/test_financial_correctness.py#L538-L640",
+          "version": "repo-lines-v1:sha256:f18a8b04eefc6bcabb2bc7c48014e659f36b84667a16644d730930b02faabae0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyMGQzNTkwNTE5ZTE3ZWMxMWNhY2YxZmNlNDI5MjE0NDE5OTc3Y2Y3MmM2YjA2YWYyODY3YTRhZGEwZThjNWEyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5YjA0ZjdmNzNhODhjZDgwY2Q0ZTRlNjI5Nzg0MjIwYjllYWI2NmNhNzk4NmZhMTBlNjFiMGY5OTVmNmRiOTI1IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkMzdkOWMyZTA1YWZiODA3NTYwN2Y4NDg1ZWJmZGFhM2ZiN2JjZDZmNzVjYjg0ZGRiMDBlNjY0YTU0NGMyNzM2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_70e9637ffc4e4016aae08a756b2d5040",
+      "statement": "Failed neural refits for CAE, SAE, SDF, and the SDF beta head must restore prior checkpoints, metadata, fitted state, and predictions; neural fits are also tested not to modify NumPy's global random state.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_lifecycle.py#L123-L258",
+          "version": "repo-lines-v1:sha256:98458288f94be217ddeb27fb5770479d5cacb2f00ce2ae08c73a13987e665815:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3MmQxZjA4NWRmMWZhY2JmNDBmMzJjMDM4NzUyMjhiZTdmOWFhNWUwYWZlMWFjMzllNGIzYmMxMzZjNzU2Mzk3IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0NGU5M2VkMGNkOWVkZDkxMzAxMjkxODgwYWE5ZmJhM2UyMTcwYTEwMTkwODdmZDQ2MmVlYTY4MzM0YzE3M2I0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3NTZjMzhkY2EwM2NmNjc2YmNjNWI2MjdkMjUyMmRiZjE3Y2RhZDg2MzljODZjNDYxNDU1MDRmYzFmMTZmOGI3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwNGViOWMwNzMyYTM4MjI1ODk3ZjJiNjFmOThjNTY1MTk5MzdhNjM2OWZjYjE4NDQ3M2U5ZDRiN2FlM2U0ZjcyIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_0c624504dce14dc3bdf019db38dbf3a3",
+      "statement": "Persistence qualification compares recovered predictions and fit records across model families, includes a PCA load and inference in a fresh Python process, rejects malformed or tampered artifacts, and requires failed atomic replacement to preserve the prior artifact.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_persistence.py#L164-L295",
+          "version": "repo-lines-v1:sha256:4952709b9ae05e35b9ee9db09ddfbcf6a6df31b4c227415ed635abeaf2832d61:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiYjJjZDRhNzRhYTgxOWZlZTMzMGIxNWRjZjZlZjIzYmRjY2MyYTg5MGE1YWMxZTEyMWJiZGU4NDBmMDc5ZThhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhNjVkNjkyYjc3NzUzNzY4NGQ0OGU2NTVhMmQwMWExNDBjMzYxZTMxMGJjZmExZDNjMWIyNWRiYzYzMjc5ZDg0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5NjFjYjY2OTUxOWVhYTUwOTgzNGJkMmY5MDFjOTdkOWY4NThlNzE2ZDNiZjdiZjkwYzNkOWM0YmFhYjZjNmI0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5ZDkxYWE4OTE1ZDc0NzNjNTRkMjYyNGQ1MWMyYmNmOWM5ZjhiYmZlM2YyNGFhOGI2MTI3ZWNmNWQxNjA3NWI2In0"
+        },
+        {
+          "resource": "repo://tests/test_persistence.py#L41-L162",
+          "version": "repo-lines-v1:sha256:a0f756b359d7b82cd2d3f28e9524f8f1e3f58e80f0fe08ea64e958504ac02d87:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0OGJlOTc0OTVlZGQ4ZjI5OTBkMThiOWQ1Nzk4OTUwM2ZjNGRhYzQ0YmU2NGUzMGE4YjJlMjAyNTJhZjJlNTYzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4OTBhZTBkM2M2OWFmN2VkMTFhMzVjMGFjOWU1ZTE2YTBhNGRmNjZlOWFjMGMyZDZiYjE5MmM0Y2VhODFkMjU5In0"
+        },
+        {
+          "resource": "repo://tests/test_persistence_validation.py#L275-L321",
+          "version": "repo-lines-v1:sha256:af698bfab8fe714d894a641f65ef5592a0b9c4fe3e78991bbe9dba9fc7780519:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmMzQwMDE0NjIzNDI1MjMwMDZkZDRjZTY5MmE4YmMyYjBiZWU3Nzk0NmYwYjg1ODE0NmU3M2M0YzQyYmMwZGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0NTUwNDBiMzA1YzQ1OTEzNDczOWU5YmMxMWZiODdjYjU1ZjZhNjIxMjc2OWY4ODkzZWY2Y2Y2NzAzNmFiZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5M2Q4NGQ1ZWFiMTUwNWZkZmM2MDg5MTE2N2IxNzU2ZjU5YzZiYTk5MTc5MjM1M2IzZGFjMTdkNjYyOWJmNjIifQ"
+        },
+        {
+          "resource": "repo://tests/test_persistence_validation.py#L44-L137",
+          "version": "repo-lines-v1:sha256:9a174050c1493a3a186eca56d9dd6f7c04d50a6f098c37a0046402dbad684b63:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5YzJhMmVlMmY1YjY1ZTZmNjM3N2NmZDE5NzA3ZDczZjBkM2IzZmZhNzM3ZmFiNDk2ZDVmNWQ2MDQ3YTk4ZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhNDYwZjU5N2M3ZjZiNTM3ZjhjZmQxYmJiODRmY2FlZTVmNjZhNjdlZjg4NTQ2NThiMDU1NzE4ZGUxOGUzZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZmZWJmY2M0ZDhiZDdlYWUyMGQ2ZjM5MGY1Nzg1NDE5NTE3NWQ4NTQ0ODg4YmU2ZDM1MDAyMWI1YWYyYzA0YzUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_38f7d9d85a8d422c928e4e5aa53d2834",
+      "statement": "Integration tests protect data identity and schema conversion, backtest feed/calendar semantics, and transactional frame publication in which write or publish failure preserves the previous generation and cleans staging when no prior generation exists.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_integration_backtest.py#L227-L252",
+          "version": "repo-lines-v1:sha256:034b31a40202451efa6824b2b220602f7a87a0e139bded2ed73351676a1cbf42:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjYmJmNTNkNDAzNWE1MmJlMjg5MzM2ODgyYTBmYmIyM2VmZjFhM2M4N2ZjYjZlODM4ZWJiMzQzZGUyZTNjMTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkZjMwZDU1YTI4ZjZiZDk4MDE4M2ZjMTE5NGY1MjczYTE4MzVjYzU3MWMxZmMxNGIwZDM1ZjUwZGM4OGZiMjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiMGEzMGMxNWRmNDcyNmJmZWRhMTAzYzMwOGEwZWRjOTgxNDgyODdjNDBhZWMzMjdmMjk5MzliNDMwMjQwMDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1MjhjMTYxMzQzODg3MDczNzkyNTQxMjFlNWYxOWEyMmNlNjUxMjFlNWZmOTYyNTY1MWEwM2M5ZGQ2NjY5OWUifQ"
+        },
+        {
+          "resource": "repo://tests/test_integration_backtest.py#L408-L514",
+          "version": "repo-lines-v1:sha256:fa540a8ef01464872cc26d7ad47df5444aa2bb69d05f55c17d956eb9190e4f86:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2ZmFhZmQzYmNjMDQ0NmY4NjY0ZDA5ZjZjMzk2NzZjMDBhZWZiZmFlNjBhMWMyZDNiNTFmYTY2YWFkMTc5NWQ4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMzYxMzJmNTc2YmJkYmQwODdlYWQ4NDdiZWI4MmQ1NDcyY2RiY2JhYzkyNDFlODA0ZGY3MzU5ODY2Y2FjMTRkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxNTU2MDYyYmNmZjc3ZjM2M2QyOTkyZDY2ZTY2MWFjMzhkMWQzNzM0YTE5MzFkNDYxNDNhZTJiYTI2MWM0YzAyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzOTE1Y2I0MmJlMzI4NTI5Zjk5YmUxYzljYWQ4YmFiMjgyYjM0NWMyOGI4YWVkZDNiYjJiM2ZhNGIxZTg3NDFiIn0"
+        },
+        {
+          "resource": "repo://tests/test_integration_data.py#L23-L208",
+          "version": "repo-lines-v1:sha256:60cab87e8db1f07539c9c5237cc685736b9ce3441958cdb08e77f8898675647a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5YTkwMzJjMmFlNTVjMzczMzY3MzQ0NTk3ODBmNDAxZDZiMTczOWVmYTk3YmZhOGY4ZjA3NGMxYjczMzkzODEwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxZTZjYTRjN2Y3MjdhMzU0ZTFkNmIxOGUyYzQ5ZWU4NzU0Yzc1ZDlmNGNmMDEyNmE4Zjc2MmRkODIzNDZiYjQ0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3MDY0NTFiMmUyZjUyZTExYmNkMjY5ODY5YjhlZWU0ZmI4ODJkZDM2YTNmYmZmZDNhOTg3ODlmNmEyYzYxZDIxIn0"
+        },
+        {
+          "resource": "repo://tests/test_integration_surfaces.py#L175-L322",
+          "version": "repo-lines-v1:sha256:aecc3eda2f63b504ea193ee05d9ba185d711467e23227b8edbc66ebda4a3ca06:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMTQwNDIzZjgxMGUxMWIxNDM4MmI5ZDc0YWZhOTcxNzZmN2FiZmNkOTYwODk2NjAwYjljOTU5MGQ3NTMyY2NlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiYmFhMDY2YzU0NGFkNzMxMDA1YmQ3ZjQ0ZTM0NTYyNDEzNjE0YmFhNTBkMmJhNWY5MzdmYmZjOGQxNmJjNDA4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiNDAxZDEyZTM4OGRiOGE0OTNiMGE0NGMxM2Y2ZTIzNzFiYWU1MmJkYjA5NzE0ZDA4MTZkNWY4ZmY5ODQzYzBhIn0"
+        },
+        {
+          "resource": "repo://tests/test_integration_surfaces.py#L364-L377",
+          "version": "repo-lines-v1:sha256:412006b76864acda9c9018e36044bf79f13933411c1da2002b6f4dccc9d866cd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1YzU2ZDU4NDVjMjc4Nzg3ZWE4ZTQyZWQxMDNjYjg3YjZjMjYyYTUzNTM2Y2I0ODIwOGE1OTI3YjY3ZWMxYWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjNWM0NDhjOTZjZDYxYmZiOTUxY2JlOTg2NTNhMzY4MDNhNzY3ZGNiOTc0YzdiNjc0Yjg5ZjhhMjMxODU2YWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlYjNjMmQzZDQ5OGU5NTE0OWVlZTM4MmY5ZTEwNDQ0N2IzYjAyNjcwNjcyNzRhYzZlMzE5NmY3ODkyODYxZmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_747a11305779414189035656d0e12376",
+      "statement": "CI builds one commit- and tree-bound candidate after lint, type, coverage, and docs pass, then qualifies it across Ubuntu, macOS, and Windows on Python 3.12–3.14 with source tests, type checks, rebuilt-wheel comparison, and installed-candidate tests; Python 3.15 prerelease qualification tests the core candidate without the deep dependency.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L128-L264",
+          "version": "repo-lines-v1:sha256:7fbdf35ca2fc840a223487843bb1c4be08844bbf176fac58216252d8b205f024:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MGJhNzA0ZGMzODExYTUzNWVkZjc5YThlYTQzZDg2YTVmNWMwMzY4YTQyNzMzZjdhNzc1MjZjOGQ0YWFkZTdlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmY2MzMjM4NWU5Y2NhZTUzYzk4MmIzMmJmZjNiNDZiYzRhNjI1NTI0MDcyNWJkYzhkYzg1NTE4NzQxNGZiNDA3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlNGQ5ZmRmMGYxNmJhNWQ4M2YxNzNhYzhlNTcyMTZkM2Q0ODA5ODExZDJmMGNiMzVmODQ5MzJhNDQ0MDE2ZTZmIn0"
+        },
+        {
+          "resource": "repo://.github/workflows/ci.yml#L320-L352",
+          "version": "repo-lines-v1:sha256:bd1487b4d5f4093da597d218fe86eb21fd3448849afcde751df02f51391f00ee:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwOWNlNDEyODUxOGJjYWMwMzRhNmEyMTBhNmRkMjM4Y2RhMWQwYmQ1YjgxYzk3ODc3MzQyZGRkOWVhY2ZiMWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwYmE3MDRkYzM4MTFhNTM1ZWRmNzlhOGVhNDNkODZhNWY1YzAzNjhhNDI3MzNmN2E3NzUyNmM4ZDRhYWRlN2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1YWM1Y2QwNmQyNDk2YjliZTJlNTZjMTZjMDg0MDYwNjZlMGM5MjhjMzE5M2YyNDhhZDJmM2VhOTUxMzAxYzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU0ZDlmZGYwZjE2YmE1ZDgzZjE3M2FjOGU1NzIxNmQzZDQ4MDk4MTFkMmYwY2IzNWY4NDkzMmE0NDQwMTZlNmYifQ"
+        },
+        {
+          "resource": "repo://tests/test_repo_hygiene.py#L67-L134",
+          "version": "repo-lines-v1:sha256:8ae5d68ee7fde8508ce7fe930e177df6d2b0182685deb7493ac8f04b65b7ed5b:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxYWIxMzdmNmQ2YWQwNDdjODkwZGY1YmE0ZDQwNjQ3MGI0M2MwN2JhM2ZjZjJiOTliY2Y4NjQ0Y2I1Njg0MGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMzY4OTJiMGFhZjg2ZmY2NjY1Y2M2MjBhMWY5YTBkNmZmN2E4YjgzMzE1OWFiODRjOGNiYWE4ODg1NjZkNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIyM2NjNjY1NDQ5NGRhYmIwMGI1MzVmM2IyMmIxYzA2MmUxMjAxYmYzZGZmM2YzZWM0NmQxMjU0Mjg0MzhlODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0Mjg3ODBjZWMzOTM5OTBmMzA0MTc2NWFhYzBlNGRhYTY1Mzc3NDNhZmJiYTdiYmZjMTliODIyY2EwZmMyZmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d15e82da836347d6a4eecc618caaeba6",
+      "statement": "Release and main-branch qualification require CUDA success, while the MPS neural smoke job is advisory; CUDA runs public neural workflows and repeated canonical and scaling performance profiles with replay and performance checks.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L294-L318",
+          "version": "repo-lines-v1:sha256:227666f439e9f5a1d8b26333f2959e63790e9b7ba17c83872ee72333f5fab0a5:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3ODEyOGJlZTY5OTJhZDE0ZTBkN2EwM2U3MTA4ZThjMGIwNDlhMjA5ZjExYmU2MzMyNmE5MDM3ZTQ4MTcyZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzY2ZmZWM3NzAwZGEwMGVmMjBmMTE0ZTE1OTlmYjdkODY1ZTFjOWYxMjNmNjlmMjZiZWJiYjg5NmZjNGMwOTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVhY2IyMDFmMjI2YTVlN2U4ODQ1MDllZTljODdlNGY1MmM0MTMzZGMxOWVmYTY0MzI3N2ViMzA4NTk0MTM4ZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3M2RiYzBjNzY3MTRlMTFjYTI4Mjk3YmU3MzZhMTdhNGNhNzZjNDkxNTRjNjg4NTY0YjU0Mjc2MDZkNDY4MjQifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/ci.yml#L354-L503",
+          "version": "repo-lines-v1:sha256:8ec328b39a5f5700106875cfc83e54057e4ccbf4d9d7181c44f331bd6e63219f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwYjMyYjk4NzI2M2RmMjE2M2U3MjZkNDhiOTJmNmY5NjUxNDhjYjZiNmQyODMxNzkxNTE0YzkzOWY4MzdhMTQyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2NTM0Njg1ZjQ1M2JjNjdlNTZjMWZiNjIzMGE3NTdjMzJhYmUzMDU5OWQ4YWZjYWQ4ZjA5ZDhlNzVkYWRkZjY4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1ODJiYjQ5MWQ5NWVlNWY4NjczN2VjNWJmMGViOGI4MDFkNzhiZjIzZDI3NjI2ODMwYWQ0ZTZkZjU0N2U2ZjEwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4YzI1ZTBkYjZmNjA4NmM1OGMyNGU0MjY1ZmIyN2JjZDY3ZWExZjQwZTMzMTQwYWIyYzc4NGYwYWZjM2YyNDRiIn0"
+        },
+        {
+          "resource": "repo://tests/test_release_candidate.py#L187-L230",
+          "version": "repo-lines-v1:sha256:a5a012c272e0b954e44d43a34332e4cfc51c18041f22cd46a45aa4b62b78111f:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYWRlYmZlYzQ2Mzc3YzMwNDAzOWE3MjI5NGZiNGI1MGNmODA4YmFiYWZmNGM2Mzc1NzAwNmI5OWEzNzMyZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVkMzdjYzY3ZDFhOWI3Nzk4YjJjMzE3NjRjYjhjOThhZGRiNjg1NDUyYjFkZWY1MDVkZDJmZDM1YjhmOTVhMDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0NTViN2E0NWQ1MmQ2ODRiMGU5Mjk0NDcwNzM1OGIyNDgwZGVkMTAyOWE2YWVlNjI5YWM1ZWMwMDEzM2JhYzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5427726a3db34492acf2ce44235f5ee8",
+      "statement": "The release workflow qualifies an explicit current-main commit, selects and verifies the same candidate by commit, tree, version, and hashes, and reuses rather than rebuilds it for documentation, PyPI, GitHub release, and post-publication verification.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/release.yml#L108-L251",
+          "version": "repo-lines-v1:sha256:9e689edd52f9f8f0b1e7dd606c5ca54c543d352ea03efc1ed54010c8901c8d27:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjMmNiNGQwYWVmMWJiNWY2ODA0YTUxOWRmNzNjMmY1Nzk0ZjNiYjcxMWVjZjg2YjFmZTM2ZjVlZTA1MTQ3NGZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjZTk0OGU5MDRlMDczYTllNTY5ZTEyZjdlYzljNzRkN2U4MDIzMmI4MWRjNjE3Y2VhMjJmZDU0ZGQ3Nzc5NDc3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3YjI1N2ViOGZkNjgxODJhMWQ0ZDc5ODQ5ODRkNTgxMmQ4MmUwM2FlMDJhOWIzNzA4MmNkYTIyYzAwZmVkYjE5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4OWRiODA4MmVhODEzZjM3YzNmNjNmYjZlMDQ1ZTI3ZmQ1YWI0MWYzMDYzNDQ5OGNjODdmMWIzZGU3N2Q3NTMzIn0"
+        },
+        {
+          "resource": "repo://.github/workflows/release.yml#L253-L317",
+          "version": "repo-lines-v1:sha256:8c7facd02ce28084a57c6ee66b049546bee5f3f32c70446088910939c352abbc:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmYzQ3YTEzYzQ1ODdkMDFlMTk3MzAxNWExMGUwNmZiOTY0YThiZjRiOWZiZTcyN2IwMjI5Y2Y2ZTlhNzQ4ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2ZjExZTY4Mzc5OTU3MzIyMGY4MjM4MGY5YzU0MzY5NTY4NTdjOGY0NGE0ODMyMGY2ZjBhMGExYjlmOTQzMTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwODdmM2YzNTM4ZDE5NDkxMzA3ZmUyMTQ0NWQ2YzAwMGJlZjEwNzRhZDY3OTQ5YzQyMmRhNjc2OTBiZTY5MmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzY2UwMmRiMjVkMTA0OTc1YTgzNTI5ZmY0ZmUwZWRmMDQzMDdiNzM1YTU3ODU5NDVlYzNmMzg2ODZlMGY5OTkifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/release.yml#L5-L106",
+          "version": "repo-lines-v1:sha256:79e1445ed228f8e5d43a36b7fae0b04e6b37132d32f3d35b39d4de0393009205:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkNTdmY2UxYmQwYjQ4NDM2YmY1ZTZlYTE1MDZlNThjYWQ2OTBlYmEyZGIxOTQ4NGRmZDM5NWE5YTVjMTMwNzczIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmZTRlOGMwMDgxMDM1OTY0ZmE3NWNhZWFkMWJmMDUxMjFjOWE3ZTc2ZTFmM2ZlYjJmZDkyMGQ2MjU5MmMyNmNjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0MGRjMjUzNjc3NTFmZGJmNmVjNDcxZmYwYzA4YzljM2JhZDllZmVjMzk1MTA1OWYxMDcxMGUxMTI2NTAxZGQ2In0"
+        },
+        {
+          "resource": "repo://tests/test_release_workflow.py#L198-L239",
+          "version": "repo-lines-v1:sha256:f3a67eb82d2a6962f4b63152c6185abce3283a5735a369c24add4ad6afdc6c9d:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkYWZkMDJiNmVmMGZkNjljM2M5MjQyZjQwZDc1MWQ2ZDc1ODRiYjMzNWNkNDY2ZDk2MDgzNThmMTViYzEzZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEyMjBhMThkNTJkNzc3NmEwNmJhYTM4YTg2YmE3MjllNWE2NWU3OTAyNTQ3Y2NmYzg1MTk5YjVmOTdiYjA0ODYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5ZDY1YjE2NWY1YjAwNjIzOGI5ZjljMTNhMTJmYTAyNTdmMGE1ZjViMGFmNTJkNGVlYWIwMTg2ZWQ5ZWY5Y2EifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

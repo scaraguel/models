@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9f2e680b7279012d66116b407f432e2904263362bd7126d124749c3fdc7a5f87",
+  "claims": [
+    {
+      "id": "claim_b8de519d1d484edda829c31a3393c713",
+      "statement": "The supported root import surface is the sorted STABLE_ROOT_EXPORTS manifest, while supported api.py and types.py submodules expose explicit narrower sets and implementation bases/loss internals are excluded.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/__init__.py#L82-L159",
+          "version": "repo-lines-v1:sha256:47df54df75b2eba0658189a1be709b095e84cc1fc9089aae12a57fbcdd811afa:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2ZWYzM2Y4MjllMzFmMjAwYTM1YTFkYjVmMjI5NjFhMjZhZjgwMTQyODRjMWZkMmY1M2JkNzE5NjIyYjIyMjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1ZGUxYjk0YjZmNzU0NDQxNjkyN2U1YjI1MGE3OTA2OWI4MDEzMTY3MjkyZTg3MDI3OTI3MmNlYjNhMzI4YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhZmU1OWU4YzIxNWMwNmJlYjkwZDI2ZjI3MTFmZGI4ZWJjZTExMmFiY2Q5M2YwODEzMWFmZDlkMmMyN2E2ZjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcwMjczZGE0NzhiZTI1NGI0NzUwYTM0YzNlMzM2MDhkOTIwZTg2YzM4MWIyNzc2NDAwYzk0ZTEzN2NkOGRkMWIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_public_api.py#L1-L81",
+          "version": "repo-lines-v1:sha256:4ffae7a4a397b88e5678507fb7c2b176db17c2a0eef1703f3c7acf8d8fbc5242:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExYzNlMGI5NmQwNDM4Zjc4OTFiZWE5ZGVmYWY5MGNmMTlmMmZkMTAyYjBmOTBiY2ZiNTAyNWI0OTk2NWY4MGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_public_api.py#L18-L62",
+          "version": "repo-lines-v1:sha256:022a09b5e67eebd5f1f59287c44ee97e8797e83b0e09ae928e3eb63bf10dce75:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1OTEwM2ZkNTc5YzZiYWE4M2IwMDVmMmUwNTU4ODk4NzExMzc3MDFmZTcwMmIwNTE1NGIyYzNhNDdmY2ViYzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyYjgxMTc3NDMwMmI1NjMxOGNjZjcxOGI0NmRiMDJiMTEwMDE0MTJjYjgzZWE1ZmQ1NTYzNTljZjJkZDRjNDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwNmI5MDJhMzM4OWIyMjMxOGY2NTU4ZDBjZDdlMjk0YmRlOTI3ZDYwYzVmYjM4NzU4Y2NmYTU3NTFlODYzNDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_02c8b100e47245209f4e89af64c97add",
+      "statement": "PyTorch-backed portfolio exports are lazily loaded from the package root, and attempting to access them without PyTorch raises an ImportError that directs users to install ml4t-models[deep].",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/__init__.py#L162-L197",
+          "version": "repo-lines-v1:sha256:b45b5219707cd30d1da6980be6e5837335a8634d2953e371fe1155c14b243428:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MTRlZTEyM2M4MjIzODJmOGM2ODg0OTBjZmM0ZTkzNmZkYWVjOTRlOTMyOGRkMDc0OGQ1MjYyYzZlNzIwZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5M2ExMzA2MmYxMGVlNGYxMjE4ZDkzZTM3YTZmODFkMzQ2ZmYxMWVjN2U1NWRkNTQyZTJkMmQyZWYwNzExZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVhZWFiZmU5YzRlODEwYTcxMDAyYjliMjEwY2RlNzZjOThjNTUxODlkNThkZjhkMGM2ZTViYjA2Y2Y3Mjk4ZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0bb41d6661e54ab4ba93d9d597205117",
+      "statement": "PersistentPanelBatch represents T-by-N stable entities with optional T-by-N returns and T-by-N-by-C characteristics, can infer shape from data or paired timestamp/asset labels, and validates cross-field and label alignment.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L44-L128",
+          "version": "repo-lines-v1:sha256:95edeff31c6d7ec3ed3ce43d675166a5fee0511704a6c8c38da79d1bfb05d34b:eyJzZWxlY3RlZExpbmVDb3VudCI6ODUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4MTNjYzY2Yzg4Mzk1ZDAzMTZhMTNlNmI1MmRhM2IwM2U4OTNhNjkwYzE2OWQ2Nzg5NTQwZjM3M2JjODE2MTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0ZTE5NDc5Yjk1MTZhMDE4ZDdiYjVmMTAzOTRmNWExMjA0YWI3NTA5ZmIzNGQ3MWFmNzU4YmY0ZjBiNjU2MzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3ZDY2YmFiMzM2YzBkZjA4OGIxZjgyNjUxYTE5NjA2MDUzNmVmMTZjNDFhN2UxNjNkNjU0ZDVmZTI4Y2EzMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExMzZiNzBkZmQxMjJmOTU2MzQ2YTcwYzhjMTU2ZWYzY2Y2OTI3Zjg2MWY5ZWY0NzA3MWJlOWFkYmVmM2ZiZmUifQ"
+        },
+        {
+          "resource": "repo://tests/test_types.py#L23-L67",
+          "version": "repo-lines-v1:sha256:38734f6698fa3279c6fbd829e328332a60c2d91e06ab5060180bd1931abe06b0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5MjhhZWI4MTZjZTQ5ZWQ5YzU3NzI5ODRmODJjNDgxYTU1MWEzOTJkZDg4ZDNjOWM0MjlmNjBiMmFhZTA3ZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2YjI1Mjg5YjUwMWNhZWU0OTExYmJlMDJiMDM3YjM1MTliMTUzYTRkODZiNTIxOWM1MGRjNWNhNGEyYWQ5NTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNkYmNmM2ZmOGUzZWJkODhmNDlhOWQ3MzkzYTJiN2IyMDQ1Yzg2M2U2N2E5Zjg1MDZmMGY0NzliOGUxNjA5NjIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_aaf5a2888adc4ef0a8d610c331dcca9d",
+      "statement": "CrossSectionBatch requires T-by-N-by-C characteristics and shape-aligns optional returns, factor_returns, context features, masks, timestamps, and asset identities to its time and slot axes.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L131-L189",
+          "version": "repo-lines-v1:sha256:e6f8ba43c00c5e1d037af1bef5c337e716ab38019e70d3d143f79276ebbf35d7:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3Y2I2YWM3MDI2MmVlYmFmMDY0MTZlZDA1YTM0NmFkN2E2NTY1NmJmOWYwMWY5NDQ4MGU3OWE5OTI3NTI0NzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMmQ2ODUxNDg3ZjEyNzFlNjdjNzAzYzU5M2JjOTE2MDZkNzRlYTQ5OGZiNzQ4ZTc5NjM1MzA3OWM1NTRiOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjNjdlMGZmNGYzNjU0YmQ1YzRkOWNiZTc5ZmI0ZmRiZDQ0N2Y1ZjRjYjc3NjRkMGM5ZjgyMjc2ZjVmNTkwMWIifQ"
+        },
+        {
+          "resource": "repo://tests/test_types.py#L69-L108",
+          "version": "repo-lines-v1:sha256:6dd2487da447d047014543d4b457f51ab579cbce5f0f54956c849d334c0ed4c0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjMzIwYjczZTEyNWVkMDdlMGI1MzEzMmI5MjQ0ZjBlZmMxZDVhNjRiY2U1ZmE5MTM0OGFjMjJiMTBmMzI0NDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzOTIxYmRmMDY5MGY3OThlOWVhYTQ1YTM1MDU2MGExNzQ4YmU2NjVhOTM1M2I3YmUzYTlmODQxMWZhNzY4MTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e62a85922c484e82a3fcbc8c03fcdd9f",
+      "statement": "PortfolioSequenceBatch uses B-by-T-by-N-by-F features and validates all optional sequence, asset-context, mask, label, and adjacency arrays against those axes; one-dimensional per-asset costs are normalized to N-by-1.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L192-L287",
+          "version": "repo-lines-v1:sha256:1aa7d366bcd320803108b2adc146fb238a1e9b967d563f12b10a1e19780eded8:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5ZjVhNDNkYzlmZGI0MDdkN2JkNzVmNTI0MTFhNGNkZGQ0ZWYwNzE0OWE3Njg0MjNhN2VmNjhhYzgxNzA1MDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjZmJkM2JhMmI5MjE4Y2ViYTBlMzdiYTBjOWQ4ZGYzMDBmNTRkYTZjMzJlMDVlYTFmMDZhZTExZjA5NzIyZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0ZjZkNjUxZjhiMDI5MWUyMWQ5MTYzZmRiZDkyYTQ1ZGU1MDEwM2NmZThkZGMzN2JlM2Q0NWU0MmVlMzA2NDgifQ"
+        },
+        {
+          "resource": "repo://tests/test_types.py#L110-L161",
+          "version": "repo-lines-v1:sha256:d147da83dab7d501c9406b956ae60aefd1c1839d357e159819ed29fafd60a5f9:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlYjI0ZmU1YzliMjc3NmNhNTJiOWIwM2E1NGJlNTdkMmViZGFjNTgwNDk0YmQ2NDk0NTMxM2IzZjE2ZmI5ZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYzg5MWM0NDVmMGQ3NGJjMmZkZWY5MzM5ZDA3MmVmYzIzNWU1OTFmZWE3NTg2ODllZDkxNTc1YTE1OGFhYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3MGMzZWMwNzg5ZTYxNjkyMDBjODBmMTIwNjZkZjM2YTVkODRkMzRjMzdkYzBjYTU0ZmM0ZGVmNjY2MzhmZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmOGJiOTdjMjAyNWVhNTNmYzc0YTBlYzUyMDU4ZjljNWM4OGQ0MTkxNjFhNzYzMWRmYzM5MmE0YmY4ZjJkOWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_249832bf36cd4644a7aa5119695815e6",
+      "statement": "Public batch, state, and result numeric arrays handled by _coerce_float_array are normalized to NumPy float64 and rank-checked at construction, whereas estimator internals and checkpoints preserve the configured float32 or float64 compute dtype recorded in FitRunRecord.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L33-L42",
+          "version": "repo-lines-v1:sha256:854aec616ef4c2b1749aa3147501d972ade7b8bd0e83c43dfa14717531aee2d0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcxMTQ5NGYwYjJkMmY5OTE2M2ViMmQ3MTYzMmIxNGM0NjUyY2NlM2I1MmI0NWEzMzg1MTIzNTM2MmQ3OWNkMTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmMxODFiMDRmMTJjY2U3NTEwOTgyM2RkM2QyYWE3ZGQ4ZjAwMzBkNTY3ZGQzOGYzYzZmNmMwYWM2MjI4NWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZjODA0YmQ0ZjA3MTljYzczMzE2ZjcxNDZhNmI3ZGEyNDk2OTYxOThmMzVkY2NiYjU2ZWY5MDlmMmNmYmZiMmMifQ"
+        },
+        {
+          "resource": "repo://tests/test_dtype_semantics.py#L141-L245",
+          "version": "repo-lines-v1:sha256:0bb7b7da44f31a4381a34bb59f68ebcf06f1b419f6a8fe3b207cf37325246ce3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyMjVkOWY4NWU1Y2RkYzQxYzMwMDdhMjc4ZjVhMDBjZDEyOGQ1YTNhNTI5ZDA5ODIwMTQzYTg0OTU3NTEyNDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhOTY0ZWFhNWMwNThhMDRiOGM1MTRmMTkwYjg4YTIzMDJiYjkyZjg2N2M0MzlmYjhkZmJjYTZhYWJiMzRkNDliIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5MDU2OTk4NTFlNGMxNWYzN2JlOGRlYjc5YjczOTZiZWExZGY0OWY3YWM3MjFkZmM3ZDc1NDFlZGMxOGRkNTk3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://tests/test_dtype_semantics.py#L76-L138",
+          "version": "repo-lines-v1:sha256:c22d48744b4c6fe409df03fe393a6c3fbfe936aba3968e9bef01f018437025cf:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjYzRhMDNmOTYyZTc4OWQzYmYzZTQ0Mzk3ODNjNDAxZWE2MzE5M2I2ZTgwNzExMTVhY2NkYjFiNDYxM2YzYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmODM4N2YyOGM1ZWE1OTQxYzI4ODA3OTVlYjIwZmE2YzFlNjUwMjEwMTg1YmZhZjlkYmRjODY2M2RkYWM2ODMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxYWNlZTFkY2Y0OGRlZWFiNDMwOGQ2OTIzNDI2NzhiYjQ0MzY0ZWMzMmQzZTc3M2QwZDMzMzE1NTRjNDllZDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1NDQyY2Q3ODJmYzU1NzAwOWY2NDQxZDdiZmQwMzJlY2ZlMjNkNjhiMmJmZWMzNjI5ZTBmNjkxZTJhNzEzNWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c7356b6ccd6a475181e14dced819dd3b",
+      "statement": "Identity-bearing contracts require any supplied asset_ids tuple to match the N axis and contain only unique, non-empty identifiers; corresponding result types also enforce time and identity label alignment.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L337-L526",
+          "version": "repo-lines-v1:sha256:e6b9cab8d8809d17f9a4c30a7e9521d7b216d8b6a70a8f78fbe1df242e99e928:eyJzZWxlY3RlZExpbmVDb3VudCI6MTkwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5N2NiNmFjNzAyNjJlZWJhZjA2NDE2ZWQwNWEzNDZhZDdhNjU2NTZiZjlmMDFmOTQ0ODBlNzlhOTkyNzUyNDc0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkN2FlOTc1NGFjN2VmYTkyZTNjMjZjMzkyODMxZDJlYWMyMWNkNjE4YjlhZGIzMTExZGExNDM1YTBkZGE5YzI2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjNDM5ZGNhOGUxNGUxNjUxZDEyYTEzYmIxNzE3ZTE3MzY3MjY1NjhkZjI1ZGMzMzE5MzNkN2QzN2ZiMGVlZTc1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhMTM2YjcwZGZkMTIyZjk1NjM0NmE3MGM4YzE1NmVmM2NmNjkyN2Y4NjFmOWVmNDcwNzFiZTlhZGJlZjNmYmZlIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L64-L72",
+          "version": "repo-lines-v1:sha256:6f37751917d02af755d9fee8da031b77b3a661fe12477a64a692ba5440d63f7e:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjA3YjVjODBhZmFlOTRlMjRhYzlkMDQ1NTcwMjFhMGRiZWEyY2IwOTFjNzFmNmY1ZTllMWIxYmRiZWRkM2E4MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjUyNDk4ZmM1ZDE3MDNmMjEzYWNiN2MxNzIyMzFkNGRiMmQ4ZmE3OWNlMzU1OWQwZTQ1ODA0YmJjNjc3NWE4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGNjNGE3ZDFjYzc5NmFiYTNlNDY3MjMzMjdmNTE3ZTlmODExOTgyZDI1MGYwNzAyOTg2ZTRiNTc2NGFkOTU4OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTEzNmI3MGRmZDEyMmY5NTYzNDZhNzBjOGMxNTZlZjNjZjY5MjdmODYxZjllZjQ3MDcxYmU5YWRiZWYzZmJmZSJ9"
+        },
+        {
+          "resource": "repo://tests/test_types.py#L164-L219",
+          "version": "repo-lines-v1:sha256:9604c7cdb18ca271257e0213d67a915f0b7264fd20a1c06157e678c23388647d:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0MzkzMTAwODNiOWQ3OGE5NTczMzFjMDE2M2YzZTkxZDU3NTcyYTE1Njg2MjEyM2NjMzAxZGYxYmY0OGE1OWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3OWNjNzU5OTdhOGU0YTg1YTY3NmFmNWUyYWJiOWI5ZmM2NDA0NTQxMDdhYzEwNmRiNmE2ZDViNTM3MmU1MGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdiMWY2Y2ViOTc4MjkyYTQ0OTE0ODgyZDQ3MDg5MGYyODk2ZGRkNGU1ZjIyNWQ0MmQ3ZmVhMmFlNTU2YTg4MjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b06dbef877f141b3a64f5a083177d255",
+      "statement": "Persistent-panel PCA preserves the fitted asset universe by reordering fitted state for a requested permutation of the same identities and rejecting a different identity set without echoing the identifiers.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L176-L192",
+          "version": "repo-lines-v1:sha256:913bb8a6d6b2063b41f0b658a468b5763c4dfc3b41033605131d292e07c31183:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3N2QzZDA1ZTA2ZjFjNTFmMDBmYjQyOTM1ZTNjMTY0ZWQ2MDBiMmNiNTQwYzZiZGU5ODUxYzY2ZGQwNjRkMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5ZTBkMDdjZTdhNzQwZTkxZDUxODU0ZTA0MGY3OWU5ZmRlNzM0NzA5NDJiMTg2NWFkYTAzODc1MGUxY2M0NTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L94-L124",
+          "version": "repo-lines-v1:sha256:6de34f90bac41b548cafeb0f2ce18ce1e90152c6da080fded46620fafa9ef83c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjODcyYzgzMmZhZjQ1N2UwMGVjODYyODZkOWI2OTU3OWZiMDc5ZWU0N2I3ZmU2Mjg0ZTNjNTI2YjA2OTRjYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2ZDgwZmUxYmE4OTVhZmU5MDI3OWQ4NWIxZTg4NzAwMDFjYjA5ODA5MDQwZDUzNjUzODM5MDhjNzIzNzgyMTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1YzJjZTkyNWM2ZWM0NzY0MDU0YjdhMDcxODkzOTk5MGNiMGZjYjhjNjAzOTM2YWE1NDEyODFkMGU5MWM3NTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5ZGE1ZGQwZWVmYWI2YjZjNDdkYWU2ZmI5OTJjMWY1OTRlODdmYjg1MzdjZTIzNDM0OTllOWIzMjcxZDY1NDUifQ"
+        },
+        {
+          "resource": "repo://tests/test_pca_pipeline.py#L70-L109",
+          "version": "repo-lines-v1:sha256:4473fb46b59a2e77943919ca1e20be172d29cb5c4808aeb42deeab9a82018fe9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MDIxYWQ3ZGM3ZjliMTFiOWFjMDU0MDlmNGRlMjRmYjQ5ODI1MzE2NzIxOWM4MmVmYTVlNTg1MzQwNGQ5ZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMDc0YWU0MWQ2YjQ4NGNlNmZiYjU1ZmI3MjhjNmZlM2Y4ZjU4NmM1ZDQ1ZTY2MzcxZGM5YmQxNWIyOWZmN2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c5c228d8e46e44e4bfcc9c741aae2d07",
+      "statement": "Position-dependent portfolio validation requires prediction asset_ids to exactly match fitted identities in the same order, and neural portfolio implementations also require training and validation identity tuples to agree.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/portfolio_validation.py#L27-L35",
+          "version": "repo-lines-v1:sha256:b23ee61d25bc9f0c978ae6dcc4c50b18311c9cd01a0580335b3aa29eb3764437:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWQ3MWU2YjE2MWJmZmI1ZWZkOWFlNGY4ODU5NTk2NzY0MTU4Y2I4MDc1NzFkZDJkOTU3MzhkYTFhOGVhNjQ5YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTkwOWE1M2E2MThkMDI4ZTFkMzAwMGMwYTdhYmNlZWNiZTVmYjM3ZjRlNTExZWZlNDY2NDNmYWQ2ZTY2ODcyZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDE4ZGRhZTg0Y2JiMTIzY2VkMzg0M2M3NGNiZTNiMThkNDVhYjUxMzYyN2FiOGYzNmNiOWQ0MDE1Zjc4NmRkNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGEyYWMzOGExODUwYWRlODNjZjhhMTljMGJiYTVjZjBhZDg5MjU4ZjhhOTZhZDVlOTNkN2YyZWQ2OGZkNDEyZSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/deep_portfolio.py#L216-L231",
+          "version": "repo-lines-v1:sha256:7dc3b7608cf46bead847796e788e3b2dd9b6e63fcf50925372e1a68f75093f8b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlNzAxYjRhY2FkZTFiNDdlNjhhNjc0MDZhZWRmNmQ1MTcyOWExNjAxMjM4YTJlNGUxNGI5ZDg0ZGQxN2E3MTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkMjI4MjQ4ZDg3NDc4MWZlMGQ4NDc1ZTA1OGQzYjQwN2M1YjZjNDZmMjVhMDE5MWRjNGZkNGEzOTJlNzY0OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwODgzOGFhNWQ5MmQzNzJiYzI1YzlhYjRjNDEzZmIzNzQ1YjQzOGU3YTM0ODIyNzQxMjMwOWE5NjM1MzhlZDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/portfolio/lstm.py#L172-L187",
+          "version": "repo-lines-v1:sha256:43d4c362374a6d32a3f440fef6918aa5bc1f84307bc1fff017bd24458a89dbbc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNGEzNGJmOWZlMDg3MGVhNTM4NTc5NzU3OWNhMjE0NzIzMzRjOGUxNGJhMzc3M2MxY2M5YmM0N2Q4M2NkOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkMjI4MjQ4ZDg3NDc4MWZlMGQ4NDc1ZTA1OGQzYjQwN2M1YjZjNDZmMjVhMDE5MWRjNGZkNGEzOTJlNzY0OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ5ODlmZmQ2YWUwZmZhNWVkMTQ2YWFiNmEwYmJkNjYwYmQxYTYxMzE2NThiZGJkYzIxNzQ3ODUyMTcwZDhmZGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3471feb3d6074664a1e40b109cc725a1",
+      "statement": "The seven public protocols define structural fit/extract/predict/transform lifecycles over finance-native batches and results, including fitted state, fit records, and integer or phase-aware checkpoint surfaces where applicable, but they do not require save/load methods.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/api.py#L1-L140",
+          "version": "repo-lines-v1:sha256:125078cde5214a8a58dbca02e7feba8e8e25fdba446597af8ba5cd2fafc57505:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwNTNiMzg2Y2EzZTFlMTA1MmJhZWRhOGJmNjhlNDdmZWI5MmY3ZDgyMDZhZDdjOWZkZTU1OGVjZDI5ZWFhNWM0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiYmQxNWQ4NDM5ZTg5OGMwMzBiYmRjNGI0M2ZjMmNkZWQzMWM2OTdlOGUwMmZiMWM1MGVjZTUwZmU2NmJlMmU3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_e81b06d3747345528abb7d5b0d9e9e59",
+      "statement": "Checkpointed extraction rejects explicitly unavailable checkpoints and otherwise selects a configured default or latest available checkpoint; non-checkpointed PCA exposes no checkpoints and requires checkpoint=None.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/latent_factor_utils.py#L89-L108",
+          "version": "repo-lines-v1:sha256:69f29b65e852d85ea6b219452a14357fea0c0fe246695ee35576c2c7e45a181e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwYWY4OWYyYTMwZDE3ZTMzNGNhM2Q3MDliOTM0MWFjMzg1ZDJlZjM0MzQ2ZmNkZjgwNWQ3MTQxYmZlOGE2N2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4YTQ2NGI2NjQ5ODk1YTkyYjkxM2I4NTY0YWRiNGI0NWI0NDk5ZTgyZTlmOGJiODVkZGQzY2JkZGEwNDBjMTYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/base.py#L37-L43",
+          "version": "repo-lines-v1:sha256:93a15aeb2cf0d806c07d62926dfea5e632cf3e88299ea8c9ec99f671d94f9c0b:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTFmODJlNzJmNWEwZjU3ZTcxNjJhZmFmY2IyYzdiMmFkOWMzMGY2Mzg0MWI5ZWQ3ZDQzOTQ2ODUzNzE2MTkzYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmVjYWNiZTVkYTdlMDEyMzEwM2UxOWE5ZmE2NDE3ZTU2MGVhMjgzODhjM2Q0YmNiY2U2NTEyZTAyODI3MzQwZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L89-L98",
+          "version": "repo-lines-v1:sha256:d6b7151e382df77b89b20a4b077755e64c596e1f4acc04820b02a2f130917ccd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzMjQ3NjE3ZjQyOTM2ZGE0ZWEzZTYzZmUyYWMxOGRlOGVjNGRjMWM1Yjg5ZjIyNjA5MDg0MzEzZTEwNjU5MDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzOGU4NTNmODdjNTBjMTA1ZmRhY2NhMmU1OGVjYzhkOTE0MDU3MTk5YzNkMzgxZTZmZjEyZjA1MDUzZjEwYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0ZDViMTI5MmY5NjMzOGU4ZTA5NGIzMjg3ODAxYjA4MjVkNjdmYTY4NTFkN2Y1ODkwMjE2MTE1MmU2NDg1MzcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ed5a10236fd24e52a4c78c29cac2b9b2",
+      "statement": "Package-observed fits attach a schema-validated FitRunRecord to successful FitSummary results and retain a failure record before re-raising errors; records contain configuration/runtime context, dimensions and an input SHA-256 rather than raw input data.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/observability.py#L109-L155",
+          "version": "repo-lines-v1:sha256:81248b1386a0a6cbbcf0fd5147c7469d0d4dca90671c5e0a46553011aa41567a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYTE4ZTA0YTJjNDQ2MDJjODBiYWU4MjExZWY5NzliZjJkMjE2MTEwOGZkNzRjMDBkOTVjZTE3M2ZkNjZlZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3OGY1NWI4NTkzZDEwMGUxMWE2ZDUwZjgzMzQzYWM5ZDdlYTM5NjdjZGVlNjNhOWNiYmYyNGE3OWY3NmE0OWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEwYzQ4ZDQ3M2QwMDBmNzNkM2MzOGFhMDE5ODIxZGM0NGQ3YjE0MWVjZDdjN2M5OTgzNGMyMDNiNDM1MjY0ZGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMyNWE1ZjEwYTc0MTRmODI5YzY5NmJkNDU1OWJkOThiZDM0OTQ4MmFiMTc3NDBlZDRmZjUwMzI4NWY3NjY2OGYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_internal/observability.py#L19-L107",
+          "version": "repo-lines-v1:sha256:8e625d230c21c8f1cdb6d1a8f983d2cc6541c10a61912b31e6810f53ee14efeb:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3MjM4NWM4ZmUwMTVlMjkyYWZhMmQ2ZGU2YjVkNDgzYWFkZmY5MDFiMTYwM2JiOWYzNjc2NDE2MDdhYTFiZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4NjdiYTMzNzBlMmE4MGJjMjA2Y2E5ZTE3NTE2NjI2OTkxY2VlMjlkZjViOTQxNzczODlmMWY3N2RlOTExNjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1OTE0YzdlYWZlMWVkOTE2ODY4NWUyZDMxM2JiYjljMTExYjA3NDhhZWU0MTk0MzMyNTkwMjUxNTI0MjU4ZWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlNjc4ZjQ3MmViYWMyNTA2ZmQ5ZWI0NWMzNTU5MTBlODJmYTUyNDgyMTFhYWFkNmExYjIyNWU4NWEwMTc4Y2IifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py#L289-L335",
+          "version": "repo-lines-v1:sha256:6dd1ac89726f8ee43221a1a9d6a30cca1e2ccea3f132d1e280e58f7d64c4d1c4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3Y2I2YWM3MDI2MmVlYmFmMDY0MTZlZDA1YTM0NmFkN2E2NTY1NmJmOWYwMWY5NDQ4MGU3OWE5OTI3NTI0NzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM1NGVhODZkNjZjMzQyMWI2YTJjNDI1MTNhY2M4ZjVmZDQwZTUyNzg0NTcwYzc0MzU5YTcxM2ZkMWY4MzJjZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmZjhmMTU5YTBmMGJjNzMxZDI3NDhiZjZiYmFmNDAyMjBjZjU1OGFkZmI5OTI5YzNhZmVmZDU2YjUwZWExODQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7420ca202ea04049a715884dec391118",
+      "statement": "Batch construction permits missing values while estimators impose model-specific information checks: PCA rejects assets without finite returns and insufficient variation, whereas factor forecasters support partial missingness but reject factors with no finite history.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/latent_factors/pca.py#L38-L69",
+          "version": "repo-lines-v1:sha256:694abdba22624b15050473fb599249a7bf300beacffeb0209f0819a0d7fab758:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzODYyOTM0NmE3NDY1YjhmMTUzNzU5NTIwNGVmNDZiOGY3ZWY2NDFmOGNkODUwNGU2NzRjNmY0Mjk2ZmM3MzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwYzhmZDdhNjY2MmE3YWQ5ZGE3ZmViMjMxMjdjMmZlMzJmMjRmY2EyMmMyNzgxYTUwMDQwNDg1ODk4YjZiZTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2NGM5NDI4NzhmNjQ3Y2IyODY0OGMyMzAyZjZhZWU5MjBmOWUzMDBmMTJiZjE0NmJhZTQ2MjFjZWNiOGNkNTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmMDIyYmQ2NzNhMTk0YzkyMDZjNDIzNThhOTA3ZTNhNTJmMmZkZWJiYmFmZjVhZDkzOTIzYjlmM2Q1ZjMzOGIifQ"
+        },
+        {
+          "resource": "repo://tests/test_estimator_validation.py#L23-L92",
+          "version": "repo-lines-v1:sha256:9205529feb7bf45410820f6e67d09c62e6322e3ddbc1e8d1584802a8f611dec6:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyNmFlY2FlZjQzOTRmYzBiOTgwOGQ3MmI4NzM5ZjJmMTBlYWU1YzI0MmNiZjAwNDM3NWI2ODgxM2U3NTgyOTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmYTk1M2QyOWVkYzkxODMyMTQ4Nzg0NjA3MjMxNGM2OGJiZGI2NWU4NDgzNTBjYjNkZDRiZjhiNzUyNDVmYWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7cc64e9433854144acc308a4e6183698",
+      "statement": "Latent-factor, asset-level, stochastic-discount-factor, and portfolio result records enforce finance-specific ranks and label alignment, while LatentFactorPrediction and PortfolioPrediction preserve multi-stage outputs including both raw and processed portfolio weights.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/types.py#L337-L543",
+          "version": "repo-lines-v1:sha256:998c98d05d71727b086cd8a46c667462ff0b8f8e402dd48ebb751e1543ac903f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjA3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5N2NiNmFjNzAyNjJlZWJhZjA2NDE2ZWQwNWEzNDZhZDdhNjU2NTZiZjlmMDFmOTQ0ODBlNzlhOTkyNzUyNDc0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlMzI2MDlkNjEzOTk2ZWJlNDQ5OGEzN2I1Y2IzZDAyYmNjNTc3ZDMwMjM0MDQ5ZDQ0YWY1MmUzMDE2YzMwZThjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjNDM5ZGNhOGUxNGUxNjUxZDEyYTEzYmIxNzE3ZTE3MzY3MjY1NjhkZjI1ZGMzMzE5MzNkN2QzN2ZiMGVlZTc1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_e7fddb3035b34d92812365518bccb6d8",
+      "statement": "Portfolio model context validation requires forward returns for training and conditionally requires group identifiers or costs when the corresponding configured context features are enabled.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/_internal/portfolio_validation.py#L8-L42",
+          "version": "repo-lines-v1:sha256:0307686502f986de750c57ad938221e4ee2bda9eaf836508c72cfff4c02a4893:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1MTc3ODM4MTNkZTBhOWI0MDA4MWNjNTYyMGQ2MTViYWU0MTczOTc0MjhmMzUyMmI1ZDMzMTAxNWM3ZjYxZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUwYjk5ZTdlOThlNzAzY2UwZDdjMjEzYjYyMGIwMDMyMjJiOWIwMmUwNTk0NDczMmNhY2RkMzEwNWQwMjJmNTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}

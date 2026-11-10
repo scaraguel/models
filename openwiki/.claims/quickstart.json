@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:24c650f37c1475e9b1391af29bea7a4894203571fc19557b270d7de46e0c22b3",
+  "claims": [
+    {
+      "id": "claim_d45352ce52ac416ca2805dd158e1ec3e",
+      "statement": "ml4t-models separates four major modeling products—latent-factor state and forecasts, weight-native stochastic discount factors, direct asset signals, and portfolio allocations—rather than forcing every model through one abstraction.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L116-L149",
+          "version": "repo-lines-v1:sha256:ed9a78a48e64fb6376382027b3632d1e9ee34be9a5d923f940a2d82ff6a6ec4b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiMzdlZWUwMDdkY2U0MDZkN2E4ZDkzYTM4OWJkYzdiYmZiMDk4ZjkyZjQwMzQ4MzYyMjI0OWQwOWUzODliOWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmODcwY2I3OTAyMzRkZDI2M2FlMGNhNjI3OGM1ZmU3NWJiY2U5OTk3YTE2NjRmNDYxZmQwMmJiN2Y5MTEyMWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmOGFmZDc5MDQ3OGJmZTBjMmY5ODgzNjEzODM5M2UyZjhmNzk1NTkyNzdjMzlhYzg2NWEyN2FhODI2MTEzMTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjN2IzZWY5NGVmM2E2NmZlYTgyOWY2YTg2YzMyZjY2ZWI5ODdjOTNhNGU0ZGFhMTg4ZjFhZjQyMDY0MmMzNWIifQ"
+        },
+        {
+          "resource": "repo://README.md#L13-L44",
+          "version": "repo-lines-v1:sha256:045a719e31e9b020c710f2bb581c1068be44d8ba9544d2053f96d5bb7d2626d9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzZDc5Yjc2NmRjMGRlNWQ4OGUyYzZlZWI2OTAyMDRjYzg3ZTA0NTliMzFjMDhlOTA2ZWJkNjlhODVhZTk5M2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMGFjYzI4YjliYzZiNGZkOTYzN2I3MjYxNGUyZDVkMGNkNWUyNzA1OTMyNGRlYWE0ZGQzOTU1Mjg3MDgwN2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwMzM4M2M1MTVjYTI0MmM3YjBiYTZjZDNiODhjNjg2MWE4MjYyODgxZjlkYmQ3ZTg0NjYxMmMyM2NjY2QwOTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEyMTQ4NDk1MjkxNmE4MGUyNWRjMTM3NDU4YTVhMTI4NjE3YzI1ODczNDQ1MDZhZTFkYmI0ZGUyYjI0MzUzOTYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/models/api.py#L30-L140",
+          "version": "repo-lines-v1:sha256:bcf80bb2751d11b2c54e93a45403e0abc10f6357ee377a08b33700ccb09fbb8f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTExLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3NTkyNGI4ZmU1YjU3ZDRkZmZjOGJkMWI0YzA0MzIyZGU5NTAyODY5NjQzZTA4NjYyMjlhNWQxYzVlZTNiYzkzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiYmQxNWQ4NDM5ZTg5OGMwMzBiYmRjNGI0M2ZjMmNkZWQzMWM2OTdlOGUwMmZiMWM1MGVjZTUwZmU2NmJlMmU3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiNWIxMGZkZDIxY2U4OTFiYzM4MGE1MzUxMjBmZjhkYTJhNmVjZGEyODY2ZTZiOGRjY2Q5MWVkMTIzNDU2NmZkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_b13efddd334b4d7aa2ca83dc1ebf2763",
+      "statement": "The base installation depends only on NumPy; the `deep` extra adds conditionally available PyTorch, the `integration` extra adds Polars and `ml4t-specs`, and `all` combines the two optional runtime boundaries.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L50-L63",
+          "version": "repo-lines-v1:sha256:df28faaa8ae4d19f17d4e4177f111ac1745441fd79cd9b5444ca37e7fd1d88a7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM5MWM3ZjVjNjAyYjNmOTU3MDQ3N2M5ZTlhMjRlNjgyNTNmNGVlMmQ0YzZmODE5MTU4ZjBkM2M5ZGVlMjg0NzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlMjM1ZmQ4ZWVkN2M0ZTlhNmJiZWE3NzE1MDEwYmE1OGFiY2Y1YTg4ZGI3NWI3YzRjNzVkOTRiN2IyMWFjYTYifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L41-L78",
+          "version": "repo-lines-v1:sha256:e20a6bbc4e6f7695be78186f8cf762a91807e4babf271e063da888ef80733be2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwN2FhNWI1NjRkMWNkOWE0NWFiNTc0YzcwOWQ5M2RiNzIwOTk1MTE3NmNjYjMwZjI0YWQ0NjU0M2UwZDY1ZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YTMzZjViNmM5Y2Y4ODc0ZGE5Mjg0NmZlM2JiZDM5Yzc3ZmRmODM5NWViNWI4NDJjYTcwNWRkNWIxNDNkMzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc5OGY3MWJmOWZiMDVmZDJjYmYxNmIxY2I1MjM5MDE1MjhiYjU0YTJhYzM5OGRmYjJjZGQwN2IwNmNmYTZkOTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcwMjBkNTE3NDE3NDNjZTY5YWQyMjllM2IwZmRkOTNmMmU4MzdmZjA4YzRhNDVkY2M0ZjgyODlhMjQ4NWE2OTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c49d2e4ca3a148bd9b7fff353e85b339",
+      "statement": "All model families are qualified on Python 3.12 through 3.14, whereas Python 3.15 is limited to NumPy core workflows because the Torch dependency is declared only below Python 3.15.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L64-L69",
+          "version": "repo-lines-v1:sha256:5a8d8b6d043631a9efdc95973c7224061a0d256be1481b0cc1a0547d75295a7a:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2UyZTFkYTJiM2NiOWJkOWQ2YmQ0YTQ1ZThlYzQwYWIwYTA2ODA3NDc0ZDRiMTAwNjhiZjY1MDFiN2VkY2Q5MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTI0OTI5YmJmOWZlZThmYjFlMGI0OWYwNWM2ZTM4ZjBmZjQ1MDA4ODJkOTdmYzdiNzUyZDFlNjYyOGQ2NzQ3YSJ9"
+        },
+        {
+          "resource": "repo://pyproject.toml#L34-L56",
+          "version": "repo-lines-v1:sha256:55b41b4143fad7c2685f038dedcaf04f1f588c9e9490d4f465f03c90599939dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxMGRmNDI4NDRjNGU5ZGNkZjEwMjdmNWNlYmNhZTIwMjA0NWI0N2E4NmNiZWQ1M2JmMzUzZGFmOGRmMmJkYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzYWM2Zjk5OTVhYmExN2MwZGVjYmVmZjMxYzUyMmNmYTliMTdjMzJjMGFjOWQyM2IxZTA4OWMxZDk5MmMyYmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2NDBlZTM5NDU0NDM0OTJiZjM2MmRmNjkwZmQyN2ZmYTA1NTgzZDMyYjFlOGU4YjYzM2NlMGQxYTQwYmJmNDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJjNmI3OTA4YzljMDkwYTI3YjY5ZWZlN2JmOTM4Yzg4MDBjYmI5YTMxNTFlNjg5MjEzODM0MTE0OWM4ZDlmMWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_36ca9b3400fc421a831b16bc8c903dcd",
+      "statement": "Supported consumer imports come from `ml4t.models`; its `__all__` surface is checked against the authoritative `STABLE_ROOT_EXPORTS` manifest, while implementation bases and loss internals are excluded from supported family exports.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L7-L14",
+          "version": "repo-lines-v1:sha256:26323a6edfdf640eb5067a929c670aee4e32bae385510f254890187a72891ab4:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWExZTc4M2MxNDJjMTMxNzc1OWEyOTM0YjA0MTlkZDFlMTM1YzYyNGQzZDk4NDliODBlYjk4MTM5ODVhZWJiMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGI1MTBkY2JhYWE5ZWU2YjhhNmI3MzE1Nzg2MDAyYTY0ZDg1MzgyYzdhOTFlOWY2ZjY1OTgzNGI2ZmQ3MzJkYiJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/__init__.py#L1-L150",
+          "version": "repo-lines-v1:sha256:54749fa9a987c1ea681f080010738d2016431fb989d0a068e4d1f45876fd30c1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhYjhkYzgzOTMwNmI4Y2U5ZWMzOGZkNDM1NjRkZjU5ZmFlNzQ0ZTdhZGViNzExOWNmYWM1NWFiNTQzMTVhMzhkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkYzdkM2JkZjg0Yjk4ZDQzNmUwZmY3MTBlMjBjM2UzNTViYWM1YmFmODNkODIwNmVhZDY2ZmJhZDZlYTJlYWZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlZGQ4Y2NlZWUzYTYyZmE3ZjFlYjczNWFiZmEzNGQxOTZjNThjZjVmYzY3MGFjMDYxM2Y3ODAzZjM4Zjg0MTAzIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/models/_public_api.py#L1-L81",
+          "version": "repo-lines-v1:sha256:4ffae7a4a397b88e5678507fb7c2b176db17c2a0eef1703f3c7acf8d8fbc5242:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExYzNlMGI5NmQwNDM4Zjc4OTFiZWE5ZGVmYWY5MGNmMTlmMmZkMTAyYjBmOTBiY2ZiNTAyNWI0OTk2NWY4MGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_public_api.py#L15-L62",
+          "version": "repo-lines-v1:sha256:28903bd766840cc2c29870241322896b1dc352813e6aeb7cbc5bcef3abe5d32a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmOTRkYTIxZTc3NTc4NDg2NWFiYTdlZTQ2NzU1YzYwNGZiMmRkMTYwYWM1NzcyNDc5OTQ2NDhhZGRlMTNlZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4YWYxZTkyMDkyZDUyZGJhNjQwZTEyMGI2NjFlYmU1Y2YzMTMyZTc4MzFjYTczY2FmNjA0NzZhMTcxNjEzZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwNmI5MDJhMzM4OWIyMjMxOGY2NTU4ZDBjZDdlMjk0YmRlOTI3ZDYwYzVmYjM4NzU4Y2NmYTU3NTFlODYzNDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6c2efa4b5e7f4309bc0c4d59b5d7a2ca",
+      "statement": "Torch-backed portfolio symbols are lazy root exports that raise an actionable `ml4t-models[deep]` error when Torch is unavailable, while a linear portfolio workflow remains operational without Torch.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/__init__.py#L153-L197",
+          "version": "repo-lines-v1:sha256:8e5a09a614154ca11e38589565e7e034824a3994b7e856e6b07a34570d0967fe:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkMmMwMDQ4ZTE3MDg2NGMyZDBlMGI1NmRhZWM4OTA3YmVjZDNlMTY4ZjRiM2UwOGRlZWY5N2VjZTQ2ZWZkYjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5M2ExMzA2MmYxMGVlNGYxMjE4ZDkzZTM3YTZmODFkMzQ2ZmYxMWVjN2U1NWRkNTQyZTJkMmQyZWYwNzExZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxZmJjZGI0MjBlODE1OGJkNDk0ZDFjNTMwZTI5YjRiNTNlODU2MjAwMmM3ZjU5OWFmZDE4YjI2Njc2MGIyOGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_core_install.py#L8-L60",
+          "version": "repo-lines-v1:sha256:9190f0ebf59b77091a727925e995428941e1bb07ad17c5ad9b7f637b90711cae:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5ZjFiZmEyMjNiOGU0OGIwMTRmNzY1MjIxZWMxNDM0Zjk3NWNiMjVmNGVjMzYzMjkwNjcxNzk4NWIxMDY0MzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fba19bbc43324f00a21c85a161066763",
+      "statement": "`LatentFactorForecastPipeline.fit` fits the structural estimator, extracts training state, and fits the factor forecaster; `predict` separately extracts state, forecasts factor premia, maps them to asset forecasts, and returns all three products.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/pipelines.py#L33-L68",
+          "version": "repo-lines-v1:sha256:8e0bd8a19eeb318fb14b2113b1bd38643c0ecc10ed01c8a49aab7587b1b50277:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzNGNmMDZiZWYzZWQxNWVkMThkZTllNzJiNTJiMWQ2YTg1MzlmZjBhZmI1NDIwZTljYzllYWVhNzZmMjNjOWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMjk3NWQ1M2I0MTY3Yjg1NmFmN2FkNWFlYWVlMmUwMzE0NmQ0MDBlMDM1OTkyYmQzOGM4NzMwZDFkOTRjMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5Y2I1ZDM5NGM2MzU3ZmEyNDA5ZWY1YjlhODBkMGVhNjBhYzAyNDg5NzQ5NzliYTZiMjU1M2RmZWQxNjg0MzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlOWYyNmFkMmJiMmUzYTIzMTgwMzVjMzczNTUyYTA3MGY4Zjc5NTY3Y2NmMGU0MmRmZDJhZTIxMTBhYzgzNzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_edeea9b830444082a744a40a84493723",
+      "statement": "The core PCA quickstart can forecast a future date-by-asset matrix without future returns, preserving the supplied future timestamp and asset ordering.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L73-L108",
+          "version": "repo-lines-v1:sha256:355af7ea69a782860b5d69099032a45bb670f96c97b6fd3cafd608ed534adb13:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyOWE0OTAwZTI5MmM0NTU0YTQwNTliOWRkMThmOTY1YzgxYzJmMWUxMmZjNDhlODY4MmFlMzI2MzAyOWNiYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1NzA4YmI5ZGE5MDZhY2M5NGMyODM2YWYyNzRkZDExODhhYTg3MzZlNTQyMTVmNWI4OWY3ZDFkYTgwODYwZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyNDkyOWJiZjlmZWU4ZmIxZTBiNDlmMDVjNmUzOGYwZmY0NTAwODgyZDk3ZmM3Yjc1MmQxZTY2MjhkNjc0N2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk3MjA4MjAyYTU5N2NlYWU2NTY1NzA1N2Y5YzRjOWYzMWM2ZWVjNWQ1M2U0MzM1M2YyMWMwMTFmYjg3N2YyODYifQ"
+        },
+        {
+          "resource": "repo://docs/getting-started/quickstart.md#L1-L50",
+          "version": "repo-lines-v1:sha256:ed84114339818dddf736b905a76ba53b6be088d2926eae5339ab1008c5680ead:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhYTA0MjQxZGM2MjJjNDhkM2EyN2Q0ZjE2MGViMmUxYTVjMDkwYjYyZTgzYzJlODU3MDk4MTg1NGViYzI3MGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ZjFmYTdiNTczMzdhZmJiNjY3NTRmMmVkMWU3ZWI3YzFhZmI4MzBlOWVmZWY1MGIzMzgxMDViZjk0OGJhYzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0YzQ3ZTFjZTRhYTk0ODExY2YzY2M5NTJjYzE2ZWQ4OWFkOTg3ZDI0ODU3MmI1NzlkZjAwNmU4OWQ5MDRhMDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c7a4fe2c31c740e5a226af43c0e04045",
+      "statement": "Direct asset prediction consumes `CrossSectionBatch` and returns `AssetSignalResult`, SDF estimation extracts weight-native `StochasticDiscountFactorState`, and portfolio models consume `PortfolioSequenceBatch` and return `PortfolioWeightsResult`.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/models/api.py#L65-L140",
+          "version": "repo-lines-v1:sha256:fa6249e733fc717020f6a99ac7cd2843d6b7102f564f2077aee18242ea29d91a:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YTk5NWM1YTY2NTA1YmZkZmE5Mjg5NTk4YzJlOTZkYTk1YzdjNDAzMjYwMjIwMzBkZDRlMjAyYTA4MTYwYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiZDE1ZDg0MzllODk4YzAzMGJiZGM0YjQzZmMyY2RlZDMxYzY5N2U4ZTAyZmIxYzUwZWNlNTBmZTY2YmUyZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwY2M4MTdjMDI3NTRiYjI3Zjg1MTg5ZGViZWYwOTczNWQwNDBhNzkzZDdiOTIzMWIxNDVhNGY1NTY0MmM1YTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dbba5a7bba4f48968f67acbbfbccdc02",
+      "statement": "Finance-native batch and result contracts make temporal and cross-sectional identity part of model behavior, so implementations must preserve axes, timestamps, asset identifiers, masks, and related metadata rather than treating them as incidental tensor details.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L35-L42",
+          "version": "repo-lines-v1:sha256:47b8015598906d5169220a3b7bcff8ad102dab47dac067c25b7e016aeff558a7:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjRmYTE0MGU2YTg5YmI1NTY5NmMzMWFlOWY0OTQxZmIxYWQyOWQyOGFkNmZkMGI0MzFjYWU3MDkxZDVmMzZjMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2EwOGMyYjIyMDdkNmMxYzM5YmZlYzgxNjE3YTJhMDEzZDZmYWNiZTY1NDdkODM3MjZhMDljOGRiMWYwOTA2ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTdkNmIwN2ZjODA3OTM3NDdjMTkxZTY1NGYwMWI2ZTI1YWQ5OTQ5MWIxNDFmNTNlNzIwZDFiNDMzMTg3YjQ2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjY1ZDBlMmNjMTAwNzEzZjI1NmQwMTNiNDAzMGJmZTM0ZDIxZjQ3YmQ4MDRhYWI0NjZhODNkM2UxODY3OTY1MCJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/models/types.py",
+          "version": "repo-file-v1:sha256:2042e6af8ee2e40c4b19524aca8908d8c7d959a99213e51b1df3c1e809645464"
+        }
+      ]
+    },
+    {
+      "id": "claim_3c33e8ff7e8241efa2a7752c997e9009",
+      "statement": "The package keeps structural estimation, forecasting, mapping, allocation, and downstream ML4T handoffs explicit; backtest and diagnostic behavior is reached through integration boundaries rather than folded into model estimation.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L1-L4",
+          "version": "repo-lines-v1:sha256:67a66f2b68c1bcff6e28bb1b1b1977e3d7baa3488699f4abf1a60fdb3e5decd5:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWMwOTFmZmQ5YjhhMDdhMzkyN2I5ZTkzMjhmMDVlYTU4YzE2NTIwZmVhMTJhNzQ3NTZkZWJjYzdhYWJiYWM2MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTE3ZmZjN2RiY2Q4MjlkNDFiMDU0OThkYmMxM2M3OGM0MzdkNzFhYTJhNmRhODgzMThiOTZmN2NkMjQ3NDgzNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2E1ZjQwYmJhYmM2OTdlNTgzNTYyMjk5ODE4YmRlYTM2OTFhZTk5MzVmNTA4ZTlkMGI1OGQyNTIyOGU1NWM1YiJ9"
+        },
+        {
+          "resource": "repo://README.md#L151-L160",
+          "version": "repo-lines-v1:sha256:e970e9c6483f0d822e95bdeda9aeab278ac049c287bb82aee738bb8492dd8416:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmNTYwMTM0Mjk0MDA3N2YyMjkwMTBlODQ1MmZmN2ZlOGY2YTgzNWZkMmNlNTRmN2EyMGQ3ZTFkMTZiMGM2YTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4N2FjNTcwYzJjMmU0NTI1NDUzN2E0OTBiYzNiYjBiNmZlNzVmNTA5YzdlMDg0ZGM1YTI0OTgwZjVlYzYzNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiNjkyMmUzYzIyOGY3ZGQ0MzIwMjQ3YTU4MDRlNTExZmVhZTAzOTA5MzAxNmUyY2Y3MTg0ODc4MDEwOWZjNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3ZWQ4MzZkODBmYjYyZTRkMjhlNjFlYTRlZjNkNThiOWVhYzM5NjgwZjY2YzE2M2QyZDBkOGI4MGFhYTA3MDQifQ"
+        },
+        {
+          "resource": "repo://README.md#L24-L44",
+          "version": "repo-lines-v1:sha256:3b2403f22aae58c39934ed8d2303113a9c88f49bb4d351ffd8da67e64cbf4ffb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5YmQ4YjNlYWFmNGYwZTJkNzQ1NGM0YzYxYTFhMTVjMmVhZTg0NWMyM2E1OTc0Mzc4ZGZlZmQ3YmViZGI3MmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMGFjYzI4YjliYzZiNGZkOTYzN2I3MjYxNGUyZDVkMGNkNWUyNzA1OTMyNGRlYWE0ZGQzOTU1Mjg3MDgwN2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3ZTk2OWY5MGRiODJiMDQxMmUyYWJkZmNkYzc1Njk2OTUwNjUxNWY0NTkwNjJjNDhmMThmOTI2YTA4OGFhZGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEyMTQ4NDk1MjkxNmE4MGUyNWRjMTM3NDU4YTVhMTI4NjE3YzI1ODczNDQ1MDZhZTFkYmI0ZGUyYjI0MzUzOTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cff2c67d166d4259847fe0a41392a08b",
+      "statement": "Repository qualification progresses from focused tests to lint, formatting, type checking, coverage-enforced pytest, strict documentation build, and package build gates.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L44-L54",
+          "version": "repo-lines-v1:sha256:b97a470e4424e69f0e698aecfa990d70dd3e6d0ae1878bf34577ba4d4129c294:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiZDg4MGE2NGY5MmFiNWFmYjE5NDY1NGVhYjRmMjg4OWU4NDA5ZTI3YTg0ODFjODIxYWU0N2Y4YzBkYWQyNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMDUwMjUxMDRlNzdjZmRlNWQyMjFhMzBjMjMxMzlkNmE2MTA5ZWVjMTk0NTI2ZDVkZmFlOWIxZmQwZWZmZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY4YzI4MTE4OTQ3ZGE5Y2M3MzM0N2Q2NWIxNWYyMWE5NWUyMmYzZDQ5ZWE4MjRlY2MxNjJmNDRlOWVjM2ViYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJiNTVlNTJkMTc1ODc1ZDcxZjc0ZWQzYzE4YTlhYzkwNTA3YjljODAyNzc1YTA5YzVlNjc1NzRmZmM2OGNjOTUifQ"
+        },
+        {
+          "resource": "repo://README.md#L169-L182",
+          "version": "repo-lines-v1:sha256:c7e3ec5b1a7debb396749c80cd6be10b98db256b1f4c4acfb5ec87ec2f232e11:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0ZGMxNzk1ODkxOWY0YWNjNDBkZDg2OTIxMTJjYzUyOThiMDIxZGYwNjEwMGJmNjg4MGY5ZDQwMmEyZjBhN2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlZTc2NGYwNzFhYTEzZTJhYTM3NWU3ZmFmOWI1NzUwYjliMjEyNjAwOGQ5MmEzY2Y5YmZjYmMwMjVlMzQ3ZGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhZWQzZGNiMjlhNzVjMDIyZGMyYzc5MGVmNGE0YTg2Njk5NjcyNjZmOTZmNTRiMWU3Nzk5MDY4YmVkNGRmZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0YjY2MmMzYjc5MjRlMjNjNzM1MDQwM2U0NGIwMDJkOTU0MzA0YzU1ZDBjM2Y3NTEzZWViYjc5MTQ3MjBiMjcifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.813Z"
+  }
+}
