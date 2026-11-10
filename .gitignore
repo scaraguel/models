@@ -20,3 +20,6 @@ CLAUDE.md
 .claude/
 .codex/
 .workspace/
+
+# macOS
+.DS_Store
